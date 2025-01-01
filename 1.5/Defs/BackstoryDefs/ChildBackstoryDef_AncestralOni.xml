@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_AncestralOniWildborn1</defName>
+	<title>wildborn ancestral Oni</title>
+	<titleShort>wildborn</titleShort>
+	<description>[PAWN_nameDef] was born and raised in a wild herd of [PAWN_possessive] kind. [PAWN_pronoun] had a slight preference over seeking vegetation for food.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Plants>2</Plants>
+		<Construction>-1</Construction>
+		<Intellectual>-1</Intellectual>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_AncestralOniWildborn2</defName>
+	<title>wildborn ancestral Oni</title>
+	<titleShort>wildborn</titleShort>
+	<description>[PAWN_nameDef] was born and raised in a wild herd of [PAWN_possessive] kind. [PAWN_pronoun] had a slight preference over interacting with other animals.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Animals>2</Animals>
+		<Construction>-1</Construction>
+		<Intellectual>-1</Intellectual>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_AncestralOniWildborn3</defName>
+	<title>wildborn ancestral Oni</title>
+	<titleShort>wildborn</titleShort>
+	<description>[PAWN_nameDef] was born and raised in a wild herd of [PAWN_possessive] kind. [PAWN_pronoun] was a lot more wild minded than the rest of the herd and resorting more to brute force.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>4</Melee>
+		<Construction>-1</Construction>
+		<Crafting>-1</Crafting>
+		<Artistic>-1</Artistic>
+		<Intellectual>-1</Intellectual>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_AncestralOniWildborn4</defName>
+	<title>wildborn ancestral Oni</title>
+	<titleShort>wildborn</titleShort>
+	<description>[PAWN_nameDef] was born and raised in a wild herd of [PAWN_possessive] kind. [PAWN_pronoun] was more curious than the rest of the herd and would try a lot more different and varied activities.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>1</Melee>
+		<Plants>1</Plants>
+		<Animals>1</Animals>
+		<Construction>-1</Construction>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

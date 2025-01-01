@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<HediffDef Name="OotR_OniRacePassive" Abstract="True">
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.9, 0.9, 0.9)</defaultLabelColor>
+	<isBad>false</isBad>
+	<initialSeverity>1</initialSeverity>
+	<maxSeverity>1</maxSeverity>
+	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	<priceImpact>true</priceImpact>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+</HediffDef>
+
+<HediffDef ParentName="OotR_OniRacePassive">
+	<defName>OotR_OniPassive</defName>
+	<label>Oni's potential</label>
+    <description>Initial passive power of the Oni activated, ready to release their potential.</description>
+	<stages>
+		<li>
+			<foodPoisoningChanceFactor>0.5</foodPoisoningChanceFactor>
+			<statFactors>
+				<MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+			</statFactors>
+			<statOffsets>
+				<MeleeHitChance>4</MeleeHitChance>
+				<MeleeDodgeChance>3</MeleeDodgeChance>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Sight</capacity>
+					<offset>0.1</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.05</offset>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+</HediffDef>
+
+<HediffDef ParentName="OotR_OniRacePassive">
+	<defName>OotR_AncestralOniPassive</defName>
+	<label>ancestral Oni's potential</label>
+    <description>Initial passive power of the ancestral Oni activated, ready to release their potential.</description>
+	<stages>
+		<li>
+			<foodPoisoningChanceFactor>0.1</foodPoisoningChanceFactor>
+			<statFactors>
+				<MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+			</statFactors>
+			<statOffsets>
+				<MeleeHitChance>6</MeleeHitChance>
+				<MeleeDodgeChance>5</MeleeDodgeChance>
+				<ShootingAccuracyPawn>-2.5</ShootingAccuracyPawn>
+				<MeleeDamageFactor>0.2</MeleeDamageFactor>
+				<StaggerDurationFactor>-0.25</StaggerDurationFactor>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Sight</capacity>
+					<offset>0.1</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.05</offset>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+</HediffDef>
+
+<HediffDef>
+	<defName>OotR_FirePanic</defName>
+	<label>fire panic</label>
+    <description>The Oni suffered directly from fire, causing severe emotional distress.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<alwaysShowSeverity>true</alwaysShowSeverity>
+	<initialSeverity>0.075</initialSeverity>
+    <minSeverity>0.001</minSeverity>
+	<maxSeverity>1.0</maxSeverity>
+    <tendable>true</tendable>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12000~18000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1</severityPerDay>
+		</li>
+		<li Class="HediffCompProperties_TendDuration">
+			<baseTendDurationHours>12</baseTendDurationHours>
+			<severityPerDayTended>-3.0</severityPerDayTended>
+		</li>
+	</comps>
+	<stages>
+		<li>
+			<label>minor</label>
+			<statOffsets>
+				<IncomingDamageFactor>0.1</IncomingDamageFactor>
+				<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+				<AimingDelayFactor>+0.10</AimingDelayFactor>
+				<MeleeHitChance>-2</MeleeHitChance>
+				<WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+				<MentalBreakThreshold>0.07</MentalBreakThreshold>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.9</postFactor>
+				</li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>0.3</minSeverity>
+			<label>moderate</label>
+			<statOffsets>
+				<IncomingDamageFactor>0.2</IncomingDamageFactor>
+				<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+				<AimingDelayFactor>+0.20</AimingDelayFactor>
+				<MeleeHitChance>-4</MeleeHitChance>
+				<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+				<MentalBreakThreshold>0.15</MentalBreakThreshold>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.9</postFactor>
+				</li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>0.6</minSeverity>
+			<label>severe</label>
+			<statOffsets>
+				<IncomingDamageFactor>0.3</IncomingDamageFactor>
+				<ShootingAccuracyPawn>-15</ShootingAccuracyPawn>
+				<AimingDelayFactor>+0.5</AimingDelayFactor>
+				<MeleeHitChance>-8</MeleeHitChance>
+				<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				<MentalBreakThreshold>0.30</MentalBreakThreshold>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.9</postFactor>
+				</li>
+			</capMods>
+		</li>		
+		<li>
+			<minSeverity>0.9</minSeverity>
+			<label>extreme</label>
+			<statOffsets>
+				<IncomingDamageFactor>0.5</IncomingDamageFactor>
+				<ShootingAccuracyPawn>-30</ShootingAccuracyPawn>
+				<AimingDelayFactor>+1.00</AimingDelayFactor>
+				<MeleeHitChance>-15</MeleeHitChance>
+				<WorkSpeedGlobal>-1.00</WorkSpeedGlobal>
+				<MentalBreakThreshold>0.5</MentalBreakThreshold>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.9</postFactor>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>0.50</offset>
+				</li>
+			</capMods>
+			<mentalStateGivers>
+				<li>
+					<mentalState>PanicFlee</mentalState>
+					<mtbDays>0.08</mtbDays>
+				</li>
+			</mentalStateGivers>
+		</li>
+	</stages>
+</HediffDef>
+
+</Defs>

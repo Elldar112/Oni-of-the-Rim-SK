@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThoughtDef>
+	<defName>ClothedNudistAncestralOni</defName>
+	<workerClass>ThoughtWorker_NudistNude</workerClass>
+	<validWhileDespawned>true</validWhileDespawned>
+    <invert>true</invert>
+	<requiredTraits>
+		<li>Nudist</li>
+	</requiredTraits>
+	<stages>
+		<li>
+			<label>constraining clothes</label>
+			<description>I'm a nudist but I have to wear these clothes. It's unbearable and uncomfortable over my superior natural feathers.</description>
+			<baseMoodEffect>-6</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+</Defs>

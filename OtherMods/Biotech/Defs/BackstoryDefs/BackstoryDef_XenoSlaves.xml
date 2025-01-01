@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_Slave_Xeno1</defName>
+	<title>enslaved Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] was captured and turned into a slave. [PAWN_pronoun] was subjected to genetic implantation of a slave xenotype, to forever chain [PAWN_objective] to be a slave with no hope of escaping this fate.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Xeno</li>
+	</spawnCategories>
+	<skillGains>
+		<Mining>1</Mining>
+		<Plants>1</Plants>
+		<Social>1</Social>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_Slave_Xeno2</defName>
+	<title>imprisoned Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] resisted to the end against [PAWN_possessive] captives, ultimately ending up being implanted with a slave xenotype. [PAWN_pronoun] felt like [PAWN_possessive] mind is eternally imprisoned to observe in horror as [PAWN_objective] body no longer listens to any attempts to resist or escape from being a slave, no matter how hard [PAWN_pronoun] tried.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Xeno</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>2</Melee>
+		<Mining>1</Mining>
+		<Plants>1</Plants>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_Slave_Xeno3</defName>
+	<title>criminal Oni slave</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] was convicted of a heinous crime and sentenced to the maximum extent of the law, short of execution. This ended up with [PAWN_objective] being implanted with a slave xenotype as part of the punishment.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Xeno</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>3</Shooting>
+		<Melee>5</Melee>
+		<Mining>1</Mining>
+		<Plants>1</Plants>
+		<Crafting>-2</Crafting>
+		<Medicine>-3</Medicine>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_Slave_Domesticated1</defName>
+	<title>domesticated Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] grew up as slave like [PAWN_possessive] parents and holds no ambitions in life.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Domesticated</li>
+	</spawnCategories>
+	<skillGains>
+		<Construction>-10</Construction>
+		<Animals>-10</Animals>
+		<Intellectual>-10</Intellectual>
+	</skillGains>
+	<disallowedTraits>
+		<Bloodlust>0</Bloodlust>
+		<Abrasive>0</Abrasive>
+		<Greedy>0</Greedy>
+		<Jealous>0</Jealous>
+	</disallowedTraits>
+	<passions>
+		<Shooting>0</Shooting>
+		<Melee>0</Melee>
+		<Construction>0</Construction>
+		<Mining>0</Mining>
+		<Cooking>0</Cooking>
+		<Plants>0</Plants>
+		<Animals>0</Animals>
+		<Crafting>0</Crafting>
+		<Artistic>0</Artistic>
+		<Medicine>0</Medicine>
+		<Social>0</Social>
+		<Intellectual>0</Intellectual>
+	</passions>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_Slave_Domesticated2</defName>
+	<title>domesticated Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] grew up as slave like [PAWN_possessive] parents, forced to work tirelessly and follow the same route in life as them.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Domesticated</li>
+	</spawnCategories>
+	<skillGains>
+		<Construction>-10</Construction>
+		<Animals>-10</Animals>
+		<Intellectual>-10</Intellectual>
+		<Mining>1</Mining>
+		<Plants>1</Plants>
+		<Medicine>1</Medicine>
+	</skillGains>
+	<disallowedTraits>
+		<Bloodlust>0</Bloodlust>
+		<Abrasive>0</Abrasive>
+		<Greedy>0</Greedy>
+		<Jealous>0</Jealous>
+	</disallowedTraits>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_Slave_Domesticated3</defName>
+	<title>domesticated Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] grew up as slave like [PAWN_possessive] parents, in a highly abusive environment. With being so far genetically chained to be a slave on top of this, [PAWN_possessive] mind have broken down into accepting this as the norm.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Domesticated</li>
+	</spawnCategories>
+	<skillGains>
+		<Construction>-10</Construction>
+		<Animals>-10</Animals>
+		<Intellectual>-10</Intellectual>
+		<Mining>1</Mining>
+		<Plants>1</Plants>
+		<Social>1</Social>
+	</skillGains>
+	<disallowedTraits>
+		<Bloodlust>0</Bloodlust>
+		<Abrasive>0</Abrasive>
+		<Greedy>0</Greedy>
+		<Jealous>0</Jealous>
+		<TorturedArtist>0</TorturedArtist>
+	</disallowedTraits>
+	<forcedTraits>
+		<Masochist>0</Masochist>
+	</forcedTraits>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

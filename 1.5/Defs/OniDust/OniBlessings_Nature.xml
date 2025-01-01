@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="OotR_OniDustBase">
+	<defName>OotR_OniDust_NaturesBlessing</defName>
+	<label>Oni dust: nature's blessing</label>
+	<description>A mysterious powder that can coax out the potential within an Oni. This variant of Oni dust bestows a specific quality akin to a blessing, altering the Oni's characteristics.\n\nNature's blessing reduces social fight chances to be near nonexistant, improves mental break threshold, animal taming and training chances, plant related work, quality of medical care, social and trading skills. However, this comes at the expense of a slower movement speed and combat actions.\n\nRequires to have received sowed 250 or more plants before able to use this.</description>
+	<descriptionHyperlinks>
+		<HediffDef>OotR_NaturesBlessing</HediffDef>
+    </descriptionHyperlinks>
+	<graphicData>
+		<texPath>Things/OotR/Item/Drug/OniDust</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<comps>
+		<li Class="OniOfTheRimLite.CompProperties_AddOniHediffs">
+			<hediffDef>OotR_NaturesBlessing</hediffDef>
+			<recordDef>PlantsSown</recordDef>
+			<recordDefNum>250</recordDefNum>
+		</li>
+	</comps>
+	<statBases>
+		<WorkToMake>3000</WorkToMake>
+	</statBases>
+	<costList>
+		<OotR_OniDust>3</OotR_OniDust>
+		<MedicineHerbal>20</MedicineHerbal>
+		<SmokeleafLeaves>20</SmokeleafLeaves>
+		<RawRice>20</RawRice>
+	</costList>
+</ThingDef>
+
+<HediffDef ParentName="OotR_OniBlessings">
+	<defName>OotR_NaturesBlessing</defName>
+	<label>nature's blessing</label>
+    <description>Exude an aura of calm that makes them more approachable by people and animals alike.</description>
+	<defaultLabelColor>(0.4, 1, 0.4)</defaultLabelColor>
+	<allowedMeditationFocusTypes>
+		<li>Natural</li>
+	</allowedMeditationFocusTypes>
+	<abilities>
+		<li>OotR_NaturesBlessing_CalmingAura</li>
+		<li>OotR_NaturesBlessing_EncourageResilience</li>
+	</abilities>
+	<stages>
+		<li>
+			<socialFightChanceFactor>0.05</socialFightChanceFactor>
+			<statOffsets>
+				<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+				<TrainAnimalChance>0.25</TrainAnimalChance>
+				<TameAnimalChance>0.25</TameAnimalChance>
+				<ForagedNutritionPerDay>+0.5</ForagedNutritionPerDay>
+				<DrugHarvestYield>0.2</DrugHarvestYield>
+				<PlantHarvestYield>0.2</PlantHarvestYield>
+				<PlantWorkSpeed>0.1</PlantWorkSpeed>
+				<MedicalTendQuality>0.2</MedicalTendQuality>
+				<SocialImpact>0.2</SocialImpact>
+				<NegotiationAbility>0.2</NegotiationAbility>
+				<TradePriceImprovement>0.2</TradePriceImprovement>
+				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.2</ConversionPower>
+				<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">0.1</PruningSpeed>
+				<MoveSpeed>-1</MoveSpeed>
+				<MeleeCooldownFactor>0.50</MeleeCooldownFactor>
+				<RangedCooldownFactor>0.50</RangedCooldownFactor>
+				<AimingDelayFactor>0.50</AimingDelayFactor>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+
+<AbilityDef>
+	<defName>OotR_NaturesBlessing_CalmingAura</defName>
+	<label>calming aura</label>
+	<description>Create an aura that calms and boosts the mood of everyone in a target area. The effect lasts half a day.</description>
+	<jobDef>CastAbilityOnThing</jobDef>
+	<iconPath>UI/OotR/AbilityIcon/CalmAura</iconPath>
+	<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+	<warmupSound>OotR_CalmingAura_Sustain</warmupSound>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<hostile>false</hostile>
+	<targetRequired>false</targetRequired>
+	<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+	<showCastingProgressBar>true</showCastingProgressBar>
+	<cooldownTicksRange>22500</cooldownTicksRange>
+	<statBases>
+		<Ability_Duration>500</Ability_Duration>
+		<Ability_EffectRadius>2.9</Ability_EffectRadius>
+	</statBases>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<soundCast>OotR_CalmingAura_Cast</soundCast>
+		<warmupTime>30.0</warmupTime>
+		<range>2.9</range>
+		<violent>false</violent>
+		<drawAimPie>false</drawAimPie>
+		<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+		<requireLineOfSight>false</requireLineOfSight>
+		<targetable>false</targetable>
+		<targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<neverTargetHostileFaction>true</neverTargetHostileFaction>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>OotR_NaturesBlessing_CalmingAura</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<replaceExisting>true</replaceExisting>
+		</li>
+		<li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		</li>
+	</comps>
+</AbilityDef>
+
+<HediffDef>
+	<defName>OotR_NaturesBlessing_CalmingAura</defName>
+	<label>calming aura</label>
+	<description>A sense of feeling calm.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.4, 1, 0.4)</defaultLabelColor>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+	<stages>
+		<li>
+			<socialFightChanceFactor>0.50</socialFightChanceFactor>
+			<statOffsets>
+				<MentalBreakThreshold>-0.06</MentalBreakThreshold>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+
+
+<AbilityDef>
+	<defName>OotR_NaturesBlessing_EncourageResilience</defName>
+	<label>encourage resilience</label>
+	<description>Encourage a person or animal to show resilience against pain, sickness and injury. With improved determination, it increases pain threshold, immunity gain and injury recovery rate.</description>
+	<jobDef>CastAbilityOnThingMelee</jobDef>
+	<iconPath>UI/OotR/AbilityIcon/EncourageResilience</iconPath>
+	<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<hostile>false</hostile>
+	<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+	<!--showCastingProgressBar>true</showCastingProgressBar-->
+	<cooldownTicksRange>45000</cooldownTicksRange>
+	<statBases>
+		<Ability_Duration>500</Ability_Duration>
+	</statBases>
+	<verbProperties>
+		<verbClass>Verb_CastAbilityTouch</verbClass>
+		<soundCast>OotR_EncourageResilience</soundCast>
+		<warmupTime>5.0</warmupTime>
+		<range>-1</range>
+		<violent>false</violent>
+		<drawAimPie>true</drawAimPie>
+		<targetParams>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<neverTargetHostileFaction>True</neverTargetHostileFaction>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>OotR_NaturesBlessing_EncourageResilience</hediffDef>
+			<onlyBrain>true</onlyBrain>
+			<replaceExisting>true</replaceExisting>
+		</li>
+		<li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		</li>
+	</comps>
+</AbilityDef>
+
+<HediffDef>
+	<defName>OotR_NaturesBlessing_EncourageResilience</defName>
+	<label>encouraged resilience</label>
+	<description>A sense of feeling calm.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.4, 1, 0.4)</defaultLabelColor>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="OniOfTheRimLite.HediffCompProperties_GiveHediffFixed">
+			<hediffDef>OotR_NaturesBlessing_EncourageResilienceMentalBreak</hediffDef>
+		</li>
+	</comps>
+	<stages>
+		<li>
+			<statOffsets>
+				<ImmunityGainSpeed>0.20</ImmunityGainSpeed>
+				<InjuryHealingFactor>0.20</InjuryHealingFactor>
+				<PainShockThreshold>0.20</PainShockThreshold>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+<HediffDef>
+	<defName>OotR_NaturesBlessing_EncourageResilienceMentalBreak</defName>
+	<label>mental break resilience</label>
+	<description>Immune to mental breaks for 3 hours.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.4, 1, 0.4)</defaultLabelColor>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>7500</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+	<stages>
+		<li>
+			<becomeVisible>false</becomeVisible>
+			<blocksMentalBreaks>true</blocksMentalBreaks>
+		</li>
+	</stages>
+</HediffDef>
+
+</Defs>

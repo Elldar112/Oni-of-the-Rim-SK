@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Name="OotR_AncestralOniBase" ParentName="OotR_AncestralOniRacePawnKinds" Abstract="True">
+	<defaultFactionType>OotR_OniFreeborn</defaultFactionType>
+	<maxGenerationAge>60</maxGenerationAge>
+	<chemicalAddictionChance>0.01</chemicalAddictionChance>
+	<invNutrition>4.8</invNutrition>
+	<invFoodDef>Pemmican</invFoodDef>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_AncestralOniBase">
+	<defName>OotR_Ancestral_Brawler</defName>
+	<label>ancestral oni</label>
+	<combatPower>30</combatPower>
+	<canBeSapper>true</canBeSapper>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>13~20</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_AncestralOniBase">
+	<defName>OotR_Ancestral_Warrior</defName>
+	<label>ancestral oni</label>
+	<combatPower>60</combatPower>
+	<canBeSapper>true</canBeSapper>
+	<weaponMoney>150~250</weaponMoney>
+	<weaponTags>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>MedievalMeleeDecent</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>OotR_OniWarKunai</li>
+		<li>OotR_OniDaiKunai</li>
+		<li>OotR_OniKanabo</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>14~22</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<shieldMoney>
+				<min>100</min>
+				<max>150</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.9</shieldChance>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_AncestralOniBase">
+	<defName>OotR_Ancestral_Guardian</defName>
+	<label>ancestral oni</label>
+	<combatPower>75</combatPower>
+	<canBeSapper>true</canBeSapper>
+	<weaponMoney>500~1000</weaponMoney>
+	<weaponTags>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>MedievalMeleeDecent</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>OotR_OniWarKunai</li>
+		<li>OotR_OniDaiKunai</li>
+		<li>OotR_OniKanabo</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<initialWillRange>3~5</initialWillRange>
+	<initialResistanceRange>16~26</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<shieldMoney>
+				<min>120</min>
+				<max>160</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.9</shieldChance>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+</Defs>

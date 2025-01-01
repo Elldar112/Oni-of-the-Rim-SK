@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<StorytellerDef ParentName="BaseStoryteller">
+	<defName>OotR_DuskAndDawn</defName>
+	<label>Dusk and Dawn</label>
+	<description>Dusk and Dawn guide the stars and streams of fate. They shall bring delight or disaster.
+As is told your foes will seek you for their own fortune, they will not rest and you must be ready and weary. 
+The Twins will provide, you will be fruitful, all they ask is you to stay strong. Note this storyteller is built around the concept of you feeling hunted. Be ready for a fight.</description>
+	<portraitLarge>Portrait/OotR/TwinsLarge</portraitLarge>
+	<portraitTiny>Portrait/OotR/Twins</portraitTiny>
+	<listOrder>40</listOrder>
+	<comps>
+		<!-- Home all -->
+		<li Class="StorytellerCompProperties_RandomMain">
+			<allowedTargetTags>
+				<li>Map_PlayerHome</li>
+			</allowedTargetTags>
+			<minDaysPassed>1</minDaysPassed>
+			<mtbDays>0.90</mtbDays>
+			<maxThreatBigIntervalDays>7</maxThreatBigIntervalDays>
+			<minIncChancePopulationIntentFactor>0.3</minIncChancePopulationIntentFactor>
+			<randomPointsFactorRange>0.9~3</randomPointsFactorRange>
+			<skipThreatBigIfRaidBeacon>false</skipThreatBigIfRaidBeacon>
+			<categoryWeights>
+				<Misc>5</Misc>
+				<ThreatBig>1.5</ThreatBig>
+				<OrbitalVisitor>1</OrbitalVisitor>
+				<FactionArrival>1.2</FactionArrival>
+				<ThreatSmall>0.8</ThreatSmall>
+				<ShipChunkDrop>0.3</ShipChunkDrop>
+			</categoryWeights>
+		</li>
+		<li Class="StorytellerCompProperties_Disease">
+			<category>DiseaseHuman</category>
+			<minDaysPassed>5</minDaysPassed>
+		</li>
+		<li Class="StorytellerCompProperties_Disease">
+			<category>DiseaseAnimal</category>
+			<minDaysPassed>0</minDaysPassed>
+		</li>
+		<!-- Home special threats -->
+		<li Class="StorytellerCompProperties_ThreatsGenerator">
+			<allowedTargetTags>
+			<li>Map_RaidBeacon</li>
+			</allowedTargetTags>
+			<parms>
+				<allowedThreats>Raids</allowedThreats>
+				<onDays>1.0</onDays>
+				<offDays>0.75</offDays>
+				<minSpacingDays>0.04</minSpacingDays>
+				<numIncidentsRange>1~3</numIncidentsRange>
+			</parms>
+		  </li>
+		<!-- Ally/neutral interaction -->
+		<li Class="StorytellerCompProperties_FactionInteraction">
+			<incident>RaidFriendly</incident>
+			<baseIncidentsPerYear>8</baseIncidentsPerYear>
+			<minSpacingDays>0.4</minSpacingDays>
+			<fullAlliesOnly>true</fullAlliesOnly>
+			<minDanger>High</minDanger>
+		</li>
+		<!-- Caravan / temp map -->
+		<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+			<category>Misc</category>
+			<allowedTargetTags>
+				<li>Caravan</li>
+				<li>Map_TempIncident</li>
+			</allowedTargetTags>
+		</li>
+		<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+			<category>ThreatSmall</category>
+			<applyCaravanVisibility>true</applyCaravanVisibility>
+			<allowedTargetTags>
+				<li>Caravan</li>
+				<li>Map_TempIncident</li>
+			</allowedTargetTags>
+		</li>
+		<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+			<category>ThreatBig</category>
+			<applyCaravanVisibility>true</applyCaravanVisibility>
+			<allowedTargetTags>
+				<li>Caravan</li>
+				<li>Map_TempIncident</li>
+			</allowedTargetTags>
+		</li>
+	<!-- Quests - non-Royalty -->
+		<li Class="StorytellerCompProperties_RandomQuest">
+			<category>GiveQuest</category>
+			<allowedTargetTags>
+				<li>World</li>
+			</allowedTargetTags>
+			<onDays>12</onDays>
+			<numIncidentsRange>2~4</numIncidentsRange>
+			<acceptFractionByDaysPassedCurve>
+				<points>
+					<li>(5, 0)</li>
+					<li>(30, 1)</li>
+				</points>
+			</acceptFractionByDaysPassedCurve>
+			<minSpacingDays>0.2</minSpacingDays>
+			<disableIfAnyModActive>
+				<li>Ludeon.RimWorld.Royalty</li>
+			</disableIfAnyModActive>
+		</li>
+		<!-- Quests - Royalty -->
+		<li Class="StorytellerCompProperties_RandomQuest">
+			<category>GiveQuest</category>
+			<allowedTargetTags>
+				<li>World</li>
+			</allowedTargetTags>
+			<onDays>12</onDays>
+			<numIncidentsRange>2~4</numIncidentsRange>
+			<acceptFractionByDaysPassedCurve>
+				<points>
+					<li>(5, 0)</li>
+					<li>(11, 1)</li>
+				</points>
+			</acceptFractionByDaysPassedCurve>
+			<minSpacingDays>0.2</minSpacingDays>
+			<enableIfAnyModActive>
+				<li>Ludeon.RimWorld.Royalty</li>
+			</enableIfAnyModActive>
+		</li>
+		<!-- World misc incidents-->
+		<li Class="StorytellerCompProperties_CategoryMTB">
+			<category>Misc</category>
+			<allowedTargetTags>
+				<li>World</li>
+			</allowedTargetTags>
+			<minDaysPassed>1</minDaysPassed>
+			<mtbDays>12</mtbDays>
+		</li>
+		<!-- Triggered -->
+		<li Class="StorytellerCompProperties_Triggered">
+			<incident>StrangerInBlackJoin</incident>
+			<delayTicks>180</delayTicks>
+		</li>
+	</comps>
+</StorytellerDef>
+
+</Defs>

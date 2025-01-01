@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ScenarioDef>
+	<defName>OotR_RevenantTalonsStart_AncientUrbanRuins</defName>
+	<label>Revenant Talons scavengers</label>
+	<description>You are a part of the Revenant Talons tribe. You have discovered intel suggesting the location of an abandoned underground facility, and go investigate for yourselves with unauthorized use of your faction's drop pods. Upon arrival and confirming its existence, it can serve as a formidable stronghold should it get developed. With such a prize before you, you now decide to either report back and hope you are pardoned for the unauthorized drop pod use and be tasked to leading this independent operating base, or defect from Revenant Talons and claim it all for yourselves.\n\nNote: With Royalty DLC, you are permanently hostile with the Empire.\n\nWith Ideology DLC, for ideal immersion, select and use the Revenant Talons faction's generated ideology, and edit from there for further preference.</description>
+	<scenario>
+		<summary>Four Oni discover a abandoned facility, with option to continue serving or defecting from Revenant Talons.</summary>		
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>OotR_RevenantTalonsPlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>4</pawnCount>
+				<pawnChoiceCount>8</pawnChoiceCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>StrangerInBlackJoin</incident>
+			</li>
+			<li Class="AncientMarket_Libraray.ScenPart_GenerateCustomMap">
+				<def>AM_StartWithStructure</def>
+				<maps>
+					<li>AM_ParkingLot1F_A</li>
+					<li>AM_ParkingLot1F_B</li>
+				</maps>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<visible>false</visible>
+				<thingDef>OotR_RevenantTalonsStartThing_AncientUrbanRuins</thingDef>
+			</li>
+			<li Class="ScenPart_PawnFilter_Age">
+				<def>PawnFilter_Age</def>
+				<visible>false</visible>
+				<allowedAgeRange>25~120</allowedAgeRange>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>20</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineHerbal</thingDef>
+				<count>10</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GoJuice</thingDef>
+				<count>4</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Apparel_WarVeil</thingDef>
+				<stuff>Cloth</stuff>
+				<count>4</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Apparel_FlakVest</thingDef>
+				<count>4</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Spear</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_Autopistol</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_MachinePistol</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_HeavySMG</thingDef>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>You have discovered an ancient underground parking lot that could serve as a new independently operated stronghold for Revenant Talons. You did break the rules and had unauthorized access of drop pods to arrive quickly before anyone else and now you must face a decision.\n\nReport back and pray you are pardoned for this big discovery and securing the facility, then be tasked to leading this new operating base, or defect from Revenant Talons altogether and claim it all for yourselves.\n\nThere seems to be a strange noise underground.....</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+	</scenario>
+</ScenarioDef>
+
+<ThingSetMakerDef>
+	<defName>OotR_RevenantTalonsScavengerStart</defName>
+	<root Class="ThingSetMaker_Sum">
+		<resolveInOrder>true</resolveInOrder>
+		<options>
+			<li>
+				<thingSetMaker Class="ThingSetMaker_StackCount">
+					<fixedParams>
+						<filter>
+							<thingDefs>
+								<li>Silver</li>
+							</thingDefs>
+						</filter>
+						<countRange>1000~1000</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+			<li>
+				<thingSetMaker Class="ThingSetMaker_StackCount">
+					<fixedParams>
+						<filter>
+							<thingDefs>
+								<li>MealSurvivalPack</li>
+							</thingDefs>
+						</filter>
+						<countRange>20~20</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+			<li>
+				<thingSetMaker Class="ThingSetMaker_StackCount">
+					<fixedParams>
+						<filter>
+							<tradeTagsToAllow>
+								<li>AM_Intel</li>
+							</tradeTagsToAllow>
+						</filter>
+						<countRange>1~1</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+			<li>
+				<thingSetMaker Class="ThingSetMaker_StackCount">
+					<fixedParams>
+						<filter>
+							<tradeTagsToAllow>
+								<li>AM_Intel</li>
+							</tradeTagsToAllow>
+						</filter>
+						<countRange>1~1</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+			<li>
+				<thingSetMaker Class="ThingSetMaker_StackCount">
+					<fixedParams>
+						<filter>
+							<tradeTagsToAllow>
+								<li>AM_Intel</li>
+							</tradeTagsToAllow>
+						</filter>
+						<countRange>1~1</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+		</options>
+	</root>
+</ThingSetMakerDef>
+
+</Defs>

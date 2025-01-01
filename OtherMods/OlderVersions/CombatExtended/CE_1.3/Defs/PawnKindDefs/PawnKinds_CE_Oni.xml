@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="OniBaseTribal">
+		<defName>OniRim_TribalGrenadier</defName>
+		<label>Oni boomer</label>
+		<combatPower>60</combatPower>
+		<maxGenerationAge>40</maxGenerationAge>
+		<canBeSapper>true</canBeSapper>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>12~19</initialResistanceRange>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>180</min>
+			<max>350</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarVeil</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>Tribal</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>60</min>
+			<max>400</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CE_GrenadeNeolithic</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>10</min>
+					<max>30</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>80</min>
+						<max>160</max>
+					</sidearmMoney>
+				<weaponTags>
+						<li>CE_Sidearm_Tribal</li>
+				</weaponTags>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalBase">
+		<defName>OniRim_TribalGunner</defName>
+		<label>Oni thunderer</label>
+		<combatPower>60</combatPower>
+		<minGenerationAge>25</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>20~34</initialResistanceRange>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>180</min>
+			<max>350</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>Tribal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_WarMask</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>180</min>
+			<max>290</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineHerbal</thingDef>
+					<countRange>
+						<min>0</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>4</max>
+				</primaryMagazineCount>
+				<shieldMoney>
+					<min>120</min>
+					<max>160</max>
+				</shieldMoney>
+				<shieldTags>
+					<li>TribalShield</li>
+				</shieldTags>
+				<shieldChance>0.9</shieldChance>
+				<sidearms>
+					<li>
+						<sidearmMoney>
+							<min>100</min>
+							<max>600</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Tribal</li>
+						</weaponTags>
+					</li>          
+				</sidearms>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef Name="OotR_OniBackstory_Child" Abstract="True">
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>OotR_OniBackstoryBase_Child</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniDreamer</defName>
+	<title>Oni dreamer</title>
+	<titleShort>dreamer</titleShort>
+	<description>[PAWN_nameDef] always had an imaginative mind, always wondering what is out there in the world. Sometimes felt a little confined where [PAWN_pronoun] currently is.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Artistic>2</Artistic>
+		<Crafting>1</Crafting>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_FeralOniChild</defName>
+	<title>feral Oni child</title>
+	<titleShort>feral child</titleShort>
+	<description>When [PAWN_nameDef] was born, [PAWN_pronoun] had little to no sense of being person and more akin to being a wild animal. It took a significant amount of time before [PAWN_nameDef] had enough mannerism and sense to behave close to a normal person and not an animal.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Animals>6</Animals>
+		<Social>-4</Social>
+	</skillGains>
+	<workDisables>Intellectual</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniSpacerChild</defName>
+	<title>Oni spacer child</title>
+	<titleShort>sky child</titleShort>
+	<description>[PAWN_nameDef] grew up on a crowded space station alongside another child, whose parents were [PAWN_possessive] masters. [PAWN_nameDef] was treated like family despite being a different race. One day, the space station was raided by pirates, and [PAWN_nameDef] was saved by the family as [PAWN_pronoun] was shoved into an escape pod at the start of the attack. The family does escape in another pod, but it headed unfortunately headed in another direction, and they could only communicate their goodbyes as they parted ways.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_BlackTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Cooking>3</Cooking>	
+		<Social>3</Social>	  
+		<Intellectual>2</Intellectual>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="-1">HAR_Xenophobia</defName>
+			<chance>33</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName Degree="1">HAR_Xenophobia</defName>
+			<chance>100</chance>
+		</li>
+	</disallowedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_AdoptedOniChild</defName>
+	<title>adopted Oni child</title>
+	<titleShort>adopted</titleShort>
+	<description>Rescued from a strange pod that fell from the sky, [PAWN_nameDef] was taken in and raised by an old farmer and his wife. Though [PAWN_pronoun] never got the hang of farming, [PAWN_possessive] perfect aim was a godsend in battle and earned [PAWN_objective] great fame as a marksmen.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>-6</Melee>
+		<Shooting>8</Shooting>
+		<Plants>1</Plants>
+		<Animals>1</Animals>
+	</skillGains>
+	<workDisables>Firefighting</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_OniSpacerEscapee</defName>
+	<title>Oni spacer escapee</title>
+	<titleShort>sky child</titleShort>
+	<description>[PAWN_nameDef] grew up maintaining and serving on [PAWN_possessive] owners' space hotel. Proves to be a fatal error of judgement letting an Oni perform delicate maintenance. One day, [PAWN_nameDef] accidentally fitted a component backwards that lead to a massive failure and explosion in the coolant systems. [PAWN_possessive] owners did not make it to the escape pods during the evacuation.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Construction>3</Construction>
+		<Social>2</Social>
+		<Crafting>2</Crafting>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+
+</Defs>

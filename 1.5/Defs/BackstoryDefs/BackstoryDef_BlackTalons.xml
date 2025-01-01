@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_BT_BlackTalonAgent</defName>
+	<title>Black Talons agent</title>
+	<titleShort>agent</titleShort>
+	<description>The Black Talons have a special force division specialized in combat, infiltration and assassination. [PAWN_nameDef] is one such member.</description>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_BlackTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>6</Melee>
+		<Social>4</Social>
+		<Shooting>6</Shooting>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>15</chance>
+		</li>
+		<li>
+			<defName>Bloodlust</defName>
+			<chance>15</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Wimp</defName>
+			<chance>100</chance>
+		</li>
+	</disallowedTraitsChance>
+	<requiredWorkTags>Violent</requiredWorkTags>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

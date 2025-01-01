@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ResearchProjectTagDef>
+	<defName>OotR_OniStart</defName>
+</ResearchProjectTagDef>
+
+<ResearchProjectTagDef>
+	<defName>OotR_RevenantTalonsStart</defName>
+</ResearchProjectTagDef>
+
+<ResearchProjectTagDef>
+	<defName>OotR_RevenantTalonsTechprints</defName>
+</ResearchProjectTagDef>
+
+</Defs>

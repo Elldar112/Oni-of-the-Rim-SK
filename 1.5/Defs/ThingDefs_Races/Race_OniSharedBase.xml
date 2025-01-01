@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace Name="OotR_OniBase" ParentName="BaseHumanlikePawn" Abstract="true">
+	<alienRace Inherit="False">
+		<generalSettings>
+			<maleGenderProbability>0.4</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<chemicalSettings></chemicalSettings>
+		</generalSettings>
+		<thoughtSettings>
+			<replacerList></replacerList>
+			<restrictedThoughts/>
+		</thoughtSettings>
+		<raceRestriction>
+			<apparelList></apparelList>
+			<weaponList></weaponList>
+			<recipeList></recipeList>
+			<foodList/>
+			<petList></petList>
+			<workGiverList></workGiverList>
+			<blackGeneTags>
+				<li>Jaw</li>
+				<li>BodyType</li>
+				<li>Headbone</li>		
+			</blackGeneTags>
+			<blackEndoCategories>
+				<li>Melanin</li>
+				<li>HairColor</li>
+				<li>Ears</li>
+				<li>Jaw</li>
+				<li>Headbone</li>
+				<li>Head</li>
+				<li>BodyType</li>
+			</blackEndoCategories>
+		</raceRestriction>
+	</alienRace>
+	<race>
+		<lifeExpectancy>100</lifeExpectancy>
+		<leatherDef>OotR_Leather_Oni</leatherDef>
+		<body>OotR_Oni</body>
+		<meatMarketValue>0.8</meatMarketValue>
+		<hediffGiverSets></hediffGiverSets>
+	</race>
+	<recipes Inherit="False"></recipes>
+	<butcherProducts></butcherProducts>
+    <comps>
+		<li Class="OniOfTheRimLite.CompProperties_OniReactToFire">
+			<damageDefIncoming>
+				<li>Flame</li>
+			</damageDefIncoming>
+			<createHediff>OotR_FirePanic</createHediff>
+		</li> 
+	</comps>
+	<tools Inherit="False"/>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Miners -->
+
+<PawnKindDef ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Miner</defName>
+	<label>miner</label>
+	<combatPower>35</combatPower>
+	<backstoryCategories Inherit="False"/>
+	<backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>TribalMiner</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
+	<itemQuality>Poor</itemQuality>
+	<isFighter>false</isFighter>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>180~350</apparelMoney>
+	<weaponMoney>80~80</weaponMoney>
+	<weaponTags>
+		<li>NeolithicMeleeBasic</li>
+		<li>NeolithicRangedBasic</li>
+		<li>OotR_OniFukiya</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<techHediffsMoney>50~50</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+	</techHediffsTags>
+	<techHediffsChance>0.03</techHediffsChance>
+	<initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>17~27</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_BlackTalonsPawnkindBase">
+	<defName>OotR_BT_Miner</defName>
+	<label>miner</label>
+	<combatPower>40</combatPower>
+	<backstoryCategories Inherit="False"/>
+	<backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>Miner</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
+	<itemQuality>Poor</itemQuality>
+	<isFighter>false</isFighter>
+	<gearHealthRange>0.2~2.0</gearHealthRange>
+	<apparelMoney>200~400</apparelMoney>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	<weaponMoney>65~125</weaponMoney>
+	<weaponTags>
+		<li>Gun</li>
+		<li>MedievalMeleeBasic</li>
+		<li>OotR_OniYumiBow</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<techHediffsMoney>1000~1000</techHediffsMoney>
+	<techHediffsTags>
+		<li>DrillArm</li>
+	</techHediffsTags>
+	<techHediffsChance>0.5</techHediffsChance>
+	<techHediffsMaxAmount>1</techHediffsMaxAmount>
+	<initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>10~17</initialResistanceRange>
+</PawnKindDef>
+
+
+<!-- Loggers -->
+
+<PawnKindDef ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Logger</defName>
+	<label>logger</label>
+	<combatPower>40</combatPower>
+	<backstoryCategories Inherit="False"/>
+    <backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>TribalLogger</li>
+			</categoriesAdulthood>
+		</li>
+    </backstoryFiltersOverride>
+	<itemQuality>Poor</itemQuality>
+	<isFighter>false</isFighter>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>180~350</apparelMoney>
+	<weaponMoney>80~80</weaponMoney>
+	<apparelRequired>
+		<li>Apparel_Shadecone</li>
+	</apparelRequired>
+	<weaponTags>
+		<li>NeolithicMeleeBasic</li>
+		<li>NeolithicRangedBasic</li>
+		<li>OotR_OniFukiya</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<techHediffsMoney>50~50</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+	</techHediffsTags>
+	<techHediffsChance>0.03</techHediffsChance>
+	<initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>17~27</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_BlackTalonsPawnkindBase">
+	<defName>OotR_BT_Logger</defName>
+	<label>logger</label>
+	<combatPower>35</combatPower>
+	<backstoryCategories Inherit="False"/>
+	<backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>Logger</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
+	<itemQuality>Poor</itemQuality>
+	<isFighter>false</isFighter>
+	<gearHealthRange>0.2~2.0</gearHealthRange>
+	<apparelMoney>200~400</apparelMoney>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	<weaponMoney>65~125</weaponMoney>
+	<weaponTags>
+		<li>Gun</li>
+		<li>MedievalMeleeBasic</li>
+		<li>OotR_OniYumiBow</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<techHediffsChance>0.06</techHediffsChance>
+	<techHediffsMoney>50~600</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+		<li>Simple</li>
+		<li>ImplantEmpireCommon</li>
+	</techHediffsTags>
+	<initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>10~17</initialResistanceRange>
+</PawnKindDef>
+
+<!-- Farmer -->
+<PawnKindDef ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Farmer</defName>
+	<label>farmer</label>
+	<combatPower>35</combatPower>
+	<backstoryCategories Inherit="False"/>
+    <backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>TribalFarmer</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
+	<itemQuality>Poor</itemQuality>
+	<isFighter>false</isFighter>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>180~350</apparelMoney>
+	<weaponMoney>80~80</weaponMoney>
+	<apparelRequired>
+		<li>Apparel_Shadecone</li>
+	</apparelRequired>
+	<weaponTags>
+		<li>NeolithicMeleeBasic</li>
+		<li>NeolithicRangedBasic</li>
+		<li>OotR_OniFukiya</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<techHediffsMoney>50~50</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+	</techHediffsTags>
+	<techHediffsChance>0.03</techHediffsChance>
+	<initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>17~27</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_BlackTalonsPawnkindBase">
+	<defName>OotR_BT_Farmer</defName>
+	<label>farmer</label>
+	<combatPower>35</combatPower>
+	<backstoryCategories Inherit="False"/>
+	<backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>Farmer</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
+	<itemQuality>Poor</itemQuality>
+	<isFighter>false</isFighter>
+	<gearHealthRange>0.2~2.0</gearHealthRange>
+	<apparelMoney>200~400</apparelMoney>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	<weaponMoney>65~125</weaponMoney>
+	<weaponTags>
+		<li>Gun</li>
+		<li>MedievalMeleeBasic</li>
+	</weaponTags>
+	<techHediffsMoney>1000~1000</techHediffsMoney>
+	<techHediffsTags>
+		<li>FieldHand</li>
+	</techHediffsTags>
+	<techHediffsChance>0.5</techHediffsChance>
+	<techHediffsMaxAmount>1</techHediffsMaxAmount>
+	<initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>10~17</initialResistanceRange>
+</PawnKindDef>
+
+<!-- Hunter -->
+
+<PawnKindDef ParentName="OotR_BlackTalonsPawnkindBase">
+	<defName>OotR_BT_Hunter</defName>
+	<label>hunter</label>
+	<combatPower>52</combatPower>
+	<backstoryCategories Inherit="False"/>
+	<backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>Hunter</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
+	<itemQuality>Poor</itemQuality>
+	<isFighter>false</isFighter>
+	<gearHealthRange>0.2~2.0</gearHealthRange>
+	<apparelMoney>200~400</apparelMoney>
+	<weaponMoney>140~250</weaponMoney>
+	<weaponTags>
+		<li>Gun</li>
+		<li>OotR_OniYumiBow</li>
+	</weaponTags>
+	<techHediffsChance>0.06</techHediffsChance>
+	<techHediffsMoney>50~600</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+		<li>Simple</li>
+		<li>ImplantEmpireCommon</li>
+	</techHediffsTags>
+	<initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>10~17</initialResistanceRange>
+</PawnKindDef>
+
+</Defs>

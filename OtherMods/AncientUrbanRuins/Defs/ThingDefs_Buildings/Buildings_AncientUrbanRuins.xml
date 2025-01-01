@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="OotR_RevenantTalonsStartThing">
+	<defName>OotR_RevenantTalonsStartThing_AncientUrbanRuins</defName>
+	<label>Revenant Talons faction device</label>
+	<description>An unknown device from the Revenant Talons faction. Activation of it requires Revenant Talons member's identification.\n\nUse this device for the true Revenant Talons faction style start.</description>
+    <comps>
+		<li Class="CompProperties_Usable">
+			<useJob>UseItem</useJob>
+			<useLabel>Report back to Revenant Talons</useLabel>
+			<useMessage>Your home faction pardons you for this major discovery. Your punishment is to lead this new independent operating base with your own power, and they provide some new intel maps.</useMessage>
+		</li>
+		<li Class="OniOfTheRimLite.CompProperties_RevenantTalonsStartThing">
+			<historyEvent>UsedRevenantTalonStartThing</historyEvent>
+			<startingAid>OotR_RevenantTalonsScavengerStart</startingAid>
+		</li>
+	</comps>
+</ThingDef>
+
+</Defs>

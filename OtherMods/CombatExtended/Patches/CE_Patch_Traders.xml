@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Base_RevenantTalons_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>FSX</thingDef>
+				<countRange>25~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Prometheum</thingDef>
+				<countRange>25~100</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_Ammo</tradeTag>
+				<thingDefCountRange>8~12</thingDefCountRange>
+				<countRange>500~2000</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_MediumAmmo</tradeTag>
+				<thingDefCountRange>5~8</thingDefCountRange>
+				<countRange>30~120</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_HeavyAmmo</tradeTag>
+				<thingDefCountRange>4~6</thingDefCountRange>
+				<countRange>10~50</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Ammo</categoryDef>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_Turret</tradeTag>
+				<thingDefCountRange>-2~4</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>WeaponsTurrets</categoryDef>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>CE_AnimalBoom</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>CE_AnimalBoom</li>
+				</tradeTagsBuy>
+				<kindCountRange>1~2</kindCountRange>
+				<countRange>-2~4</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_PreIndustrialAmmo</tradeTag>
+				<price>Cheap</price>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<countRange>50~300</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Caravan_RT_ResourceSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>FSX</thingDef>
+				<countRange>25~75</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Prometheum</thingDef>
+				<countRange>25~75</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Ammo</categoryDef>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>WeaponsTurrets</categoryDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Caravan_RT_RaidSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_Ammo</tradeTag>
+				<thingDefCountRange>6~11</thingDefCountRange>
+				<countRange>400~1000</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_MediumAmmo</tradeTag>
+				<thingDefCountRange>3~6</thingDefCountRange>
+				<countRange>30~60</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_HeavyAmmo</tradeTag>
+				<thingDefCountRange>4~6</thingDefCountRange>
+				<countRange>10~15</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Ammo</categoryDef>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>WeaponsTurrets</categoryDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Caravan_RT_RaidLootDistributor"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_Ammo</tradeTag>
+				<thingDefCountRange>8~12</thingDefCountRange>
+				<countRange>125~500</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_MediumAmmo</tradeTag>
+				<thingDefCountRange>5~8</thingDefCountRange>
+				<countRange>15~60</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_HeavyAmmo</tradeTag>
+				<thingDefCountRange>4~6</thingDefCountRange>
+				<countRange>5~20</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Ammo</categoryDef>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>WeaponsTurrets</categoryDef>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>CE_Turret</tradeTag>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

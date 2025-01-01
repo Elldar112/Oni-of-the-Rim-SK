@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<RecipeDef Name="Surgeryonihorn" ParentName="SurgeryFlesh" Abstract="True">
+	<recipeUsers>
+		<li>AOni</li>
+		<li>Alien_AncestralAOni</li>
+	</recipeUsers>
+</RecipeDef>
+  
+<RecipeDef ParentName="Surgeryonihorn">
+	<defName>Installonihorn</defName>
+	<label>Install Restored Oni Horn</label>
+	<description>Replace missing or damaged horn.</description>
+	<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+	<jobString>Installing horn</jobString>
+	<workAmount>1200</workAmount>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RestoredOniHorn</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>RestoredOniHorn</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>OniHorn</li>
+	</appliedOnFixedBodyParts>
+</RecipeDef>
+
+<RecipeDef ParentName="Surgeryonihorn">
+	<defName>Installgoldhorn</defName>
+	<label>install gold horn</label>
+	<description>Install a gold horn to replace lost or damaged horn</description>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<jobString>Installing gold horn</jobString>
+	<workAmount>1200</workAmount>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>GoldOniHorn</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>GoldOniHorn</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>OniHorn</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>goldhorn</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="Surgeryonihorn">
+	<defName>Installsteelhorn</defName>
+	<label>install steel horn</label>
+	<description>Install a steel horn to replace lost or damaged horn.</description>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<jobString>Installing steel horn</jobString>
+	<workAmount>1200</workAmount>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>SteelOniHorn</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>SteelOniHorn</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>OniHorn</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>Steelhorn</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="Surgeryonihorn">
+	<defName>InstallBioniconihorn</defName>
+	<label>install bionic oni horn</label>
+	<description>Install a bionic horn.</description>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<jobString>Installing Bionic horn</jobString>
+	<workAmount>1200</workAmount>
+	<ingredients>
+		<li>
+			<filter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Bioniconihorn</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>Bioniconihorn</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>OniHorn</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>Bioniconihorn</addsHediff>
+</RecipeDef>
+
+</Defs>

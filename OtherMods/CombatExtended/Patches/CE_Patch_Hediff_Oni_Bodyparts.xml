@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="OotR_GoldOniHorn"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>horn</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>3.0</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationSharp>0.15</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="OotR_SteelOniHorn"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>horn</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>14</power>
+					<cooldownTime>3.0</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationSharp>0.55</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.875</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="OotR_BionicOniHorn"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>horn</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>18</power>
+					<cooldownTime>3.0</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationSharp>0.60</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.95</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+			<li>Expanded Prosthetics, Implants and Augmentations</li>
+			<li>[FSF] Advanced Bionics Expansion</li>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/HediffDef[defName="OotR_AdvancedBionicOniHorn"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools</xpath>
+			<value>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>horn</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>3.0</cooldownTime>
+						<chanceFactor>0.2</chanceFactor>
+						<armorPenetrationSharp>0.65</armorPenetrationSharp>
+						<armorPenetrationBlunt>1.00</armorPenetrationBlunt>
+					</li>
+				</tools>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

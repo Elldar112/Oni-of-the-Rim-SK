@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Name="OotR_OniRacePawnKinds" Abstract="True" >
+	<race>OotR_Alien_Oni</race>
+	<startingHediffs>
+		<li>
+			<def>OotR_OniPassive</def>
+		</li>
+	</startingHediffs>
+	<abilities />
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_AncestralOniRacePawnKinds" Abstract="True" >
+	<race>OotR_Alien_AncestralOni</race>
+	<startingHediffs>
+		<li>
+			<def>OotR_AncestralOniPassive</def>
+		</li>
+	</startingHediffs>
+	<abilities />
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>OotR_AncestralOniBackstory</li>
+			</categories>
+		</li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+</Defs>

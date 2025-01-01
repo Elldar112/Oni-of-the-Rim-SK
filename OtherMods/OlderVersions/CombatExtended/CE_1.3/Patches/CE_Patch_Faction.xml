@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">    <!-- Normal mix combat -->
+		<xpath>Defs/FactionDef[defName="OniFreeborn" or defName="RevenantTalons"]/pawnGroupMakers/li[1]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>10</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>5</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">    <!-- Ranged only combat -->
+		<xpath>Defs/FactionDef[defName="OniFreeborn" or defName="RevenantTalons"]/pawnGroupMakers/li[2]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>5</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>10</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">    <!-- Breacher -->
+		<xpath>Defs/FactionDef[defName="OniFreeborn" or defName="RevenantTalons"]/pawnGroupMakers/li[4]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>10</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>10</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">    <!-- Veteran squad -->
+		<xpath>Defs/FactionDef[defName="OniFreeborn" or defName="RevenantTalons"]/pawnGroupMakers/li[5]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>5</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>10</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<!-- Normal Oni tribe -->
+
+	<Operation Class="PatchOperationAdd">    <!-- Normal Peaceful -->
+		<xpath>Defs/FactionDef[defName="OniFreeborn"]/pawnGroupMakers/li[6]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>10</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>5</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">    <!-- Normal Trader -->
+		<xpath>Defs/FactionDef[defName="OniFreeborn"]/pawnGroupMakers/li[7]/guards</xpath>
+		<value>
+			<OniRim_TribalGrenadier>5</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>15</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">    <!-- Normal Settlement -->
+		<xpath>Defs/FactionDef[defName="OniFreeborn"]/pawnGroupMakers/li[8]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>10</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>10</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<!--Revenant Talons -->
+
+	<Operation Class="PatchOperationAdd">    <!-- Revenant Talons Peaceful -->
+		<xpath>Defs/FactionDef[defName="RevenantTalons"]/pawnGroupMakers/li[7]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>10</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>5</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">    <!-- Revenant Talons Trader -->
+		<xpath>Defs/FactionDef[defName="RevenantTalons"]/pawnGroupMakers/li[8]/guards</xpath>
+		<value>
+			<OniRim_TribalGrenadier>5</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>15</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">    <!-- Revenant Talons Settlement -->
+		<xpath>Defs/FactionDef[defName="RevenantTalons"]/pawnGroupMakers/li[9]/options</xpath>
+		<value>
+			<OniRim_TribalGrenadier>10</OniRim_TribalGrenadier>
+			<OniRim_TribalGunner>10</OniRim_TribalGunner>
+		</value>
+	</Operation>
+
+</Patch>

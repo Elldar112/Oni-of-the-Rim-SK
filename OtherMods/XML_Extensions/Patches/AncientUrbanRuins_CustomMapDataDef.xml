@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Ancient urban ruins</li>
+	</mods>
+	<match Class="XmlExtensions.OptionalPatch">
+		<modId>morishep.tarojun.onioftherimlite</modId>
+		<key>OotR_AncientUrbanRuins_Add_RT</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_A"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_B"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_C"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_D"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>2</OotR_RT_ConscriptRanged>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_E"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_F"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<!-- Small pawn count
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_G"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+			-->
+
+			<!-- Small pawn count
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_H"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+			-->
+
+			<!-- Small pawn count
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Bunker_I"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+			-->
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_CommercialStreet_A"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_CommercialStreet_B"]/pawns</xpath>
+				<value>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_CommercialStreet_C"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_CommercialStreet_D"]/pawns</xpath>
+				<value>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_CommercialStreet_E"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Reserve"]/pawns</xpath>
+				<value>
+						<OotR_RT_ZealotGunner>2</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>2</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_ReserveBunker"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_ReserveRailway"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Street_A"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>2</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Street_B"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Street_C"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Street_D"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>1</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Subway_A"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Subway_B"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>1</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_2L_L"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>2</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_2L_S"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>2</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>1</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>1</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_L"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>2</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>2</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>2</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_S"]/pawns</xpath>
+				<value>
+						<OotR_RT_ConscriptRanged>2</OotR_RT_ConscriptRanged>
+						<OotR_RT_ConscriptMelee>2</OotR_RT_ConscriptMelee>
+						<OotR_RT_ZealotGunner>2</OotR_RT_ZealotGunner>
+						<OotR_RT_ZealotMelee>2</OotR_RT_ZealotMelee>
+				</value>
+			</Operation>
+
+		</caseTrue>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Ancient urban ruins</li>
+	</mods>
+	<match Class="XmlExtensions.OptionalPatch">
+		<modId>morishep.tarojun.onioftherimlite</modId>
+		<key>OotR_AncientUrbanRuins_Add_BT</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Reserve"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentRanged>1</OotR_BT_AgentRanged>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_ReserveRailway"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentRanged>1</OotR_BT_AgentRanged>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Street_C"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentRanged>1</OotR_BT_AgentRanged>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Street_D"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentRanged>1</OotR_BT_AgentRanged>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_2L_L"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentMelee>1</OotR_BT_AgentMelee>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_2L_S"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentMelee>1</OotR_BT_AgentMelee>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_L"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentRanged>1</OotR_BT_AgentRanged>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AncientMarket_Libraray.CustomMapDataDef[defName="AM_Supermarket_S"]/pawns</xpath>
+				<value>
+						<OotR_BT_AgentRanged>1</OotR_BT_AgentRanged>
+				</value>
+			</Operation>
+
+		</caseTrue>
+	</match>
+</Operation>
+
+</Patch>

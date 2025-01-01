@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniWanderer</defName>
+	<title>ancestral wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<description>[PAWN_nameDef] is a ancestral Oni wanderer of unknown origins, having one day suddenly finding [PAWN_objective]self here in this world.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>3</Melee>
+		<Animals>2</Animals>
+		<Plants>2</Plants>
+		<Intellectual>-3</Intellectual>
+		<Construction>-3</Construction>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniLostWanderer</defName>
+	<title>lost wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<description>[PAWN_nameDef] is a lost ancestral Oni of unknown origins, suddenly finding [PAWN_objective]self here in this world.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>3</Melee>
+		<Animals>2</Animals>
+		<Plants>2</Plants>
+		<Construction>-3</Construction>
+	</skillGains>
+	<workDisables>Intellectual</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniKeenWanderer</defName>
+	<title>keen wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<description>[PAWN_nameDef] is a ancestral Oni traveller of unknown origins, and was unphased by the sudden introduction into this new world.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>3</Melee>
+		<Animals>3</Animals>
+		<Plants>3</Plants>
+		<Construction>-3</Construction>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniWildWanderer</defName>
+	<title>wild wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<description>[PAWN_nameDef] is a wild ancestral Oni wanderer of unknown origins, suddenly finding [PAWN_objective]self here in this world. [PAWN_objective] mindset is more close to that of a wild animal.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>5</Melee>
+		<Animals>6</Animals>
+		<Plants>5</Plants>
+	</skillGains>
+	<workDisables>Firefighting,Caring,Social,Cooking,Crafting,Artistic,Intellectual,Constructing</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniExplorer</defName>
+	<title>ancestral Oni explorer</title>
+	<titleShort>explorer</titleShort>
+	<description>[PAWN_nameDef] is a ancestral Oni explorer interested in the unknown. Seeking out new places brings out [PAWN_possessive] curiosity and is eager to try new things.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>1</Melee>
+		<Plants>4</Plants>
+		<Mining>2</Mining>
+		<Social>2</Social>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniHomesickWanderer</defName>
+	<title>homesick wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<description>[PAWN_nameDef] is a lost ancestral Oni explorer of unknown origins. [PAWN_pronoun] did not appreciate finding [PAWN_objective]self in this new world, and misses [PAWN_possessive] herd.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>2</Melee>
+		<Animals>2</Animals>
+		<Plants>2</Plants>
+		<Artistic>1</Artistic>
+		<Social>1</Social>
+		<Intellectual>-3</Intellectual>
+		<Construction>-3</Construction>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniManhunter</defName>
+	<title>manhunter ancestral Oni</title>
+	<titleShort>manhunter</titleShort>
+	<description>[PAWN_nameDef] is a ancestral Oni explorer of unknown origins. [PAWN_pronoun] found joy in hunting for smart prey, and have been on manhunter-like sprees. Due to this, [PAWN_pronoun] did learn how to treat injuries that comes with the hunt.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>7</Melee>
+		<Medicine>2</Medicine>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Bloodlust</defName>
+			<chance>100</chance>
+		</li>
+	</forcedTraitsChance>
+	<workDisables>Social,Artistic</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniNomad</defName>
+	<title>ancestral Oni nomad</title>
+	<titleShort>nomad</titleShort>
+	<description>[PAWN_nameDef] is a ancestral Oni nomad who does not settle in one place for long, having a carefree life of living off the land.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>3</Melee>
+		<Animals>5</Animals>
+		<Plants>5</Plants>
+	</skillGains>
+	<workDisables>Firefighting,Social,Cooking,Artistic,Intellectual,Constructing</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_AncestralOniSettler</defName>
+	<title>ancestral Oni settler</title>
+	<titleShort>settler</titleShort>
+	<description>[PAWN_nameDef] is a ancestral Oni who wants to find a good place to call home, and have wandered a long time to find a suitable location.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_AncestralOniBackstory</li>
+		<li>OotR_AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>2</Melee>
+		<Plants>2</Plants>
+		<Crafting>1</Crafting>
+		<Social>2</Social>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

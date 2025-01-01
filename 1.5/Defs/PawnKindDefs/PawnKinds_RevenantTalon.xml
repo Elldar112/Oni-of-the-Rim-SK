@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Name="OotR_RevenantTalonsPawnkindBase" ParentName="OotR_OniRacePawnKinds" Abstract="True">
+	<defaultFactionType>OotR_RevenantTalons</defaultFactionType>
+	<chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<backstoryCryptosleepCommonality>0.10</backstoryCryptosleepCommonality>
+	<invNutrition>2.55</invNutrition>
+	<invFoodDef>Pemmican</invFoodDef>
+	<backstoryCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</backstoryCategories>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <techHediffsTags>
+		<li>Advanced</li>
+		<li>ImplantEmpireCommon</li>
+		<li>OotR_Advanced</li>
+    </techHediffsTags>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_RevenantTalonsZealotBase" ParentName="OotR_RevenantTalonsPawnkindBase" Abstract="True">
+	<apparelMoney>1000~1500</apparelMoney>
+	<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+	<apparelTags>
+		<li>IndustrialBasic</li>
+		<li>IndustrialAdvanced</li>
+		<li>IndustrialMilitaryBasic</li>
+		<li>IndustrialMilitaryAdvanced</li>
+		<li>OotR_OniWear</li>
+		<li>OotR_OniHeadWear</li>
+		<li>BeltDefensePop</li>
+	</apparelTags>
+	<weaponMoney>400~800</weaponMoney>
+	<techHediffsChance>0.3</techHediffsChance>
+	<techHediffsMoney>1000~1500</techHediffsMoney>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+	<techHediffsRequired>
+		<li>DeathAcidifier</li>
+	</techHediffsRequired>
+	<techHediffsDisallowTags>
+		<li>PainCauser</li>
+	</techHediffsDisallowTags>
+	<biocodeWeaponChance>0.25</biocodeWeaponChance>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+</PawnKindDef>
+
+
+	<!-- Conscripts -->
+	
+<PawnKindDef Name="OotR_RevenantTalonsConscriptBase" ParentName="OotR_RevenantTalonsZealotBase" Abstract="True">
+	<backstoryCategories>
+		<li>OotR_RevenantTalonsConscript</li>
+	</backstoryCategories>
+	<backstoryFilters>
+		<li>
+			<exclude>
+				<li>OotR_RevenantTalonsZealot</li>
+			</exclude>
+		</li>
+	</backstoryFilters>
+	<apparelTags>
+		<li>Neolithic</li>
+		<li>OotR_OniHeadWear</li>
+	</apparelTags>
+	<apparelRequired>
+		<li>Apparel_FlakVest</li>
+	</apparelRequired>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired Inherit="False" />
+    <techHediffsTags>
+		<li>Simple</li>
+    </techHediffsTags>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>15~24</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RevenantTalonsConscriptBase">
+	<defName>OotR_RT_ConscriptRanged</defName>
+	<label>conscript</label>
+	<combatPower>65</combatPower>
+	<weaponTags>
+		<li>NeolithicRangedDecent</li>
+		<li>NeolithicRangedHeavy</li>
+		<li>OotR_OniYumiBow</li>
+		<li>Gun</li>
+		<li>OotR_WisplightGuns</li>
+		<li>OotR_IndustrialGun</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RevenantTalonsConscriptBase">
+	<defName>OotR_RT_ConscriptMelee</defName>
+	<label>conscript</label>
+	<combatPower>75</combatPower>
+    <apparelRequired>
+		<li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+	<weaponTags>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>MedievalMeleeDecent</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>OotR_OniDaiKunai</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+</PawnKindDef>
+
+	<!-- Zealots -->
+
+<PawnKindDef Name="OotR_RT_ZealotBase" ParentName="OotR_RevenantTalonsZealotBase" Abstract="True">
+	<backstoryCategories>
+		<li>OotR_RevenantTalonsZealot</li>
+	</backstoryCategories>
+	<backstoryFilters>
+		<li>
+			<exclude>
+				<li>OotR_RevenantTalonsConscript</li>
+			</exclude>
+		</li>
+	</backstoryFilters>
+	<weaponMoney>700~1100</weaponMoney>
+	<apparelMoney>4000~6000</apparelMoney>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>25~34</initialResistanceRange>
+    <techHediffsTags>
+		<li>Simple</li>
+    </techHediffsTags>
+	<startingHediffs />
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_ZealotBase">
+	<defName>OotR_RT_ZealotGunner</defName>
+	<label>zealot</label>
+	<combatPower>90</combatPower>
+	<weaponTags>
+		<li>Gun</li>
+		<li>OotR_WisplightCarbine</li>
+		<li>OotR_PsyruptGuns</li>
+	</weaponTags>
+	<apparelRequired>
+		<li>Apparel_FlakJacket</li>
+		<li>Apparel_FlakVest</li>
+		<li>Apparel_FlakPants</li>
+	</apparelRequired>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>4~12</range>
+		</li>
+	</skills>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_ZealotBase">
+	<defName>OotR_RT_ZealotMelee</defName>
+	<label>zealot</label>
+	<combatPower>100</combatPower>
+    <canBeSapper>true</canBeSapper>
+	<weaponTags>
+		<li>MedievalMeleeDecent</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>OotR_OniKanabo</li>
+		<li>OotR_OniDaiKunai</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+    <apparelRequired>
+		<li>Apparel_PlateArmor</li>
+		<li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>6~12</range>
+		</li>
+	</skills>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_ZealotBase">
+	<defName>OotR_RT_ZealotBomber</defName>
+	<label>zealot</label>
+	<combatPower>100</combatPower>
+	<weaponTags>
+		<li>GrenadeDestructive</li>
+		<li>GrenadeEMP</li>
+		<li>OotR_GrenadeWisplight</li>
+		<li>OotR_GrenadeYokaiNarcotic</li>
+	</weaponTags>
+	<apparelRequired>
+		<li>Apparel_FlakJacket</li>
+		<li>Apparel_FlakVest</li>
+		<li>Apparel_FlakPants</li>
+	</apparelRequired>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>4~12</range>
+		</li>
+	</skills>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<!-- Enforcer -->
+
+<PawnKindDef Name="OotR_RT_EnforcerBase" ParentName="OotR_RevenantTalonsZealotBase" Abstract="True">
+	<backstoryCategories>
+		<li>OotR_RevenantTalonsZealot</li>
+	</backstoryCategories>
+	<backstoryFilters>
+		<li>
+			<exclude>
+				<li>OotR_RevenantTalonsConscript</li>
+				<li>OotR_OniSlave</li>
+			</exclude>
+		</li>
+	</backstoryFilters>
+	<weaponMoney>1550~2700</weaponMoney>
+	<apparelMoney>5000~8000</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_ArmorHelmetRecon</li>
+		<li>Apparel_ArmorRecon</li>
+	</apparelRequired>
+	<techHediffsChance>0.3</techHediffsChance>
+	<techHediffsMoney>1500~2000</techHediffsMoney>
+	<techHediffsMaxAmount>8</techHediffsMaxAmount>
+	<techHediffsRequired />
+	<startingHediffs />
+	<initialWillRange>3~5</initialWillRange>
+	<initialResistanceRange>30~39</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_EnforcerBase">
+	<defName>OotR_RT_EnforcerGunner</defName>
+	<label>enforcer</label>
+	<combatPower>120</combatPower>
+	<weaponTags>
+		<li>IndustrialGunAdvanced</li>
+		<li>OotR_WisplightCarbine</li>
+		<li>GunHeavy</li>
+		<li>SpacerGun</li>
+		<li>SniperRifle</li>
+		<li>OotR_PsyruptGuns</li>
+		<li>OotR_StarfireLance</li>
+	</weaponTags>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>6~14</range>
+		</li>
+	</skills>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_EnforcerBase">
+	<defName>OotR_RT_EnforcerMelee</defName>
+	<label>enforcer</label>
+	<combatPower>130</combatPower>
+    <canBeSapper>true</canBeSapper>
+	<weaponTags>
+		<li>MedievalMeleeAdvanced</li>
+		<li>OotR_OniKanabo</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+	<apparelRequired>
+		<li>Apparel_ShieldBelt</li>
+	</apparelRequired>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>6~14</range>
+		</li>
+	</skills>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_EnforcerBase">
+	<defName>OotR_RT_Demolisher</defName>
+	<label>demolisher</label>
+	<combatPower>130</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+	<weaponTags>
+		<li>NeolithicMeleeDestructive</li>
+	</weaponTags>
+	<apparelRequired>
+		<li>Apparel_ShieldBelt</li>
+	</apparelRequired>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>6~20</range>
+		</li>
+	</skills>
+</PawnKindDef>
+
+
+<!-- Champions -->
+
+<PawnKindDef Name="OotR_RT_ChampionBase" ParentName="OotR_RevenantTalonsZealotBase" Abstract="True">
+	<backstoryCategories>
+		<li>OotR_RevenantTalonsZealot</li>
+	</backstoryCategories>
+	<backstoryFilters>
+		<li>
+			<exclude>
+				<li>OotR_RevenantTalonsConscript</li>
+				<li>OotR_OniSlave</li>
+			</exclude>
+		</li>
+	</backstoryFilters>
+	<apparelMoney>7000~10000</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_PowerArmorHelmet</li>
+		<li>Apparel_PowerArmor</li>
+	</apparelRequired>
+	<weaponMoney>1500~3000</weaponMoney>
+	<techHediffsChance>0.5</techHediffsChance>
+	<techHediffsMoney>1500~4500</techHediffsMoney>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+		<li MayRequire="Ludeon.RimWorld.Biotech">DetoxifierLung</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">DetoxifierLung</li>
+	</techHediffsRequired>
+	<startingHediffs />
+	<initialWillRange>4~6</initialWillRange>
+	<initialResistanceRange>30~39</initialResistanceRange>
+	<itemQuality>Good</itemQuality>
+	<disallowedTraits>
+		<li>Wimp</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_ChampionBase">
+	<defName>OotR_RT_ChampionGunner</defName>
+	<label>champion</label>
+	<combatPower>150</combatPower>
+	<weaponTags>
+		<li>IndustrialGunAdvanced</li>
+		<li>GunHeavy</li>
+		<li>SpacerGun</li>
+		<li>SniperRifle</li>
+		<li>OotR_WisplightCarbine</li>
+		<li>OotR_PsyruptGuns</li>
+		<li>OotR_StarfireLance</li>
+	</weaponTags>
+	<startingHediffs>
+		<li>
+			<def>OotR_ShinigamiBlessing</def>
+			<chance>0.01</chance>
+		</li>
+	</startingHediffs>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>8~20</range>
+		</li>
+	</skills>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_EnforcerBase">
+	<defName>OotR_RT_ChampionMelee</defName>
+	<label>champion</label>
+	<combatPower>150</combatPower>
+    <canBeSapper>true</canBeSapper>
+	<apparelRequired>
+		<li>Apparel_ShieldBelt</li>
+	</apparelRequired>
+	<weaponTags>
+		<li>MedievalMeleeAdvanced</li>
+		<li>UltratechMelee</li>
+		<li>OotR_OniKanabo</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+	<startingHediffs>
+		<li>
+			<def>OotR_ShinigamiBlessing</def>
+			<chance>0.01</chance>
+		</li>
+	</startingHediffs>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>8~20</range>
+		</li>
+	</skills>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_ChampionBase">
+	<defName>OotR_RT_Chief</defName>
+	<label>chief</label>
+	<combatPower>150</combatPower>
+	<factionLeader>true</factionLeader>
+	<weaponTags>
+		<li>IndustrialGunAdvanced</li>
+		<li>GunHeavy</li>
+		<li>SpacerGun</li>
+		<li>SniperRifle</li>
+		<li>OotR_PsyruptGuns</li>
+		<li>OotR_StarfireLance</li>
+		<li>OotR_PsyruptCannon</li>
+	</weaponTags>
+	<startingHediffs>
+		<li>
+			<def>OotR_ShinigamiBlessing</def>
+			<chance>0.01</chance>
+		</li>
+	</startingHediffs>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>8~20</range>
+		</li>
+	</skills>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_ChampionBase">
+	<defName>OotR_RT_Shinigami</defName>
+	<label>shinigami</label>
+	<combatPower>125</combatPower>
+	<factionLeader>true</factionLeader>
+	<itemQuality>Excellent</itemQuality>
+	<weaponTags>
+		<li>SpacerGun</li>
+		<li>OotR_PsyruptGuns</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+	<techHediffsChance>0.5</techHediffsChance>
+	<techHediffsMoney>3000~6000</techHediffsMoney>
+	<startingHediffs>
+		<li>
+			<def>OotR_ShinigamiBlessing</def>
+			<chance>0.1</chance>
+		</li>
+	</startingHediffs>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>8~20</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>8~20</range>
+		</li>
+	</skills>
+</PawnKindDef>
+
+<!-- Traders only -->
+
+<PawnKindDef Name="OotR_RT_BossTier" ParentName="OotR_RT_ChampionBase">
+	<defName>OotR_RT_ShinigamiBoss</defName>
+	<label>shinigami</label>
+	<combatPower>60</combatPower>
+	<itemQuality>Masterwork</itemQuality>
+	<forceWeaponQuality>Masterwork</forceWeaponQuality>
+	<maxApparelQuality>Masterwork</maxApparelQuality>
+	<weaponMoney>3000~5000</weaponMoney>
+	<biocodeWeaponChance>1</biocodeWeaponChance>
+	<weaponTags>
+		<li>SpacerGun</li>
+		<li>UltratechMelee</li>
+		<li>OotR_PsyruptGuns</li>
+		<li>OotR_StarfireLance</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+	<techHediffsChance>1</techHediffsChance>
+	<techHediffsMoney>5000~8000</techHediffsMoney>
+	<techHediffsMaxAmount>10</techHediffsMaxAmount>
+	<techHediffsRequired Inherit="False">
+		<li>DeathAcidifier</li>
+		<li>OotR_PsyruptTalon</li>
+		<li>Painstopper</li>
+	</techHediffsRequired>
+	<startingHediffs>
+		<li>
+			<def>OotR_ShinigamiBlessing</def>
+			<chance>0.1</chance>
+		</li>
+	</startingHediffs>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>8~20</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>8~20</range>
+		</li>
+	</skills>
+	<forcedTraits>
+		<Tough>0</Tough>
+	</forcedTraits>
+	<xenotypeSet>
+		<xenotypeChances>
+			<OotR_Shinigami_Oni MayRequire="Ludeon.RimWorld.Biotech">1</OotR_Shinigami_Oni>
+		</xenotypeChances>
+	</xenotypeSet>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_RT_BossTier">
+	<defName>OotR_RT_Supplier</defName>
+	<label>supplier</label>
+	<combatPower>40</combatPower>
+	<trader>true</trader>
+	<weaponTags Inherit="False">
+		<li>SpacerGun</li>
+		<li>OotR_PsyruptGuns</li>
+		<li>OotR_StarfireLance</li>
+	</weaponTags>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+</PawnKindDef>
+
+
+</Defs>

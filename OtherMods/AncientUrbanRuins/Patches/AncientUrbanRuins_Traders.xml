@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Base_RevenantTalons_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AM_Intel</tradeTag>
+				<thingDefCountRange>4~6</thingDefCountRange>
+				<countRange>3~4</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Caravan_RT_ResourceSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AM_Intel</tradeTag>
+				<thingDefCountRange>3~5</thingDefCountRange>
+				<countRange>2~3</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Caravan_RT_RaidSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AM_Intel</tradeTag>
+				<thingDefCountRange>4~6</thingDefCountRange>
+				<countRange>3~4</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="OotR_Caravan_RT_RaidLootDistributor"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AM_Intel</tradeTag>
+				<thingDefCountRange>3~5</thingDefCountRange>
+				<countRange>2~3</countRange>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

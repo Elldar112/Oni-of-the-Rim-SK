@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThoughtDef>
+	<defName>OotR_FirePanic</defName>
+	<workerClass>ThoughtWorker_Hediff</workerClass>
+	<hediff>OotR_FirePanic</hediff>
+	<nullifyingTraits>
+		<li>Pyromaniac</li>
+	</nullifyingTraits>
+    <nullifyingGenes>
+		<li MayRequire="Ludeon.RimWorld.Biotech">FireResistant</li>
+    </nullifyingGenes>
+	<stages>
+		<li>
+			<label>shaken by fire</label>
+			<description>Fire is dangerous to me!</description>
+			<baseMoodEffect>-4</baseMoodEffect>
+		</li>
+		<li>
+			<label>distressed by fire</label>
+			<description>So much fire, I can't handle this!</description>
+			<baseMoodEffect>-8</baseMoodEffect>
+		</li>
+		<li>
+			<label>panic from fire</label>
+			<description>Ahhhhh, so much fire! This can't be happening!</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		</li>
+		<li>
+			<label>FULL FIRE PANIC</label>
+			<description>AHHHHH!!! FIRE EVERYWHERE!!! HELP HELP HELP!!!</description>
+			<baseMoodEffect>-30</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+</Defs>

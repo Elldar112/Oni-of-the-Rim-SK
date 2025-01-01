@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.RaceSettings>
+	<defName>OotR_OniRaceSettings_AncientUrbanRuins</defName>
+	<pawnKindSettings>
+		<startingColonists>
+			<li>
+				<factionDefs>
+					<li>AM_PlayerColony</li>
+				</factionDefs>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>OotR_AM_Oni_Scavenger</li>
+						</kindDefs>
+						<chance>10</chance>
+					</li>
+				</pawnKindEntries>
+			</li>
+		</startingColonists>
+	</pawnKindSettings>
+</AlienRace.RaceSettings>
+  
+</Defs>

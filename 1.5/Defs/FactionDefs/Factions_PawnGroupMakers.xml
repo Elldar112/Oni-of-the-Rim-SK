@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- PawnmGroupMakers moved here for easier edits based on vanilla or CE. -->
+
+<!-- Oni Freeborn tribe -->
+
+<FactionDef ParentName="OotR_Faction_OniFreeborn">
+    <pawnGroupMakers Inherit="False">
+		<li>
+			<!--Normal mix-->
+			<kindDef>Combat</kindDef>
+			<commonality>100</commonality>
+			<options>
+				<OotR_Oni_Penitent>5</OotR_Oni_Penitent>
+				<OotR_Oni_Warrior>5</OotR_Oni_Warrior>
+				<OotR_Oni_Archer>10</OotR_Oni_Archer>
+				<OotR_Oni_Hunter>10</OotR_Oni_Hunter>
+				<OotR_Oni_HeavyArcher>10</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Berserker>5</OotR_Oni_Berserker>
+				<OotR_Oni_Chief>3</OotR_Oni_Chief>
+				<OotR_Oni_ChiefMelee>1.5</OotR_Oni_ChiefMelee>
+				<OotR_Oni_Veteran>1</OotR_Oni_Veteran>
+				<OotR_Ancestral_Brawler>0.75</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>0.5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>0.5</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<!--Ranged only-->
+			<kindDef>Combat</kindDef>
+			<commonality>60</commonality>
+			<options>
+				<OotR_Oni_Archer>10</OotR_Oni_Archer>
+				<OotR_Oni_Hunter>10</OotR_Oni_Hunter>
+				<OotR_Oni_HeavyArcher>10</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Chief>5</OotR_Oni_Chief>
+			</options>
+		</li>
+		<li>
+			<!--Melee only-->
+			<kindDef>Combat</kindDef>
+			<commonality>60</commonality>
+			<options>
+				<OotR_Oni_Penitent>10</OotR_Oni_Penitent>
+				<OotR_Oni_Warrior>10</OotR_Oni_Warrior>
+				<OotR_Oni_Berserker>10</OotR_Oni_Berserker>
+				<OotR_Oni_ChiefMelee>5</OotR_Oni_ChiefMelee>
+				<OotR_Ancestral_Brawler>0.75</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>0.5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>0.5</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<!-- Breacher in normal mix-->
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<options>
+				<OotR_Oni_Breacher>5</OotR_Oni_Breacher>
+				<OotR_Oni_Penitent>5</OotR_Oni_Penitent>
+				<OotR_Oni_Warrior>5</OotR_Oni_Warrior>
+				<OotR_Oni_Archer>10</OotR_Oni_Archer>
+				<OotR_Oni_Hunter>10</OotR_Oni_Hunter>
+				<OotR_Oni_HeavyArcher>10</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Berserker>5</OotR_Oni_Berserker>
+				<OotR_Oni_Chief>3</OotR_Oni_Chief>
+				<OotR_Oni_ChiefMelee>1.5</OotR_Oni_ChiefMelee>
+				<OotR_Oni_Veteran>1</OotR_Oni_Veteran>
+				<OotR_Ancestral_Brawler>0.75</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>0.5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>0.5</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<!--Veteran hitsquad-->
+			<kindDef>Combat</kindDef>
+			<commonality>25</commonality>
+			<options>
+				<OotR_Oni_Hunter>1</OotR_Oni_Hunter>
+				<OotR_Oni_Warrior>1</OotR_Oni_Warrior>
+				<OotR_Oni_HeavyArcher>1</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Berserker>1</OotR_Oni_Berserker>
+				<OotR_Oni_Chief>5</OotR_Oni_Chief>
+				<OotR_Oni_ChiefMelee>5</OotR_Oni_ChiefMelee>
+				<OotR_Oni_Veteran>15</OotR_Oni_Veteran>
+				<OotR_Ancestral_Brawler>0.5</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<!--Ancestral assault-->
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<options>
+				<OotR_Ancestral_Brawler>10</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>3</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<kindDef>Peaceful</kindDef>
+			<options>
+				<OotR_Oni_Warrior>10</OotR_Oni_Warrior>
+				<OotR_Freeborn_Child MayRequire="Ludeon.RimWorld.Biotech">10</OotR_Freeborn_Child>
+				<OotR_Oni_Archer>10</OotR_Oni_Archer>
+				<OotR_Oni_Hunter>20</OotR_Oni_Hunter>
+				<OotR_Oni_HeavyArcher>15</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Berserker>15</OotR_Oni_Berserker>
+				<OotR_Oni_Chief>2</OotR_Oni_Chief>
+				<OotR_Oni_Veteran>2</OotR_Oni_Veteran>
+				<OotR_Ancestral_Brawler>0.75</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>0.5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>0.5</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<kindDef>Trader</kindDef>
+			<traders>
+				<OotR_Oni_Trader>1</OotR_Oni_Trader>
+			</traders>
+			<carriers>
+				<Muffalo>6</Muffalo>
+				<Dromedary>5</Dromedary>
+				<Alpaca>2.5</Alpaca>
+				<Elephant>2</Elephant>
+			</carriers>
+			<guards>
+				<OotR_Oni_Warrior>7</OotR_Oni_Warrior>
+				<OotR_Oni_Archer>7</OotR_Oni_Archer>				
+				<OotR_Oni_Hunter>15</OotR_Oni_Hunter>
+				<OotR_Oni_HeavyArcher>10</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Berserker>9</OotR_Oni_Berserker>
+				<OotR_Oni_Veteran>10</OotR_Oni_Veteran>
+				<OotR_Ancestral_Brawler>0.75</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>0.5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>0.5</OotR_Ancestral_Guardian>
+			</guards>
+		</li>
+		<li>
+			<kindDef>Settlement</kindDef>
+			<options>
+				<OotR_Oni_Warrior>7</OotR_Oni_Warrior>
+				<OotR_Oni_Archer>10</OotR_Oni_Archer>
+				<OotR_Oni_Hunter>15</OotR_Oni_Hunter>
+				<OotR_Oni_HeavyArcher>10</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Berserker>7</OotR_Oni_Berserker>
+				<OotR_Oni_Chief>10</OotR_Oni_Chief>
+				<OotR_Oni_ChiefMelee>5</OotR_Oni_ChiefMelee>
+				<OotR_Oni_Veteran>10</OotR_Oni_Veteran>
+				<OotR_Ancestral_Brawler>1.5</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1.5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1.5</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<kindDef>Settlement_RangedOnly</kindDef>
+			<options>
+				<OotR_Oni_Archer>10</OotR_Oni_Archer>
+				<OotR_Oni_Hunter>15</OotR_Oni_Hunter>
+				<OotR_Oni_HeavyArcher>10</OotR_Oni_HeavyArcher>
+				<OotR_Oni_Chief>10</OotR_Oni_Chief>
+				<OotR_Oni_Veteran>10</OotR_Oni_Veteran>
+				<OotR_Ancestral_Brawler>1.5</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1.5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1.5</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Miners</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_Oni_Miner>1</OotR_Oni_Miner>
+			</options>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Hunters</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_Oni_Hunter>1</OotR_Oni_Hunter>
+			</options>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Loggers</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_Oni_Logger>1</OotR_Oni_Logger>
+			</options>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Farmers</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_Oni_Farmer>1</OotR_Oni_Farmer>
+			</options>
+		</li>
+		<li>
+			<!--Ancestral assault-->
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<options>
+				<OotR_Ancestral_Brawler>10</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>3</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+    </pawnGroupMakers>
+</FactionDef>
+
+<!-- Black Talons -->
+
+<FactionDef ParentName="OotR_Faction_BlackTalons">
+	<pawnGroupMakers Inherit="False">
+		<li>
+			<!-- Normal fights, standard mix -->
+			<kindDef>Combat</kindDef>
+			<options>
+				<OotR_BT_Villager>5</OotR_BT_Villager>
+				<OotR_BT_Guard>10</OotR_BT_Guard>
+				<OotR_Oni_Grenadier_Destructive>1.5</OotR_Oni_Grenadier_Destructive>
+				<OotR_Oni_Grenadier_Debuff>1.5</OotR_Oni_Grenadier_Debuff>
+				<OotR_BT_AgentMelee>7</OotR_BT_AgentMelee>
+				<OotR_BT_AgentRanged>10</OotR_BT_AgentRanged>
+				<OotR_BT_Elite>10</OotR_BT_Elite>
+				<OotR_BT_Chief>10</OotR_BT_Chief>
+			</options>
+		</li>
+		<li>
+			<!--Ancestral assault-->
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<disallowedStrategies>
+				<li>Siege</li>
+			</disallowedStrategies>
+			<options>
+				<OotR_Ancestral_Brawler>10</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>3</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<kindDef>Peaceful</kindDef>
+			<options>
+				<OotR_BT_Villager>20</OotR_BT_Villager>
+				<OotR_BT_Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</OotR_BT_Villager_Child>
+				<OotR_BT_Guard>10</OotR_BT_Guard>
+				<OotR_BT_Chief>10</OotR_BT_Chief>
+			</options>
+		</li>
+		<li>
+			<kindDef>Trader</kindDef>
+			<traders>
+				<OotR_BT_Trader>1</OotR_BT_Trader>
+			</traders>
+			<carriers>
+				<Muffalo>6</Muffalo>
+				<Dromedary>5</Dromedary>
+				<Alpaca>2</Alpaca>
+				<Elephant>1</Elephant>
+			</carriers>
+			<guards>
+				<OotR_BT_Villager>3</OotR_BT_Villager>
+				<OotR_BT_Guard>10</OotR_BT_Guard>
+				<OotR_Oni_Grenadier_Destructive>1.5</OotR_Oni_Grenadier_Destructive>
+				<OotR_Oni_Grenadier_Debuff>1.5</OotR_Oni_Grenadier_Debuff>
+				<OotR_BT_AgentMelee>7</OotR_BT_AgentMelee>
+				<OotR_BT_AgentRanged>10</OotR_BT_AgentRanged>
+				<OotR_BT_Elite>10</OotR_BT_Elite>
+			</guards>
+		</li>
+		<li>
+			<kindDef>Settlement</kindDef>
+			<options>
+				<OotR_BT_Villager>10</OotR_BT_Villager>
+				<OotR_BT_Guard>10</OotR_BT_Guard>
+				<OotR_Oni_Grenadier_Destructive>1.5</OotR_Oni_Grenadier_Destructive>
+				<OotR_Oni_Grenadier_Debuff>1.5</OotR_Oni_Grenadier_Debuff>
+				<OotR_BT_AgentMelee>7</OotR_BT_AgentMelee>
+				<OotR_BT_AgentRanged>10</OotR_BT_AgentRanged>
+				<OotR_BT_Elite>10</OotR_BT_Elite>
+				<OotR_BT_Chief>10</OotR_BT_Chief>
+			</options>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Miners</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_BT_Miner>1</OotR_BT_Miner>
+			</options>
+		</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Hunters</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_BT_Hunter>1</OotR_BT_Hunter>
+			</options>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Loggers</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_BT_Logger>1</OotR_BT_Logger>
+			</options>
+		</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Farmers</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<OotR_BT_Farmer>1</OotR_BT_Farmer>
+			</options>
+		</li>
+	</pawnGroupMakers>
+</FactionDef>
+
+<!-- Revenant Talons -->
+
+<FactionDef ParentName="OotR_Faction_RevenantTalons">
+	<pawnGroupMakers>
+		<li>
+			<!--Normal mix-->
+			<kindDef>Combat</kindDef>
+			<commonality>100</commonality>
+			<options>
+				<OotR_RT_ConscriptRanged>20</OotR_RT_ConscriptRanged>
+				<OotR_RT_ZealotGunner>10</OotR_RT_ZealotGunner>
+				<OotR_RT_ZealotBomber>1</OotR_RT_ZealotBomber>
+				<OotR_RT_EnforcerGunner>5</OotR_RT_EnforcerGunner>
+				<OotR_RT_ChampionGunner>3</OotR_RT_ChampionGunner>
+				<OotR_RT_Chief>2</OotR_RT_Chief>
+				
+				<OotR_RT_ConscriptMelee>10</OotR_RT_ConscriptMelee>
+				<OotR_RT_ZealotMelee>7</OotR_RT_ZealotMelee>
+				<OotR_RT_EnforcerMelee>5</OotR_RT_EnforcerMelee>
+				<OotR_RT_ChampionMelee>3</OotR_RT_ChampionMelee>
+				
+				<OotR_Ancestral_Brawler>1</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<!--mainly Ranged-->
+			<kindDef>Combat</kindDef>
+			<commonality>50</commonality>
+			<options>
+				<OotR_RT_ConscriptRanged>20</OotR_RT_ConscriptRanged>
+				<OotR_RT_ZealotGunner>10</OotR_RT_ZealotGunner>
+				<OotR_RT_ZealotBomber>1</OotR_RT_ZealotBomber>
+				<OotR_RT_EnforcerGunner>5</OotR_RT_EnforcerGunner>
+				<OotR_RT_ChampionGunner>3</OotR_RT_ChampionGunner>
+				<OotR_RT_Chief>2</OotR_RT_Chief>
+			</options>
+		</li>
+		<li>
+			<!--mainly Melee-->
+			<kindDef>Combat</kindDef>
+			<commonality>25</commonality>
+			<disallowedStrategies>
+				<li>Siege</li>
+			</disallowedStrategies>
+			<options>
+				<OotR_RT_ConscriptMelee>15</OotR_RT_ConscriptMelee>
+				<OotR_RT_ZealotMelee>10</OotR_RT_ZealotMelee>
+				<OotR_RT_EnforcerMelee>5</OotR_RT_EnforcerMelee>
+				<OotR_RT_ChampionMelee>3</OotR_RT_ChampionMelee>
+				
+				<OotR_Ancestral_Brawler>1</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<!-- Breacher in normal mix-->
+			<kindDef>Combat</kindDef>
+			<commonality>75</commonality>
+			<options>
+				<OotR_RT_Demolisher>5</OotR_RT_Demolisher>
+				
+				<OotR_RT_ConscriptRanged>20</OotR_RT_ConscriptRanged>
+				<OotR_RT_ZealotGunner>10</OotR_RT_ZealotGunner>
+				<OotR_RT_ZealotBomber>1</OotR_RT_ZealotBomber>
+				<OotR_RT_EnforcerGunner>5</OotR_RT_EnforcerGunner>
+				<OotR_RT_ChampionGunner>3</OotR_RT_ChampionGunner>
+				<OotR_RT_Chief>2</OotR_RT_Chief>
+				
+				<OotR_RT_ConscriptMelee>10</OotR_RT_ConscriptMelee>
+				<OotR_RT_ZealotMelee>7</OotR_RT_ZealotMelee>
+				<OotR_RT_EnforcerMelee>5</OotR_RT_EnforcerMelee>
+				<OotR_RT_ChampionMelee>3</OotR_RT_ChampionMelee>
+				
+				<OotR_Ancestral_Brawler>1</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1</OotR_Ancestral_Guardian>
+
+			</options>
+		</li>
+		<li>
+			<!--Veteran hitsquad. Unleash the Oni weapons and drugs. -->
+			<kindDef>Combat</kindDef>
+			<commonality>25</commonality>
+			<options>
+				<OotR_RT_EnforcerGunner>10</OotR_RT_EnforcerGunner>
+				<OotR_RT_ChampionGunner>5</OotR_RT_ChampionGunner>
+				<OotR_RT_Chief>3</OotR_RT_Chief>
+				<OotR_RT_EnforcerMelee>10</OotR_RT_EnforcerMelee>
+				<OotR_RT_ChampionMelee>5</OotR_RT_ChampionMelee>
+				<OotR_RT_Shinigami>5</OotR_RT_Shinigami>
+				<OotR_RT_Demolisher>3</OotR_RT_Demolisher>
+				<OotR_Ancestral_Guardian>0.5</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<!--Ancestral assault-->
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<disallowedStrategies>
+				<li>Siege</li>
+			</disallowedStrategies>
+			<options>
+				<OotR_Ancestral_Brawler>10</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>5</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>3</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<kindDef>Peaceful</kindDef>
+			<options>
+				<OotR_RT_ConscriptRanged>20</OotR_RT_ConscriptRanged>
+				<OotR_RT_ZealotGunner>10</OotR_RT_ZealotGunner>
+				<OotR_RT_ZealotBomber>1</OotR_RT_ZealotBomber>
+				<OotR_RT_EnforcerGunner>5</OotR_RT_EnforcerGunner>
+				<OotR_RT_ChampionGunner>3</OotR_RT_ChampionGunner>
+				<OotR_RT_Chief>2</OotR_RT_Chief>
+				
+				<OotR_RT_ConscriptMelee>10</OotR_RT_ConscriptMelee>
+				<OotR_RT_ZealotMelee>7</OotR_RT_ZealotMelee>
+				<OotR_RT_EnforcerMelee>5</OotR_RT_EnforcerMelee>
+				<OotR_RT_ChampionMelee>3</OotR_RT_ChampionMelee>
+				
+				<OotR_Ancestral_Brawler>1</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<kindDef>Trader</kindDef>
+			<traders>
+				<OotR_RT_Supplier>1</OotR_RT_Supplier>
+			</traders>
+			<carriers>
+				<Muffalo>6</Muffalo>
+				<Dromedary>5</Dromedary>
+				<Alpaca>2.5</Alpaca>
+				<Elephant>2</Elephant>
+			</carriers>
+			<guards>
+				<OotR_RT_Shinigami>1</OotR_RT_Shinigami>
+				<OotR_RT_ShinigamiBoss>10</OotR_RT_ShinigamiBoss>
+			</guards>
+		</li>
+		<li>
+			<kindDef>Settlement</kindDef>
+			<options>
+				<OotR_RT_ConscriptRanged>5</OotR_RT_ConscriptRanged>
+				<OotR_RT_ZealotGunner>10</OotR_RT_ZealotGunner>
+				<OotR_RT_ZealotBomber>1</OotR_RT_ZealotBomber>
+				<OotR_RT_EnforcerGunner>5</OotR_RT_EnforcerGunner>
+				<OotR_RT_ChampionGunner>3</OotR_RT_ChampionGunner>
+				<OotR_RT_Chief>3</OotR_RT_Chief>
+				<OotR_RT_Shinigami>3</OotR_RT_Shinigami>
+				
+				<OotR_RT_ConscriptMelee>5</OotR_RT_ConscriptMelee>
+				<OotR_RT_ZealotMelee>10</OotR_RT_ZealotMelee>
+				<OotR_RT_EnforcerMelee>5</OotR_RT_EnforcerMelee>
+				<OotR_RT_ChampionMelee>3</OotR_RT_ChampionMelee>
+				
+				<OotR_RT_Demolisher>3</OotR_RT_Demolisher>
+				
+				<OotR_Ancestral_Brawler>1</OotR_Ancestral_Brawler>
+				<OotR_Ancestral_Warrior>1</OotR_Ancestral_Warrior>
+				<OotR_Ancestral_Guardian>1</OotR_Ancestral_Guardian>
+			</options>
+		</li>
+		<li>
+			<kindDef>Settlement_RangedOnly</kindDef>
+			<options>
+				<OotR_RT_ConscriptRanged>5</OotR_RT_ConscriptRanged>
+				<OotR_RT_ZealotGunner>10</OotR_RT_ZealotGunner>
+				<OotR_RT_ZealotBomber>1</OotR_RT_ZealotBomber>
+				<OotR_RT_EnforcerGunner>5</OotR_RT_EnforcerGunner>
+				<OotR_RT_ChampionGunner>3</OotR_RT_ChampionGunner>
+				<OotR_RT_Chief>3</OotR_RT_Chief>
+				<OotR_RT_Shinigami>5</OotR_RT_Shinigami>
+			</options>
+		</li>
+    </pawnGroupMakers>
+</FactionDef>
+
+
+</Defs>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- normal outlander -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Gunner</xpath>
+	<match Class="PatchOperationInsert">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Gunner</xpath>
+		<value>
+			<OotR_Oni_Mercenary_Gunner>0.4</OotR_Oni_Mercenary_Gunner>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Slasher</xpath>
+	<match Class="PatchOperationInsert">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Slasher</xpath>
+		<value>
+			<OotR_Oni_Mercenary_Slasher>0.4</OotR_Oni_Mercenary_Slasher>
+		</value>
+	</match>
+</Operation>
+
+<!-- peaceful outlander -->
+
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>  
+	<value>
+		<OotR_Oni_Mercenary_Gunner>0.4</OotR_Oni_Mercenary_Gunner>
+	</value>
+</Operation>
+
+<!-- outlander trader -->
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>  
+	<value>
+		<OotR_Oni_Mercenary_Gunner>0.4</OotR_Oni_Mercenary_Gunner>
+		<OotR_Oni_Mercenary_Slasher>0.4</OotR_Oni_Mercenary_Slasher>
+	</value>
+</Operation>
+
+<!-- outlander settlement -->
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+	<value>
+		<OotR_Oni_Mercenary_Gunner>0.65</OotR_Oni_Mercenary_Gunner>
+		<OotR_Oni_Mercenary_Slasher>0.4</OotR_Oni_Mercenary_Slasher> 
+	</value>
+</Operation>
+
+<!-- adding ranged tribal -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Tribal_Archer</xpath>
+	<match Class="PatchOperationInsert">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Tribal_Archer</xpath>
+		<value>
+			<OotR_Oni_Hunter>0.3</OotR_Oni_Hunter>
+			<OotR_Oni_Archer>0.3</OotR_Oni_Archer>
+			<OotR_Oni_HeavyArcher>0.3</OotR_Oni_HeavyArcher>
+		</value>
+	</match>
+</Operation>
+
+<!-- adding melee tribal -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Tribal_Warrior</xpath>
+	<match Class="PatchOperationInsert">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Tribal_Warrior</xpath>
+		<value>
+			<OotR_Oni_Warrior>0.4</OotR_Oni_Warrior>
+			<OotR_Oni_Berserker>0.4</OotR_Oni_Berserker>
+		</value>
+	</match>
+</Operation>
+
+<!-- peaceful tribal -->
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>  
+	<value>
+		<OotR_Oni_Hunter>0.4</OotR_Oni_Hunter>
+		<OotR_Oni_Warrior>0.4</OotR_Oni_Warrior>
+	</value>
+</Operation>
+
+<!-- tribal trader -->
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>  
+	<value>
+		<OotR_Oni_Archer>0.3</OotR_Oni_Archer>
+		<OotR_Oni_Hunter>0.3</OotR_Oni_Hunter>
+		<OotR_Oni_Warrior>0.15</OotR_Oni_Warrior>
+	</value>
+</Operation> 
+
+<!-- tribal settlement -->
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+	<value>
+		<OotR_Oni_Archer>0.3</OotR_Oni_Archer>
+		<OotR_Oni_HeavyArcher>0.3</OotR_Oni_HeavyArcher>
+		<OotR_Oni_Warrior>0.3</OotR_Oni_Warrior>
+		<OotR_Oni_Berserker>0.3</OotR_Oni_Berserker>
+	</value>
+</Operation>
+
+<!-- adding melee pirate -->
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Slasher</xpath>
+	<match Class="PatchOperationInsert">
+		<xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Slasher</xpath>
+		<value>
+			<OotR_Oni_Thrasher>0.4</OotR_Oni_Thrasher>
+			<OotR_Oni_Mercenary_Slasher>0.4</OotR_Oni_Mercenary_Slasher> 
+		</value>
+	</match>
+</Operation>
+
+<!-- adding ranged pirate -->
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Gunner</xpath>
+	<match Class="PatchOperationInsert">
+		<xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Gunner</xpath>
+		<value>
+			<OotR_Oni_Scavenger>0.4</OotR_Oni_Scavenger>
+			<OotR_Oni_Mercenary_Gunner>0.4</OotR_Oni_Mercenary_Gunner> 
+		</value>
+	</match>
+</Operation>
+
+<!-- pirate base -->
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+	<value>
+		<OotR_Oni_Mercenary_Gunner>0.65</OotR_Oni_Mercenary_Gunner>
+		<OotR_Oni_Mercenary_Slasher>0.65</OotR_Oni_Mercenary_Slasher> 
+	</value>
+</Operation>
+
+</Patch>

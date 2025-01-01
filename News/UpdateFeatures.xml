@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="OniRim_UpdateFeatureBase">
+		<modNameReadable>Oni of the Rim: Lite</modNameReadable>
+		<modIdentifier>Oni_of_the_Rim_Lite</modIdentifier>
+		<linkUrl>https://steamcommunity.com/workshop/filedetails/?id=1807327083</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_5_3_1</defName>
+		<assemblyVersion>5.3.1</assemblyVersion>
+		<content>Some minor content update and bug fixes, including for Combat Extended. New xenotypes added to sprinkle a bit more lore for the race, and the new gene "Lifeless Oni eyes" is intended to look cursed at certain angles.
+For the Combat Extended patch, a lowered requirement of gaining Shinigami's blessing for Combat Extended is due to no death on downed chances, and the main cause of deaths come from rapid bleed outs. This is to reduced the amount of micro intensive moments needed to ensure the Oni you want to satisfy the blessing requirements.
+
+|Patch notes:
+- Three new xenotypes for the Oni, with two of them adding a little more backstory and history as a race.
+- Enslaved Oni xenotype: Genetically chained an Oni to become an obedient slave and livestock, limiting their future growth and encouraged to breed like animals among themselves.
+- Domesticated Oni xenotype: Identical to enslaved Oni, but through generations of forced xenogene implantation and mutation, it now became part of their germline and inherited by their children.
+- Shinigami Oni: Revenant Talons combat xenotype, only found on their most elite of soldiers that guard their overworked caravans and mismanaged logistic system.
+- Cast time of Shinigami's pressure have been reduced from 1 second to 0.25 second.
+- Sound volume of abilities Shinigami's pressure and Mark of Death have been increased.
+- Revenant Talons has increased stock on genepacks and archite capsules.
+
+For Combat Extended:
+- Fixed Revenant Talons' "Loot distributor" trader and faction base trader sale of ammo issue.
+- Oni dust: Shinigami's blessing, have a lowered requirement of humanlike kill from 44 to 33 in Combat Extended.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_5_3_0</defName>
+		<assemblyVersion>5.3.0</assemblyVersion>
+		<content>Adjustments and corrections for the Oni race, to keep consistency to their racial thoughts when Ideology is active.
+
+New patch to integrate with Ancient Urban Ruins mod, where Revenant Talons and Black Talons will get a bit more involved and a new scenario start "Revenant Talons scavengers". XML Extensions option to disable Revenant Talons and/or Black Talons from initially spawning in those maps.
+
+|Patch notes:
+- New games with default Revenant Talons player type scenario now have "Strangers in black" incident disabled.
+- Oni and Ancestral Oni are no longer bothered by bad food ideology thoughts from Fungus Eating precepts.
+- Ancestral Oni now disregard a lot of ideology thoughts from Cannibalism/Eating Alien precepts. Only "last ate human/alien flesh" thoughts are not affected.
+- Ancestral Oni now no longer care eating twisted meat from Anomaly. Normal modern Oni will still be bothered.
+- Integration patch for Ancient Urban Ruins mod.
+- XML Extensions options added to the mod (Only Ancient Urban Ruins related settings for now).</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_5_2_0</defName>
+		<assemblyVersion>5.2.0</assemblyVersion>
+		<content>A change to the Oni race to inherit from the Human def, to improve automatic adjustments without needing mod specific patches. This would be most noticeable for mods that adds jobs but age restricted, so Oni children will now automatically follow identical restrictions as a human child.
+
+Changes:
+- Slight rewrite of the base for the Oni race to inherit from the Human def, to improve automatic adjustments without needing mod specific patches.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_5_1_1</defName>
+		<assemblyVersion>5.1.1</assemblyVersion>
+		<content>Reduced the record grind for the blessings to increase accessibility, as they already come with specific drawbacks that not every Oni may want to use one as it can hinder or limit their established roles or skill set.
+
+- Oni dust: Nature's blessing requirements reduced from 500 plants sowed, to 250.
+- Oni dust: Shinigami's blessing requirements reduced from 100 humanlike kills, to 44.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_5_1_0</defName>
+		<assemblyVersion>5.1.0</assemblyVersion>
+		<content>Combat Extended compatibility is now live!
+
+Some base game content have been updated, and Oni now have their own culture group and for Ideology, Revenant Talons no longer go for the supremacist meme and instead have the raiders meme. These changes will take effect in new games.
+Improved bionic support for body parts of this mod (Naturally with EPOE-Forked), and now added to work with [FSF]Advanced Bionics Expansion.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_5_0_1</defName>
+		<assemblyVersion>5.0.1</assemblyVersion>
+		<content>Minor bugfixes with some DLC related silent spawning issues, and a faction relation oversight fix so Oni Freeborn Tribes and Black Talons should no longer be hostile with the Empire in new games.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_5_0_0</defName>
+		<assemblyVersion>5.0.0</assemblyVersion>
+		<content>Oni of the Rim: Lite has officially updated to 1.5 version of RimWorld! The race mod has gone through a big overhaul, and a few new necessary items are added, but they should remain out of the way for the most part.
+
+Black Talons now exist as an industrial tier faction, similar to the outlander type faction.
+Revenant Talons are now graded as a spacer faction, have completely unique traders, do not use vanilla trader types and has a starting scenario that simulates you starting off as an independent base associated with them.
+
+With the Revenant Talons becoming a spacer tier faction, they will have weapons similar to that of the Empire faction from Royalty and will not have their unique weapon systems from the main mod.
+Three new "Oni dust" items are added, and made at the drugs lab. They are there to give Oni their racial passives which had always existed but hidden. This is mostly relevant to children Oni born in your colonies, or from resurrection.
+The "Natures blessing" trait has been removed and replaced as a hediff that grants two new abilities alongside it. Only an Oni can use the "Oni dust" items to gain their racial passive or blessings.
+
+Hope you will enjoy the new updated Oni of the Rim: Lite!</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_1_1_1</defName>
+		<assemblyVersion>1.1.1</assemblyVersion>
+		<content>Some graphic adjustments correction and a minor storyteller tweak. Ancestral Oni should now look larger again in 1.4.
+
+|Patch notes:
+- Dusk and Dawn storyteller had a slight tweak, with maybe reduced frequency of ship chunk drop events.
+- Fixed the horns graphics for the infant and children Oni.
+- Ancestral Oni draw sizes readjusted for RimWorld version 1.4's scaling.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="OniRim_UpdateFeatureBase">
+		<defName>Oni_of_the_Rim_Lite_1_1_0</defName>
+		<assemblyVersion>1.1.0</assemblyVersion>
+		<content>Many changes, fixes and optimizations have been done, alongside the Combat Extended compatibility update. The author may not be a user of CE, but have tried their best at replicating as many tribal patches for the Oni race, with very minor tweaks.
+
+|Most notably, there is a very minor nerf to the Oni stats, to ever slightly reduce their oppressive speed in combat to potentially give you a second or two more to prepare and deal with their raids.
+|The Ancestral Oni are given a little bit more research speed, improving it from a hefty -70% penalty to -60% penalty.
+
+|Patch notes:
+* Big update to set the Lite version to be in line with the main mod again.
+* Now available for RimWorld 1.4.
+* The hidden Revenant Talons faction is removed entirely, with the new Revenant Talons appearing on the world map and can be befriended.
+* XML Extensions support added.
+* Normal Oni speed reduced from 6.24 to 6.14.
+* Ancestral Oni speed reduced from 7.14 to 6.94.
+* Ancestral Oni research speed penalty improved from -70% to -60%, and removed the reduction to social impact.
+* Improvement to the Combat Extended patch, covering many previously missed areas.
+* Oni of the Rim: Lite version is updated for 1.3 and is also now available for 1.4.
+* For 1.3 version, the Revenant Talons are now properly generated as a natural enemy.
+* Probably many other tiny bits not documented because I failed and forgot to do it as I go.</content>
+	</HugsLib.UpdateFeatureDef>
+
+</Defs>

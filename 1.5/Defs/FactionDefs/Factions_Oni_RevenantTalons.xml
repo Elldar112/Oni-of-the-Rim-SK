@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- pawnGroupMaker is done at another file, and to complete the faction def. -->
+<!-- Blame CE, but it makes the process need significantly less patch operations. -->
+
+<FactionDef Name="OotR_Faction_RevenantTalons" ParentName="FactionBase" Abstract="True">
+	<defName>OotR_RevenantTalons</defName>
+	<label>Revenant Talons</label>
+	<description>A aggressive tribe of the Oni race. A mysterious group that appeared suddenly, indiscriminately attacking everyone as if possessed by raw malice and hatred. They have successfully risen up the technological ladder through raiding others.
+
+However, their progress have reached some stagnation due to the result of their extreme expansion without real infrastructure planning. Evident struggle can be observed in their logistics management to maintain their current level of power.
+
+They still refer to themselves as a tribe and maintain a similar hierarch system, despite being way more technologically developed than their usual brethren.</description>
+	<fixedName>Revenant Talons</fixedName>
+    <categoryTag>OotR_RevenantTalons</categoryTag>
+    <factionIconPath>World/OotR/RevenantTalonsBaseIcon</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <colorSpectrum>
+		<li>(1, 1, 1)</li>
+    </colorSpectrum>
+	<pawnSingular>zealot</pawnSingular>
+	<pawnsPlural>zealots</pawnsPlural>
+	<techLevel>Spacer</techLevel>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <settlementGenerationWeight>0.5</settlementGenerationWeight>
+	<requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>71</configurationListOrderPriority>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <naturalEnemy>true</naturalEnemy>
+	<!--permanentEnemyToEveryoneExcept>
+		<li>OniPlayerColony</li>
+		<li>OniTPlayerColony</li>
+		<li>AncestralOniPlayerColony</li>
+		<li>RevenantTalonsPlayerColony</li>
+		<li>OniFreeborn</li>
+	</permanentEnemyToEveryoneExcept-->
+    <allowedCultures>
+		<li>OotR_OniCulture</li>
+	</allowedCultures>
+    <requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophobia</li>
+    </requiredMemes>
+    <disallowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+		<li>Slavery_Classic</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology, Ludeon.RimWorld.Biotech">PreferredXenotype</li>
+    </disallowedPrecepts>
+	<structureMemeWeights>
+		<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+		<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+		<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+		<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+	</structureMemeWeights>
+    <backstoryFilters>
+		<li>
+			<categories>
+				<li>OotR_RevenantTalonsBackstory</li>
+			</categories>
+		</li>
+    </backstoryFilters>
+    <leaderTitle>chief</leaderTitle>
+	<caravanTraderKinds>
+		<li>OotR_Caravan_RT_ResourceSupplier</li>
+		<li>OotR_Caravan_RT_RaidSupplier</li>
+		<li>OotR_Caravan_RT_RaidLootDistributor</li>
+	</caravanTraderKinds>
+	<baseTraderKinds>
+		<li>OotR_Base_RevenantTalons_Standard</li>
+	</baseTraderKinds>
+    <allowedArrivalTemperatureRange>-55~60</allowedArrivalTemperatureRange>
+	<earliestRaidDays>60</earliestRaidDays>
+	<raidCommonalityFromPointsCurve>
+		<points>
+			<li>(0, 1)</li>
+		</points>
+    </raidCommonalityFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+		<points>
+			<li>(0,70)</li>
+			<li>(70, 100)</li>
+			<li>(700, 200)</li>
+			<li>(1300, 300)</li>
+			<li>(100000, 10000)</li>
+		</points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootMaker>OotR_RevenantTalonsRaidLootMaker</raidLootMaker>
+	<disallowedRaidAgeRestrictions>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+	</disallowedRaidAgeRestrictions>
+</FactionDef>
+
+<ThingSetMakerDef>
+	<defName>OotR_RevenantTalonsRaidLootMaker</defName>
+	<root Class="ThingSetMaker_MarketValue">
+		<fixedParams>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+					<li>Jade</li>
+					<li>MedicineIndustrial</li>
+					<li>ComponentIndustrial</li>
+					<li>MealSurvivalPack</li>
+					<li>Neutroamine</li>
+					<li>MedicineHerbal</li>
+				</thingDefs>
+			</filter>
+		</fixedParams>
+	</root>
+</ThingSetMakerDef>
+
+</Defs>

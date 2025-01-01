@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ObservedLayingCorpse"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="DeadMansApparel"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="DeadMansApparel"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="DeadMansApparel"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparelSad"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+</Patch>

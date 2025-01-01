@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+		<value>
+			<li>OotR_OniStart</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<value>
+			<tags>
+				<li>OotR_OniStart</li>
+			</tags>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ResearchProjectDef[defName="Smithing"]/tags</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="Smithing"]/tags</xpath>
+		<value>
+			<li>OotR_RevenantTalonsStart</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+		<value>
+			<tags>
+				<li>OotR_RevenantTalonsStart</li>
+			</tags>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ResearchProjectDef[defName="DrugProduction"]/tags</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="DrugProduction"]/tags</xpath>
+		<value>
+			<li>OotR_RevenantTalonsStart</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+		<value>
+			<tags>
+				<li>OotR_RevenantTalonsStart</li>
+			</tags>
+		</value>
+	</nomatch>
+</Operation>
+
+</Patch>

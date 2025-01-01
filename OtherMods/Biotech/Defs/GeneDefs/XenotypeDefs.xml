@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>OotR_Enslaved_Oni</defName>
+		<label>enslaved Oni</label>
+		<description>Purposely designed xenotype to biologically chain the Oni into becoming an obedient slave and livestock with minimal upkeep. The genetic choices are tailored to use them as a work force, encouraged to breed among themselves like animals, and as a emergency meat shield in a pinch. All avenues of attempted rebellion are sealed, including by proxy with using animals against their masters, with common cases of deliberate abuse by some masters to satisfy their sadistic desires with minimal risk of losing a toy that has been granted regenerative capabilities.
+
+Originally, the humans used this to control and enslave the Oni, but during the great liberation war, Black Talons gotten a hold of the procedure. They kept it as a form of capital punishment and as a reminder of the darker days of their race.</description>
+		<descriptionShort>Purposely designed xenotype to biologically chain the Oni into becoming an obedient slave and livestock with minimal upkeep. They are able to perform various tasks, mentally held back on future self developments, and incapable of violence.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon2</iconPath>
+		<combatPowerFactor>0.8</combatPowerFactor>
+		<canGenerateAsCombatant>false</canGenerateAsCombatant>
+		<genes>
+			<li>Immunity_SuperStrong</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_Slow</li>
+			<li>NakedSpeed</li>
+			<li>Mood_Sanguine</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>Aggression_DeadCalm</li>
+			<li>ViolenceDisabled</li>
+			<li>Libido_High</li>
+			<li>Fertile</li>
+			<li>Beauty_Beautiful</li>
+			<li>OotR_Oni_LifelessEyes</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeTerrible_Melee</li>
+			<li>AptitudeTerrible_Construction</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>OotR_Domesticated_Oni</defName>
+		<label>domesticated Oni</label>
+		<description>A xenotype of Oni that have been forcefully created through generations of forceful implantation and mutation of a particular purposely engineered slave xenotype, now passable to their children. Reduced into a semi-animalistic domesticated state, they become incapable of looking after themselves properly for the long term, having no future to develop independantly even if they escaped, never to rise up again as a race.
+
+Black Talons have not been able to find an adequate answer on how to humanely handle these victims resulting from past atrocities to their race, as increasingly more are discovered every year.</description>
+		<descriptionShort>A xenotype of Oni that have been forcefully created through generations of forceful implantation and mutation of a particular purposely engineered slave xenotype, now passable to their children. They are able to perform various tasks, mentally held back on future self developments, and incapable of violence.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon2</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>0.8</combatPowerFactor>
+		<canGenerateAsCombatant>false</canGenerateAsCombatant>
+		<genes>
+			<li>Immunity_SuperStrong</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_Slow</li>
+			<li>NakedSpeed</li>
+			<li>Mood_Sanguine</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>Aggression_DeadCalm</li>
+			<li>ViolenceDisabled</li>
+			<li>Libido_High</li>
+			<li>Fertile</li>
+			<li>Beauty_Beautiful</li>
+			<li>OotR_Oni_LifelessEyes</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeTerrible_Melee</li>
+			<li>AptitudeTerrible_Construction</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>OotR_Shinigami_Oni</defName>
+		<label>shinigami Oni</label>
+		<description>A powerful combat focused xenotype put together by Revenant Talons for their most specific and elite of soldiers. They are primarily found as a defensive force to guard their overworked caravans and logistic points.</description>
+		<descriptionShort>A powerful combat focused xenotype put together by Revenant Talons for their most specific and elite of soldiers. They are primarily found as a defensive force to guard their overworked caravans and logistic points.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon2</iconPath>
+		<genes>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Mood_Pessimist</li>
+			<li>ToxResist_Total</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>FireResistant</li>
+			<li>MeleeDamage_Strong</li>
+			<li>KillThirst</li>
+			<li>Robust</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Unstoppable</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

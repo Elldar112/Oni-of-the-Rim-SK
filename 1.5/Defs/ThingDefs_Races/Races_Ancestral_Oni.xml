@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="OotR_OniBase">
+	<defName>OotR_Alien_AncestralOni</defName>
+	<label>Ancestral Oni</label>
+	<description>The ancient ancestors of the current Oni that can be found on some rim worlds. They have been mysteriously appearing with no traceable origins, but their descendant race welcomes them into their tribes without question.</description>
+	<alienRace>
+		<generalSettings>
+			<maxDamageForSocialfight>7</maxDamageForSocialfight>
+			<disallowedTraits>
+                <li>
+                    <defName>Pyromaniac</defName>
+                </li>
+                <li>
+                    <defName>Transhumanist</defName>
+                </li>
+                <li>
+                    <defName>Greedy</defName>
+                </li>
+                <li>
+                    <defName>Jealous</defName>
+                </li>
+			</disallowedTraits>
+			<forcedRaceTraitEntries>
+				<li>
+					<defName>Nudist</defName>
+					<chance>95</chance>
+				</li>
+				<li>
+					<defName Degree="1">Beauty</defName>
+					<chance>10</chance>
+				</li>
+				<li>
+					<defName Degree="2">Beauty</defName>
+					<chance>5</chance>
+				</li>
+			</forcedRaceTraitEntries>
+			<notXenophobistTowards>
+				<li>OotR_Alien_Oni</li>
+			</notXenophobistTowards>
+			<growthAges>
+				<li>7</li>
+				<li>10</li>
+				<li>13</li>
+			</growthAges>
+			<alienPartGenerator>
+				<headTypes>
+					<li>Male_AverageNormal</li>
+					<li>Male_AveragePointy</li>
+					<li>Male_AverageWide</li>
+					<li>Female_AverageNormal</li>
+					<li>Female_AveragePointy</li>
+					<li>Female_AverageWide</li>
+				</headTypes>
+				<bodyTypes>
+					<li>Thin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+				</bodyTypes>
+				<customDrawSize>(1.6, 1.6)</customDrawSize>
+				<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+				<customPortraitDrawSize>(1.6, 1.6)</customPortraitDrawSize>
+				<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+				<!--headOffset>(0.0, 0.05)</headOffset-->
+				<bodyAddons>
+					<li>
+						<path>Things/OotR/Pawn/AncestralOni/Horn/AncestralOniHorn</path>
+						<conditions>
+							<BodyPart>
+								<bodyPart>OotR_OniHorn</bodyPart>
+								<drawWithoutPart>false</drawWithoutPart>
+							</BodyPart>					
+							<RotStage>Fresh,Rotting,Dessicated</RotStage>
+						</conditions>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<colorChannel>skin</colorChannel>
+						<offsets>
+							<south>
+								<layerOffset>-0.26</layerOffset>
+							</south>
+							<north />
+							<east>
+								<layerOffset>-0.27</layerOffset>
+							</east>
+						</offsets>
+					</li>
+					<li>
+						<path>Things/OotR/Oni/Ear/OniEarsLeft</path>
+						<conditions>
+							<BodyPart>
+								<bodyPartLabel>left ear</bodyPartLabel>
+								<drawWithoutPart>false</drawWithoutPart>
+							</BodyPart>
+							<RotStage>Fresh,Rotting,Dessicated</RotStage>
+						</conditions>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<colorChannel>skin</colorChannel>
+						<offsets>
+							<south>
+								<layerOffset>-0.33</layerOffset>
+							</south>
+							<north>
+								<layerOffset>-0.31</layerOffset>
+							</north>
+							<east>
+								<layerOffset>-0.33</layerOffset>
+							</east>
+							<west>
+								<layerOffset>-0.33</layerOffset>
+							</west>
+						</offsets>
+					</li>
+					<li>
+						<path>Things/OotR/Oni/Ear/OniEarsRight</path>
+						<conditions>
+							<BodyPart>
+								<bodyPartLabel>right ear</bodyPartLabel>
+								<drawWithoutPart>false</drawWithoutPart>
+							</BodyPart>
+							<RotStage>Fresh,Rotting,Dessicated</RotStage>
+						</conditions>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<colorChannel>skin</colorChannel>
+						<offsets>
+							<south>
+								<layerOffset>-0.33</layerOffset>
+							</south>
+							<north>
+								<layerOffset>-0.31</layerOffset>
+							</north>
+							<east>
+								<layerOffset>-0.33</layerOffset>
+							</east>
+							<west>
+								<layerOffset>-0.33</layerOffset>
+							</west>
+						</offsets>
+					</li>
+				</bodyAddons>
+				<colorChannels>
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.9,0.9,0.9,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.8,0.8,0.8,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.7,0.7,0.7,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.6,0.6,0.6,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.5,0.5,0.5,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.4,0.4,0.4,1)</only>
+								</li>
+								<li>
+									<weight>2</weight>
+									<only>RGBA(0.3,0.3,0.3,1)</only>
+								</li>
+								<li>
+									<weight>2</weight>
+									<only>RGBA(0.2,0.2,0.2,1)</only>
+								</li>
+							</options>
+						</first>
+						<second Class="ColorGenerator_Single">
+							<color>RGBA(1, 1, 1, 1)</color>
+						</second>
+					</li>
+					<li>
+						<name>hair</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(1,1,1,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.9,0.9,0.9,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.8,0.8,0.8,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.7,0.7,0.7,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.6,0.6,0.6,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.5,0.5,0.5,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.4,0.4,0.4,1)</only>
+								</li>
+								<li>
+									<weight>2</weight>
+									<only>RGBA(0.3,0.3,0.3,1)</only>
+								</li>
+								<li>
+									<weight>2</weight>
+									<only>RGBA(0.2,0.2,0.2,1)</only>
+								</li>
+							</options>
+						</first>
+					</li>
+				</colorChannels>
+			</alienPartGenerator>
+		</generalSettings>
+		<graphicPaths>
+			<head>Things/OotR/Oni/Head/</head>
+			<body>Things/OotR/Pawn/AncestralOni/Body/</body>
+			<!--skinShader>Cutout</skinShader-->
+		</graphicPaths>
+		<styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>true</hasStyle>
+					<styleTagsOverride>
+						<li>OotR_Oni</li>
+						<!--li>OotR_AncestralOni</li-->
+					</styleTagsOverride>
+				</value>
+			</li>
+			<li>
+				<key>TattooDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+		</styleSettings>
+		<relationSettings>
+			<relationChanceModifierChild>0.2</relationChanceModifierChild>
+			<relationChanceModifierExLover>0.1</relationChanceModifierExLover>
+			<relationChanceModifierExSpouse>0.1</relationChanceModifierExSpouse>
+			<relationChanceModifierFiance>0.1</relationChanceModifierFiance>
+			<relationChanceModifierLover>0.1</relationChanceModifierLover>
+			<relationChanceModifierParent>0.2</relationChanceModifierParent>
+			<relationChanceModifierSibling>0.2</relationChanceModifierSibling>
+			<relationChanceModifierSpouse>0.1</relationChanceModifierSpouse>
+		</relationSettings>
+		<thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>AteRawFood</li>
+				<li>AteInsectMeatDirect</li>
+				<li>AteInsectMeatAsIngredient</li>
+				<li>SleptOnGround</li>
+				<li>Naked</li>
+				<li>KnowGuestExecuted</li>
+				<li>KnowPrisonerDiedInnocent</li>
+				<li>AteCorpse</li>
+				<li>AteHumanlikeMeatDirect</li>
+				<li>AteHumanlikeMeatAsIngredient</li>
+				<li>SleptOutside</li>
+				<li>KnowPrisonerSold</li>
+				<li>KnowGuestOrganHarvested</li>
+				<li>ButcheredHumanlikeCorpse</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
+				<li>ObservedLayingCorpse</li>
+				<li>ObservedLayingRottingCorpse</li>
+				<li>PrisonerBanishedToDie</li>
+				<li>ClothedNudist</li>
+				<li>HappyNude</li>
+				<li>ButcheredHumanlikeCorpseOpinion</li>
+				<li>AteRawHumanlikeMeat</li>
+				<li>SoldPrisoner</li>
+				<li>ExecutedPrisoner</li>
+				<li>AteWithoutTable</li>
+				<li>ApparelDamaged</li>
+				<li>WrongApparelGender</li>
+				<li>DeadMansApparel</li>
+				<li>HumanLeatherApparelSad</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Preferred</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteNonAlienFood_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteNonAlienFood_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_RequiredStrong</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Preferred</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Preferred</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteNonCannibalFood_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteNonCannibalFood_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_RequiredStrong</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_RequiredStrong</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteNonCannibalFood_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteNonCannibalFood_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_RequiredRavenous</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_RequiredRavenous</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteNonFungusPlant_Despised</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteNonFungusMealWithPlants_Despised</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteFungus_Despised</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteFungusAsIngredient_Despised</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Anomaly">AteTwistedMeat</li>
+			</cannotReceiveThoughts>
+			<replacerList>
+				<li>
+					<original>AteKibble</original>
+					<replacer>OotR_AteKibbleAncestralOni</replacer> 
+				</li>
+			</replacerList>
+			<restrictedThoughts/>
+		</thoughtSettings>
+		<raceRestriction>
+			<apparelList/>
+			<recipeList/>
+			<foodList/>
+			<blackEndoCategories/>
+		</raceRestriction>
+	</alienRace>
+	<statBases>
+		<Mass>75</Mass>
+		<MarketValue>5600</MarketValue>
+		<RoyalFavorValue>5</RoyalFavorValue>
+		<LeatherAmount>30</LeatherAmount>
+		<MoveSpeed>6.94</MoveSpeed>
+		<Flammability>2.75</Flammability>
+		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+		<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+		<ComfyTemperatureMax>50</ComfyTemperatureMax>
+		<MentalBreakThreshold>0.20</MentalBreakThreshold>
+		<ImmunityGainSpeed>1.15</ImmunityGainSpeed>
+		<EatingSpeed>2</EatingSpeed>
+		<AnimalGatherSpeed>1.4</AnimalGatherSpeed>
+		<AnimalGatherYield>1.1</AnimalGatherYield>
+		<TameAnimalChance>1.5</TameAnimalChance>
+		<TrainAnimalChance>1.5</TrainAnimalChance>
+		<HuntingStealth>1.25</HuntingStealth>
+		<AnimalsLearningFactor>3.00</AnimalsLearningFactor>
+		<ButcheryFleshEfficiency>1.2</ButcheryFleshEfficiency>
+		<ButcheryFleshSpeed>1.2</ButcheryFleshSpeed>
+		<PlantWorkSpeed>1.15</PlantWorkSpeed>
+		<MiningSpeed>1.2</MiningSpeed>
+		<MiningYield>0.9</MiningYield>
+		<GlobalLearningFactor>0.9</GlobalLearningFactor>
+		<FoodPoisonChance>4.44</FoodPoisonChance>
+		<ConstructSuccessChance>0.8</ConstructSuccessChance>
+		<FixBrokenDownBuildingSuccessChance>0.8</FixBrokenDownBuildingSuccessChance>
+		<GeneralLaborSpeed>0.9</GeneralLaborSpeed>
+		<MedicalTendQuality>0.9</MedicalTendQuality>
+		<MedicalSurgerySuccessChance>0.9</MedicalSurgerySuccessChance>
+		<NegotiationAbility>0.90</NegotiationAbility>
+		<TradePriceImprovement>0.85</TradePriceImprovement>
+		<ResearchSpeed>0.4</ResearchSpeed>
+	</statBases>
+	<tools>
+		<li>
+			<label>horn</label>
+			<capacities>
+				<li>Stab</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2.2</cooldownTime>
+			<linkedBodyPartsGroup>OotR_OniHorn</linkedBodyPartsGroup>
+			<chanceFactor>0.33</chanceFactor>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>30</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>left talon</label>
+			<labelNoLocation>talon</labelNoLocation>
+			<capacities>
+				<li>Scratch</li>
+			</capacities>
+			<power>9.2</power>
+			<cooldownTime>1.55</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>20</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right talon</label>
+			<labelNoLocation>talon</labelNoLocation>
+			<capacities>
+				<li>Scratch</li>
+			</capacities>
+			<power>9.2</power>
+			<cooldownTime>1.55</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>20</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>10.5</power>
+			<cooldownTime>2.2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.4</chanceFactor>
+			<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+			<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+		</li>
+	</tools>
+	<race>
+		<nameGenerator>OotR_NamerPersonAncestralOniMale</nameGenerator>
+		<nameGeneratorFemale>OotR_NamerPersonAncestralOniFemale</nameGeneratorFemale>
+		<baseBodySize>1.5</baseBodySize>
+		<baseHealthScale>3</baseHealthScale>
+		<foodType>OmnivoreHuman, OmnivoreAnimal</foodType>
+		<gestationPeriodDays>17</gestationPeriodDays>
+		<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+		<baseHungerRate>1.50</baseHungerRate>
+		<useMeatFrom>OotR_Alien_Oni</useMeatFrom>
+	</race>
+    <comps/>
+</AlienRace.ThingDef_AlienRace>
+  
+</Defs>

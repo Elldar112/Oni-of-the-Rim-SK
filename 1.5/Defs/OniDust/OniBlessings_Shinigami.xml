@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="OotR_OniDustBase">
+	<defName>OotR_OniDust_ShinigamiBlessing</defName>
+	<label>Oni dust: shinigami's blessing</label>
+	<description>A mysterious powder that can coax out the potential within an Oni. This variant of Oni dust bestows a specific quality akin to a blessing, altering the Oni's characteristics.\n\nShinigami's blessing improves overall combat accuracy and melee damage, alongside mood not affected by corpses, butchering humanlike, tainted clothing or disturbing material in clothing. However, this comes at the expense of reduced global work speed and more likely to have social fights.\n\nRequires to have killed 44 or more humanlikes before able to use this.</description>
+	<descriptionHyperlinks>
+		<HediffDef>OotR_ShinigamiBlessing</HediffDef>
+    </descriptionHyperlinks>
+	<graphicData>
+		<texPath>Things/OotR/Item/Drug/OniDust</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<comps>
+		<li Class="OniOfTheRimLite.CompProperties_AddOniHediffs">
+			<hediffDef>OotR_ShinigamiBlessing</hediffDef>
+			<recordDef>KillsHumanlikes</recordDef>
+			<recordDefNum>44</recordDefNum>
+		</li>
+	</comps>
+	<statBases>
+		<WorkToMake>3000</WorkToMake>
+	</statBases>
+	<costList>
+		<OotR_OniDust>3</OotR_OniDust>
+		<MedicineHerbal>20</MedicineHerbal>
+		<PsychiteTea>10</PsychiteTea>
+		<Skull>10</Skull>
+	</costList>
+</ThingDef>
+
+<HediffDef ParentName="OotR_OniBlessings">
+	<defName>OotR_ShinigamiBlessing</defName>
+	<label>shinigami's blessing</label>
+    <description>Being familiar with death, is not affected from observing corpses, butchering humanlike, tainted apparel and disturbing clothing. Combat accuracy and melee damage increased. Lower productivity, and social fights are more likely.</description>
+	<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+	<allowedMeditationFocusTypes>
+		<li>Morbid</li>
+	</allowedMeditationFocusTypes>
+	<abilities>
+		<li>OotR_ShinigamiBlessingShinigamiPressure</li>
+		<li>OotR_ShinigamiBlessingMarkOfDeath</li>
+	</abilities>
+	<stages>
+		<li>
+			<socialFightChanceFactor>1.50</socialFightChanceFactor>
+			<statFactors>
+				<WorkSpeedGlobal>0.66</WorkSpeedGlobal>
+			</statFactors>
+			<statOffsets>
+				<MeleeHitChance>8</MeleeHitChance>
+				<MeleeDamageFactor>0.25</MeleeDamageFactor>
+				<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+<AbilityDef>
+	<defName>OotR_ShinigamiBlessingShinigamiPressure</defName>
+	<label>shinigami's pressure</label>
+	<description>Instill dread and doubt of everyone in a targeted area, reducing their combat effectiveness.</description>
+	<jobDef>CastAbilityOnThing</jobDef>
+	<iconPath>UI/OotR/AbilityIcon/ShinigamiPressure</iconPath>
+	<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<!--showCastingProgressBar>true</showCastingProgressBar-->
+	<aiCanUse>true</aiCanUse>
+	<cooldownTicksRange>5400</cooldownTicksRange>
+	<statBases>
+		<Ability_Duration>60</Ability_Duration>
+		<Ability_EffectRadius>3.9</Ability_EffectRadius>
+	</statBases>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<soundCast>OotR_ShinigamiPressure</soundCast>
+		<warmupTime>0.25</warmupTime>
+		<range>24.9</range>
+		<violent>false</violent>
+		<drawAimPie>true</drawAimPie>
+		<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+		<requireLineOfSight>true</requireLineOfSight>
+		<targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetLocations>true</canTargetLocations>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>OotR_ShinigamiBlessingShinigamiPressure</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<replaceExisting>true</replaceExisting>
+			<ignoreSelf>true</ignoreSelf>
+			<applicableToMechs>false</applicableToMechs>
+		</li>
+		<li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		</li>
+	</comps>
+</AbilityDef>
+
+<HediffDef>
+	<defName>OotR_ShinigamiBlessingShinigamiPressure</defName>
+	<label>shinigami's pressure</label>
+	<description>Struck by a intense combat pressure, resulting in hesitation and reduced accuracy.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+	<stages>
+		<li>
+			<damageFactors />
+			<statOffsets>
+				<MoveSpeed>-1.0</MoveSpeed>
+				<MeleeHitChance>-4</MeleeHitChance>
+				<MeleeDodgeChance>-10</MeleeDodgeChance>
+				<ShootingAccuracyPawn>-10</ShootingAccuracyPawn>
+				<AimingDelayFactor>0.20</AimingDelayFactor>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+<AbilityDef>
+	<defName>OotR_ShinigamiBlessingMarkOfDeath</defName>
+	<label>mark of death</label>
+	<description>Project into the target's psyche to give up and embrace imminent death. Reduces dodge chances, increases received incoming damage, and further for yokai narcotic based attacks.</description>
+	<iconPath>UI/OotR/AbilityIcon/MarkOfDeath</iconPath>
+	<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<!--showCastingProgressBar>true</showCastingProgressBar-->
+	<aiCanUse>true</aiCanUse>
+	<cooldownTicksRange>5400</cooldownTicksRange>
+	<statBases>
+		<Ability_Duration>30</Ability_Duration>
+	</statBases>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<soundCast>OotR_MarkOfDeath</soundCast>
+		<requireLineOfSight>true</requireLineOfSight>
+		<drawAimPie>true</drawAimPie>
+		<warmupTime>0.5</warmupTime>
+		<range>24.9</range>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class = "CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>OotR_ShinigamiBlessingMarkOfDeath</hediffDef>
+			<goodwillImpact>-15</goodwillImpact>
+			<applicableToMechs>false</applicableToMechs>
+		</li>
+		<li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		</li>
+	</comps>
+</AbilityDef>
+
+<HediffDef>
+	<defName>OotR_ShinigamiBlessingMarkOfDeath</defName>
+	<label>mark of death</label>
+	<description>Struck by a feeling of giving up and embrace imminent death.</description>
+	<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+	<hediffClass>HediffWithComps</hediffClass>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+	<stages>
+		<li>
+			<damageFactors />
+			<statOffsets>
+				<MeleeDodgeChance>-15</MeleeDodgeChance>
+				<IncomingDamageFactor>0.25</IncomingDamageFactor>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+</Defs>

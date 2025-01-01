@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_BT_BlackTalonsRecruit</defName>
+	<title>Black Talons recruit</title>
+	<titleShort>recruit</titleShort>
+	<description>[PAWN_nameDef] was raised at a young age by [PAWN_possessive] family to be put forward as a Black Talons recruit.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_BlackTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>3</Melee>
+		<Social>3</Social>
+		<Shooting>3</Shooting>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

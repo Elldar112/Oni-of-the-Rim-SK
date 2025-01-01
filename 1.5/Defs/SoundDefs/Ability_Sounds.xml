@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<SoundDef>
+	<defName>OotR_CalmingAura_Cast</defName>
+	<context>MapOnly</context>
+	<subSounds>
+		<li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>OotR/CalmingAura_Cast</clipPath>
+				</li>
+			</grains>
+			<volumeRange>100~100</volumeRange>
+			<pitchRange>1~1</pitchRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>OotR_CalmingAura_Sustain</defName>
+    <sustain>True</sustain>  
+	<context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>  
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>OotR/CalmingAura_Sustain</clipPath>
+				</li>
+			</grains>
+			<volumeRange>100~100</volumeRange>
+			<pitchRange>1~1</pitchRange>
+			<distRange>10~38</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>OotR_ShinigamiPressure</defName>
+	<context>MapOnly</context>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>OotR/ShinigamiPressure</clipPath>
+				</li>
+			</grains>
+			<volumeRange>100~100</volumeRange>
+			<pitchRange>1~1</pitchRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>OotR_EncourageResilience</defName>
+	<context>MapOnly</context>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>OotR/EncourageResilience</clipPath>
+				</li>
+			</grains>
+			<volumeRange>100~100</volumeRange>
+			<pitchRange>1~1</pitchRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>OotR_MarkOfDeath</defName>
+	<context>MapOnly</context>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>OotR/MarkOfDeath</clipPath>
+				</li>
+			</grains>
+			<volumeRange>100~100</volumeRange>
+			<pitchRange>1~1</pitchRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+</Defs>

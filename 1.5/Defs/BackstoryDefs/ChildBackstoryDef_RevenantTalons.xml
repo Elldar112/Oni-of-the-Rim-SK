@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_RT_RevenantTalonsRecruit</defName>
+	<title>Revenant Talons recruit</title>
+	<titleShort>recruit</titleShort>
+	<description>[PAWN_nameDef] was raised at a young age by [PAWN_possessive] family to be prepared for the eventual Revenant Talons conscription.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_BlackTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>4</Melee>
+		<Shooting>2</Shooting>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

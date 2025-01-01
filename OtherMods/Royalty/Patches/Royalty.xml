@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>OotR_OniFreeborn</li>
+			<li>OotR_BlackTalons</li>
+			<li>OotR_OniPlayerColony</li>
+			<li>OotR_OniPlayerTribe</li>
+			<li>OotR_AncestralOniPlayerTribe</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags[li="Outlander" or li="Empire"]</xpath>
+		<value>
+			<li>OotR_RevenantTalons</li>
+		</value>
+	</Operation>
+
+	<!-- Guests -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/QuestScriptDef/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+		<value>
+			<li>
+				<factionDef>OotR_OniFreeborn</factionDef>
+				<pawnKinds>
+					<li>OotR_Oni_Warrior</li>
+					<li>OotR_Oni_Archer</li>
+					<li>OotR_Oni_Hunter</li>
+				</pawnKinds>
+			</li>
+			<li>
+				<factionDef>OotR_BlackTalons</factionDef>
+				<pawnKinds>
+					<li>OotR_BT_Villager</li>
+					<li>OotR_BT_Guard</li>
+				</pawnKinds>
+			</li>
+			<li>
+				<factionDef>OotR_RevenantTalons</factionDef>
+				<pawnKinds>
+					<li>OotR_RT_ConscriptRanged</li>
+					<li>OotR_RT_ZealotGunner</li>
+					<li>OotR_RT_ConscriptMelee</li>
+					<li>OotR_RT_ZealotMelee</li>
+				</pawnKinds>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Mercenaries -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/QuestScriptDef/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+		<value>
+			<li>
+				<factionDef>OotR_OniFreeborn</factionDef>
+				<pawnKinds>
+					<li>OotR_Oni_HeavyArcher</li>
+					<li>OotR_Oni_Berserker</li>
+					<li>OotR_Oni_Veteran</li>
+				</pawnKinds>
+			</li>
+			<li>
+				<factionDef>OotR_BlackTalons</factionDef>
+				<pawnKinds>
+					<li>OotR_BT_Guard</li>
+					<li>OotR_BT_AgentMelee</li>
+					<li>OotR_BT_AgentRanged</li>
+				</pawnKinds>
+			</li>
+			<li>
+				<factionDef>OotR_RevenantTalons</factionDef>
+				<pawnKinds>
+					<li>OotR_RT_ZealotGunner</li>
+					<li>OotR_RT_EnforcerGunner</li>
+					<li>OotR_RT_ZealotMelee</li>
+					<li>OotR_RT_EnforcerMelee</li>
+				</pawnKinds>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- pawnGroupMaker is done at another file, and to complete the faction def. -->
+<!-- Blame CE, but it makes the process need significantly less patch operations. -->
+
+<FactionDef Name="OotR_Faction_BlackTalons" ParentName="OutlanderFactionBase" Abstract="True">
+	<defName>OotR_BlackTalons</defName>
+	<label>Black Talons</label>
+    <description>A tribe of the Oni race. This particular group have developed beyond their usual brethren and rapidly embraced the use of industrial tech, albeit some traces of old methods remain. Their goal is expanding their influence to protect their kind from being exploited by the other races.
+
+They still refer to themselves as a tribe and maintain a similar hierarch system, despite being more technologically developed.</description>
+	<fixedName>Black Talons</fixedName>
+	<colorSpectrum>
+		<li>(0.1, 0.1, 0.1)</li>
+		<!--li>(0, 0, 0)</li-->
+	</colorSpectrum>
+    <factionIconPath>World/OotR/OniBase</factionIconPath>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>71</configurationListOrderPriority>
+    <classicIdeo>true</classicIdeo>
+	<pawnSingular>Oni</pawnSingular>
+	<pawnsPlural>Oni</pawnsPlural>
+	<leaderTitle>chief</leaderTitle>
+	<factionNameMaker Inherit="False" />
+	<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+	<allowedCultures Inherit="False">
+		<li>OotR_OniCulture</li>
+	</allowedCultures>
+	<disallowedMemes Inherit="False">
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+	</disallowedMemes>
+	<structureMemeWeights Inherit="False">
+		<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+		<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">4</Structure_TheistEmbodied>
+		<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">4</Structure_TheistAbstract>
+		<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Archist>
+		<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+		<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+		<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+		<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+	</structureMemeWeights>
+	<xenotypeSet Inherit="False" />
+	<backstoryFilters Inherit="False">
+		<li>
+			<categories>
+				<li>OotR_BlackTalonsBackstory</li>
+			</categories>
+			<commonality>0.85</commonality>
+		</li>
+		<li>
+			<categories>
+				<li>Outlander</li>
+			</categories>
+			<commonality>0.14</commonality>
+		</li>
+		<li>
+			<categories>
+				<li>Offworld</li>
+			</categories>
+			<commonality>0.01</commonality>
+		</li>
+	</backstoryFilters>
+	<caravanTraderKinds>
+	</caravanTraderKinds>
+	<allowedArrivalTemperatureRange>-55~60</allowedArrivalTemperatureRange>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<disallowedRaidAgeRestrictions>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+	</disallowedRaidAgeRestrictions>
+</FactionDef>
+
+</Defs>

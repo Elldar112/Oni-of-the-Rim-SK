@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_Slaveborn1</defName>
+	<title>slave born Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] was born into a genetically altered family of slaves, knowing nothing but serving with full obedience to [PAWN_possessive] masters.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Domesticated</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_Slaveborn2</defName>
+	<title>slave born Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] knew nothing except work and exhaustion, following after [PAWN_objective] parents jobs as a slave.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Domesticated</li>
+	</spawnCategories>
+	<skillGains>
+		<Plants>1</Plants>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_Slaveborn3</defName>
+	<title>slave born Oni</title>
+	<titleShort>slave</titleShort>
+	<description>For as long as [PAWN_nameDef] can remember, being an obedient slave is [PAWN_possessive] only rightful purpose of life, no matter how unreasonable or abusive the demand is from [PAWN_possessive] master.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave_Domesticated</li>
+	</spawnCategories>
+	<skillGains>
+		<Social>1</Social>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

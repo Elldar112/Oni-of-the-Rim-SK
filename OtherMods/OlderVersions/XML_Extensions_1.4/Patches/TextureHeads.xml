@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="XmlExtensions.UseSetting">
+    <modId>morishep.tarojun.onioftherimlite</modId>
+    <key>TextureHeads</key>
+    <defaultValue>0</defaultValue>
+    <apply>
+		<Operation Class="XmlExtensions.IfStatement">
+			<condition Class="XmlExtensions.Boolean.Comparision">
+				<value1>{TextureHeads}</value1>
+				<value2>1</value2>
+				<nonNumeric>true</nonNumeric>
+				<relation>eq</relation>
+			</condition>
+			<caseTrue>
+				<Operation Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AOni"]/alienRace/graphicPaths/head</xpath>
+							<value>
+								<head>Things/Heads/Oni_NoDetailFace/</head>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HairDef[defName="OniCross"]/texPath</xpath>
+							<value>
+								<texPath>Things/Heads/Oni_NoDetailFace/OriginalHair/oni_cross</texPath>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HairDef[defName="OniLong"]/texPath</xpath>
+							<value>
+								<texPath>Things/Heads/Oni_NoDetailFace/OriginalHair/oni_long</texPath>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HairDef[defName="OniMidcut"]/texPath</xpath>
+							<value>
+								<texPath>Things/Heads/Oni_NoDetailFace/OriginalHair/oni_midcut</texPath>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HairDef[defName="OniTail"]/texPath</xpath>
+							<value>
+								<texPath>Things/Heads/Oni_NoDetailFace/OriginalHair/oni_tail</texPath>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HairDef[defName="OniMale"]/texPath</xpath>
+							<value>
+								<texPath>Things/Heads/Oni_NoDetailFace/OriginalHair/oni_male</texPath>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HairDef[defName="OniMaleLong"]/texPath</xpath>
+							<value>
+								<texPath>Things/Heads/Oni_NoDetailFace/OriginalHair/oni_male_long</texPath>
+							</value>
+						</li>
+					</operations>
+				</Operation>
+			</caseTrue>
+		</Operation>
+		<Operation Class="XmlExtensions.IfStatement">
+			<condition Class="XmlExtensions.Boolean.Comparision">
+				<value1>{TextureHeads}</value1>
+				<value2>2</value2>
+				<nonNumeric>true</nonNumeric>
+				<relation>eq</relation>
+			</condition>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AOni"]/alienRace/graphicPaths/head</xpath>
+					<value>
+						<head>Things/Heads/Oni_VanillaStyleHeads/</head>
+					</value>
+				</Operation>
+			</caseTrue>
+		</Operation>
+    </apply>
+</Operation>
+
+	
+</Patch>

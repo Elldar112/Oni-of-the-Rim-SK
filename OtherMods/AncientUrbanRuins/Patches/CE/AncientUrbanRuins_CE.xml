@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ScenarioDef[defName="OotR_RevenantTalonsStart_AncientUrbanRuins"]/scenario/parts</xpath>
+					<value>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>Ammo_45ACP_FMJ</thingDef>
+							<count>400</count>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ScenarioDef[defName="OotR_RevenantTalonsStart_AncientUrbanRuins"]/scenario/parts/li[thingDef="Apparel_FlakVest"]</xpath>
+					<value>
+						<stuff>Steel</stuff>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingSetMakerDef[defName="OotR_RevenantTalonsScavengerStart"]/root/options</xpath>
+					<value>
+						<li>
+							<thingSetMaker Class="ThingSetMaker_StackCount">
+								<fixedParams>
+									<filter>
+										<thingDefs>
+											<li>Ammo_45ACP_FMJ</li>
+										</thingDefs>
+									</filter>
+									<countRange>300~300</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="OotR_AM_Oni_Scavenger"]</xpath>
+					<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+								<min>1</min>
+								<max>4</max>
+							</primaryMagazineCount>
+							<sidearms>
+								<li>
+									<generateChance>0.5</generateChance>
+									<sidearmMoney>
+										<min>10</min>
+										<max>60</max>
+									</sidearmMoney>
+									<weaponTags>
+										<li>CE_Sidearm_Melee</li>
+									</weaponTags>
+								</li>
+							</sidearms>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

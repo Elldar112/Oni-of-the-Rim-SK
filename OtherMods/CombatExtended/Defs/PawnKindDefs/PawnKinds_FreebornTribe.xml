@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Name="OotR_OniBaseTribal" ParentName="OotR_OniRacePawnKinds" Abstract="True">
+	<defaultFactionType>OotR_OniFreeborn</defaultFactionType>
+	<chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<maxGenerationAge>60</maxGenerationAge>
+	<invNutrition>2.4</invNutrition>
+	<invFoodDef>Pemmican</invFoodDef>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<apparelTags>
+		<li>Neolithic</li>
+		<li>OotR_OniWear</li>
+	</apparelTags>
+	<backstoryCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+	</backstoryCategories>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_Penitent" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Penitent</defName>
+	<label>Oni penitent</label>
+	<combatPower>21</combatPower>
+	<chemicalAddictionChance>0.10</chemicalAddictionChance>
+	<invNutrition>1</invNutrition>
+	<itemQuality>Poor</itemQuality>
+	<gearHealthRange>0.2~1.1</gearHealthRange>
+	<apparelMoney>50~100</apparelMoney>
+	<weaponMoney>50~150</weaponMoney>
+	<weaponTags>
+		<li>NeolithicMeleeBasic</li>
+	</weaponTags>
+	<techHediffsMoney>50~50</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+	</techHediffsTags>
+	<techHediffsChance>0.15</techHediffsChance>
+	<initialWillRange>0~1</initialWillRange>
+	<initialResistanceRange>10~17</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_Archer" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Archer</defName>
+	<label>Oni archer</label>
+	<combatPower>50</combatPower>
+	<itemQuality>Poor</itemQuality>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>180~350</apparelMoney>
+	<weaponMoney>80~80</weaponMoney>
+	<weaponTags>
+		<li>NeolithicRangedBasic</li>
+	</weaponTags>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+	<techHediffsMoney>50~50</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+	</techHediffsTags>
+	<techHediffsChance>0.03</techHediffsChance>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<initialWillRange>1~3</initialWillRange>
+	<initialResistanceRange>17~27</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+				<min>20</min>
+				<max>40</max>
+			</primaryMagazineCount>
+			<shieldMoney>
+				<min>100</min>
+				<max>130</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.6</shieldChance>
+			<sidearms>
+				<li>
+					<sidearmMoney>
+						<min>80</min>
+						<max>160</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm_Tribal</li>
+					</weaponTags>
+				</li>
+			</sidearms>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_Warrior" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Warrior</defName>
+	<label>Oni warrior</label>
+	<combatPower>29</combatPower>
+	<itemQuality>Poor</itemQuality>
+	<canBeSapper>true</canBeSapper>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>200~300</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarVeil</li>
+	</apparelRequired>
+	<weaponMoney>115~150</weaponMoney>
+	<weaponTags>
+		<li>NeolithicMeleeDecent</li>
+		<li>OotR_OniDaiKunai</li>
+	</weaponTags>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<initialWillRange>1~3</initialWillRange>
+	<initialResistanceRange>5~9</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<shieldMoney>
+				<min>100</min>
+				<max>150</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.9</shieldChance>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_Hunter" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Hunter</defName>
+	<label>Oni hunter</label>
+	<combatPower>50</combatPower>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>200~300</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarVeil</li>
+	</apparelRequired>
+	<weaponMoney>100~100</weaponMoney>
+	<weaponTags>
+		<li>NeolithicRangedDecent</li>
+		<li>OotR_OniYumiBow</li>
+		<li>OotR_OniFukiya</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>10~16</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+				<min>25</min>
+				<max>50</max>
+			</primaryMagazineCount>
+			<shieldMoney>
+				<min>100</min>
+				<max>140</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.6</shieldChance>
+			<sidearms>
+				<li>
+					<sidearmMoney>
+						<min>80</min>
+						<max>240</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm_Tribal</li>
+					</weaponTags>
+				</li>
+			</sidearms>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+  
+<PawnKindDef Name="OotR_Oni_Trader" ParentName="OotR_Oni_Hunter">
+	<defName>OotR_Oni_Trader</defName>
+	<label>trader</label>
+	<trader>true</trader>
+	<apparelRequired Inherit="False">
+		<li>Apparel_TribalHeaddress</li>
+	</apparelRequired>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>9~15</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_Berserker" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Berserker</defName>
+	<label>berserker</label>
+	<combatPower>65</combatPower>
+	<canBeSapper>true</canBeSapper>
+	<apparelMoney>200~550</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarMask</li>
+	</apparelRequired>
+	<weaponMoney>300~300</weaponMoney>
+	<weaponTags>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>MedievalMeleeDecent</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>OotR_OniDaiKunai</li>
+		<li>OotR_OniKanabo</li>
+		<li>OotR_OniWarKunai</li>
+	</weaponTags>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>13~20</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<shieldMoney>
+				<min>120</min>
+				<max>160</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.9</shieldChance>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_HeavyArcher" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_HeavyArcher</defName>
+	<label>heavy archer</label>
+	<combatPower>65</combatPower>
+	<apparelMoney>200~550</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarMask</li>
+	</apparelRequired>
+	<weaponMoney>250~250</weaponMoney>
+	<weaponTags>
+		<li>NeolithicRangedHeavy</li>
+		<li>NeolithicRangedChief</li>
+		<li>OotR_OniYumiBow</li>
+	</weaponTags>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<initialWillRange>2~4</initialWillRange>
+	<initialResistanceRange>14~22</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+				<min>20</min>
+				<max>40</max>
+			</primaryMagazineCount>
+			<shieldMoney>
+				<min>100</min>
+				<max>160</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.6</shieldChance>
+			<sidearms>
+				<li>
+					<sidearmMoney>
+						<min>80</min>
+						<max>300</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm_Tribal</li>
+					</weaponTags>
+				</li>
+			</sidearms>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_OniBaseChiefTribal" ParentName="OotR_OniBaseTribal"  Abstract="True">
+	<combatPower>105</combatPower>
+	<minGenerationAge>30</minGenerationAge>
+	<itemQuality>Normal</itemQuality>
+	<factionLeader>true</factionLeader>
+	<canBeSapper>true</canBeSapper>
+	<apparelMoney>450~750</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarMask</li>
+		<li>Apparel_PlateArmor</li>
+		<li>CE_Apparel_TribalBackpack</li>
+	</apparelRequired>
+	<weaponMoney>230~300</weaponMoney>
+	<initialWillRange>3~5</initialWillRange>
+	<initialResistanceRange>19~30</initialResistanceRange>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+				<min>3</min>
+				<max>6</max>
+			</primaryMagazineCount>
+			<shieldMoney>
+				<min>120</min>
+				<max>160</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.5</shieldChance>
+			<sidearms>
+				<li>
+					<sidearmMoney>
+						<min>100</min>
+						<max>600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm_Tribal</li>
+					</weaponTags>
+				</li>
+			</sidearms>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_Chief" ParentName="OotR_OniBaseChiefTribal">
+	<defName>OotR_Oni_Chief</defName>
+	<label>chief</label>
+	<weaponTags>
+		<li>SimpleGun</li>
+	</weaponTags>
+	<disallowedTraits>
+		<li>Brawler</li>
+	</disallowedTraits>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>6~12</range>
+		</li>
+	</skills>
+</PawnKindDef>
+  
+<PawnKindDef Name="OotR_Oni_ChiefMelee" ParentName="OotR_OniBaseChiefTribal">
+	<defName>OotR_Oni_ChiefMelee</defName>
+	<label>chief</label>
+	<weaponTags>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>MedievalMeleeDecent</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>OotR_OniKanabo</li>
+		<li>OotR_OniYokaiKatana</li>
+	</weaponTags>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>6~12</range>
+		</li>
+	</skills>
+</PawnKindDef>  
+
+<PawnKindDef Name="OotR_Oni_Veteran" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Veteran</defName>
+	<label>veteran</label>
+	<combatPower>110</combatPower>
+	<itemQuality>Good</itemQuality>
+	<canBeSapper>true</canBeSapper>
+	<apparelMoney>350~650</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarMask</li>
+		<li>Apparel_PlateArmor</li>
+		<li>CE_Apparel_TribalBackpack</li>
+	</apparelRequired>
+	<weaponMoney>230~300</weaponMoney>
+	<weaponTags>
+		<li>SimpleGun</li>
+	</weaponTags>
+	<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<inventoryOptions>
+		<skipChance>0</skipChance>
+		<subOptionsChooseOne>
+			<li>
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+		</subOptionsChooseOne>
+	</inventoryOptions>
+	<disallowedTraits>
+		<li>Wimp</li>
+	</disallowedTraits>
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>8~20</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>8~20</range>
+		</li>
+	</skills>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<initialWillRange>3~5</initialWillRange>
+	<initialResistanceRange>21~32</initialResistanceRange>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+				<min>3</min>
+				<max>6</max>
+			</primaryMagazineCount>
+			<shieldMoney>
+				<min>120</min>
+				<max>160</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.5</shieldChance>
+			<sidearms>
+				<li>
+					<sidearmMoney>
+						<min>100</min>
+						<max>600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm_Tribal</li>
+					</weaponTags>
+				</li>
+			</sidearms>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_Oni_Breacher" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_Oni_Breacher</defName>
+	<label>breacher</label>
+	<combatPower>60</combatPower>
+	<itemQuality>Poor</itemQuality>
+	<canBeSapper>true</canBeSapper>
+	<isGoodBreacher>true</isGoodBreacher>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>200~300</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarMask</li>
+	</apparelRequired>
+	<weaponMoney>150~150</weaponMoney>
+	<weaponTags>
+		<li>NeolithicMeleeDestructive</li>
+	</weaponTags>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<initialWillRange>1~3</initialWillRange>
+	<initialResistanceRange>12~19</initialResistanceRange>
+</PawnKindDef>
+
+<!-- New CE Pawnkinds -->
+
+<PawnKindDef Name="OotR_CE_Oni_Grenadier" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_CE_Oni_Grenadier</defName>
+	<label>boomer</label>
+	<combatPower>65</combatPower>
+	<maxGenerationAge>40</maxGenerationAge>
+	<canBeSapper>true</canBeSapper>
+	<initialWillRange>1~3</initialWillRange>
+	<initialResistanceRange>12~19</initialResistanceRange>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>180~350</apparelMoney>
+	<apparelRequired>
+		<li>Apparel_WarVeil</li>
+	</apparelRequired>
+	<apparelTags>
+		<li>Tribal</li>
+	</apparelTags>
+	<weaponMoney>60~400</weaponMoney>
+	<weaponTags>
+		<li>CE_GrenadeNeolithic</li>
+	</weaponTags>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+				<min>10</min>
+				<max>30</max>
+			</primaryMagazineCount>
+			<forcedSidearm>
+				<sidearmMoney>
+					<min>80</min>
+					<max>160</max>
+				</sidearmMoney>
+				<weaponTags>
+					<li>CE_Sidearm_Tribal</li>
+				</weaponTags>
+			</forcedSidearm>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_CE_Oni_Gunner" ParentName="OotR_OniBaseTribal">
+	<defName>OotR_CE_Oni_Gunner</defName>
+	<label>thunderer</label>
+	<combatPower>65</combatPower>
+	<minGenerationAge>25</minGenerationAge>
+	<maxGenerationAge>45</maxGenerationAge>
+	<initialWillRange>3~5</initialWillRange>
+	<initialResistanceRange>20~34</initialResistanceRange>
+	<gearHealthRange>0.5~1.8</gearHealthRange>
+	<apparelMoney>180~350</apparelMoney>
+	<apparelTags>
+		<li>Tribal</li>
+	</apparelTags>
+	<apparelRequired>
+		<li>Apparel_WarMask</li>
+	</apparelRequired>
+	<weaponMoney>180~290</weaponMoney>
+	<weaponTags>
+		<li>SimpleGun</li>
+	</weaponTags>
+	<combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+	<modExtensions>
+		<li Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+				<min>2</min>
+				<max>4</max>
+			</primaryMagazineCount>
+			<shieldMoney>
+				<min>120</min>
+				<max>160</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>TribalShield</li>
+			</shieldTags>
+			<shieldChance>0.9</shieldChance>
+			<sidearms>
+				<li>
+					<sidearmMoney>
+						<min>100</min>
+						<max>600</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm_Tribal</li>
+					</weaponTags>
+				</li>
+			</sidearms>
+		</li>
+	</modExtensions>
+</PawnKindDef>
+
+</Defs>

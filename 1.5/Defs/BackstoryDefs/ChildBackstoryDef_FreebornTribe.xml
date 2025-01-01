@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniScout</defName>
+	<title>Oni scout</title>
+	<titleShort>scout</titleShort>
+	<description>[PAWN_nameDef] was a young scout, training to be a hunter for [PAWN_possessive] tribe. [PAWN_pronoun] works with the older hunters to learn the game paths and watering holes, and how to treat the scrapes and bruises that may happen along the way.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>	
+	<skillGains>
+		<Animals>2</Animals>
+		<Medicine>1</Medicine>
+		<Shooting>1</Shooting>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniKidWrestler</defName>
+	<title>Oni kid wrestler</title>
+	<titleShort>wrestler</titleShort>
+	<description>[PAWN_nameDef] was strong from the start, and could often be found wrestling and rough-housing with other youths.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>3</Melee>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniShamanApprentice</defName>
+	<title>Oni shaman apprentice</title>
+	<titleShort>shaman</titleShort>
+	<description>[PAWN_nameDef] was born into the shaman cast. [PAWN_pronoun] was raised to memorize the tribes lore and legends, and training in herbal and medical arts.</description>
+	<bodyTypeMale>Male</bodyTypeMale>	
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Social>2</Social>
+		<Medicine>2</Medicine>
+		<Plants>3</Plants>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_CuriousOniYouth</defName>
+	<title>curious Oni youth</title>
+	<titleShort>curious</titleShort>
+	<description>[PAWN_nameDef] was always the curious one. Getting into things - making some small trouble for the tenders, but never anything malicious. This curiosity never faded, and grew into a thirst for all knowledge.</description>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Social>2</Social>
+		<Intellectual>2</Intellectual>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_LittleOniDigger</defName>
+	<title>little Oni digger</title>
+	<titleShort>digger</titleShort>
+	<description>[PAWN_nameDef] was constantly playing in the mud or sand, [PAWN_pronoun] can often be found digging, burrowing and building. The others used to chuckle a bit, that [PAWN_pronoun] must be part mole.</description>
+	<maleCommonality>75</maleCommonality>
+	<femaleCommonality>25</femaleCommonality>
+	<bodyTypeMale>Male</bodyTypeMale>	
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Mining>3</Mining>
+		<Construction>2</Construction>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniTribesChild</defName>
+	<title>Oni tribe child</title>
+	<titleShort>tribesman</titleShort>
+	<description>Most of the Oni children lead a simple life, like [PAWN_nameDef]. They are looked after by their parents and tribal elders, occasionally lending a small hand here and there with the adults on simple chores.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Animals>1</Animals>
+		<Plants>1</Plants>
+		<Social>1</Social>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniTribesChild2</defName>
+	<title>Oni tribe child</title>
+	<titleShort>tribesman</titleShort>
+	<description>Most of the Oni children lead a simple life, like [PAWN_nameDef]. [PAWN_pronoun] loved to run around everywhere in the settlement and being difficult to catch, sometimes to much of [PAWN_possessive] guardian's grief.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>1</Melee>
+		<Animals>1</Animals>
+		<Social>1</Social>
+	</skillGains>
+	<disallowedTraitsChance>
+		<li>
+			<defName Degree="2">SpeedOffset</defName>
+			<chance>75</chance>
+		</li>
+		<li>
+			<defName Degree="1">SpeedOffset</defName>
+			<chance>50</chance>
+		</li>
+	</disallowedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniTribesChild3</defName>
+	<title>Oni tribe child</title>
+	<titleShort>Oni</titleShort>
+	<description>[PAWN_nameDef] was born in a large village. [PAWN_pronoun] had to learn to carry [PAWN_possessive] weight and help keep the tribe fed from an early age. With so many Oni in one village [PAWN_nameDef] became very engrossed in social activity.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Social>3</Social>
+		<Plants>1</Plants>
+		<Animals>1</Animals>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniTribesChild4</defName>
+	<title>Oni tribe child</title>
+	<titleShort>Oni</titleShort>
+	<description>[PAWN_nameDef] was raised in a large village where there was not enough to go around. [PAWN_pronoun] learned very quickly how to be resourceful with everything [PAWN_pronoun] can get.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Intellectual>1</Intellectual>
+		<Social>1</Social>
+		<Cooking>1</Cooking>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_ApprenticeOniBuilder</defName>
+	<title>apprentice Oni builder</title>
+	<titleShort>builder</titleShort>
+	<description>[PAWN_nameDef] was curious about how [PAWN_possessive] hut was made. As such, [PAWN_pronoun] played more with building blocks at a young age and discovering how easily [PAWN_pronoun] made mistakes, and learned from it.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Crafting>1</Crafting>
+		<Construction>3</Construction>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniMinder</defName>
+	<title>Oni minders</title>
+	<titleShort>minder</titleShort>
+	<description>[PAWN_nameDef] was raised from young as an healer apprentice, refered as minders by the tribe.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Plants>2</Plants>
+		<Social>2</Social>
+		<Medicine>3</Medicine>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_YoungOniAnimalCaretaker</defName>
+	<title>young animal caretaker</title>
+	<titleShort>herder</titleShort>
+	<description>[PAWN_nameDef] has been assisting with looking after the animals in the tribe at a young age, and has gotten use to handling them early on.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Animals>3</Animals>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_OniCrafterApprentice</defName>
+	<title>Oni crafter apprentice</title>
+	<titleShort>crafter</titleShort>
+	<description>[PAWN_nameDef] has always been making little things for [PAWN_possessive] family. Naturally, they encouraged [PAWN_possessive] skill, and is developing into quite the artisan.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Artistic>2</Artistic>
+		<Crafting>4</Crafting>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_OniStickyfingers</defName>
+	<title>Oni stickyfingers</title>
+	<titleShort>stickyfingers</titleShort>
+	<description>If something was missing, it was probably [PAWN_nameDef]. Ever since [PAWN_pronoun] could crawl, [PAWN_pronoun] was getting into everything, and secreting things away in all kinds of little holes. A very sneaky and clever one here.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Intellectual>2</Intellectual>
+		<Construction>2</Construction>
+		<Crafting>2</Crafting>
+		<Social>-2</Social>
+	</skillGains>
+	<workDisables>Firefighting</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Child">
+	<defName>OotR_Child_ClumsyOniChild</defName>
+	<title>clumsy Oni child</title>
+	<titleShort>clumsy child</titleShort>
+	<description>At a young age, [PAWN_nameDef] struggled with doing just about anything because [PAWN_pronoun] kept carelessly shredding everything with [PAWN_possessive] sharp claws. [PAWN_nameDef] often needed more time to learn how to do things.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Crafting>-2</Crafting>
+		<Plants>-2</Plants>
+		<Medicine>-2</Medicine>
+	</skillGains>
+	<disallowedTraitsChance>
+		<li>
+			<defName>TooSmart</defName>
+			<chance>100</chance>
+		</li>
+		<li>
+			<defName>FastLearner</defName>
+			<chance>100</chance>
+		</li>
+	</disallowedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

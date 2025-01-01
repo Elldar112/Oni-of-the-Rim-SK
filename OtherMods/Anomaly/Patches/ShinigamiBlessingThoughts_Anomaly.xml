@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThoughtDef[defName="WearingDreadLeather"]/nullifyingHediffs</xpath>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="WearingDreadLeather"]/nullifyingHediffs</xpath>
+		<value>
+			<li>OotR_ShinigamiBlessing</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="WearingDreadLeather"]</xpath>
+		<value>
+			<nullifyingHediffs>
+				<li>OotR_ShinigamiBlessing</li>
+			</nullifyingHediffs>
+		</value>
+	</nomatch>
+</Operation>
+
+</Patch>

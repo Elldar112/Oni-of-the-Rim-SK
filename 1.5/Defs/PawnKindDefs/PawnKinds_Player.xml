@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Name="OotR_BasePlayerOni" ParentName="OotR_OniRacePawnKinds" Abstract="True">
+	<combatPower>30</combatPower>
+	<isFighter>false</isFighter>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+	<forceNormalGearQuality>true</forceNormalGearQuality>
+    <initialWillRange>0~0</initialWillRange>
+    <humanPregnancyChance>0.06</humanPregnancyChance>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_BasePlayerAncestralOni" ParentName="OotR_AncestralOniRacePawnKinds" Abstract="True">
+	<combatPower>50</combatPower>
+	<isFighter>false</isFighter>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+	<forceNormalGearQuality>true</forceNormalGearQuality>
+    <initialWillRange>0~0</initialWillRange>
+    <humanPregnancyChance>0.06</humanPregnancyChance>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_OniTribal" ParentName="OotR_BasePlayerOni">
+	<defName>OotR_OniTribal</defName>
+	<label>member</label>
+	<defaultFactionType>OotR_OniPlayerTribe</defaultFactionType>
+	<backstoryCategories>
+		<li>OotR_OniFreebornTribeBackstory</li>
+	</backstoryCategories>
+	<chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <apparelTags>
+		<li>Neolithic</li>
+    </apparelTags>
+	<!--apparelRequired>
+		<li>OotR_Apparel_OniWrap</li>
+	</apparelRequired-->
+    <apparelMoney>200~200</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+    <initialResistanceRange>9~15</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef Name="OotR_OniColonist" ParentName="OotR_BasePlayerOni">
+	<defName>OotR_OniColonist</defName>
+	<label>colonist</label>
+	<defaultFactionType>OotR_OniPlayerColony</defaultFactionType>
+	<chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<backstoryCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_OniFreebornTribeBackstory</li>
+		<li>OotR_BlackTalonsBackstory</li>
+	</backstoryCategories>
+    <apparelTags>
+		<li>IndustrialBasic</li>
+		<li>IndustrialAdvanced</li>
+    </apparelTags>
+	<!--apparelRequired>
+		<li>OotR_Apparel_OniWrap</li>
+	</apparelRequired-->
+	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+	<apparelMoney>350~600</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+	<techHediffsChance>0.03</techHediffsChance>
+	<techHediffsMoney>50~800</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+		<li>Simple</li>
+		<li>ImplantEmpireCommon</li>
+	</techHediffsTags>
+	<techHediffsDisallowTags>
+		<li>PainCauser</li>
+	</techHediffsDisallowTags>
+	<initialResistanceRange>13~21</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_BasePlayerOni">
+	<defName>OotR_OniRevenantTalonMember</defName>
+	<label>member</label>
+	<defaultFactionType>OotR_RevenantTalonsPlayerColony</defaultFactionType>
+	<chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<backstoryCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_RevenantTalonsConscript</li>
+	</backstoryCategories>
+    <apparelTags>
+		<li>IndustrialBasic</li>
+		<li>IndustrialAdvanced</li>
+		<li>Neolithic</li>
+		<li>OotR_OniWear</li>
+    </apparelTags>
+	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+	<apparelMoney>400~600</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+	<techHediffsChance>0.3</techHediffsChance>
+	<techHediffsMoney>1000~1500</techHediffsMoney>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+		<li>Poor</li>
+		<li>Simple</li>
+		<li>Advanced</li>
+		<li>ImplantEmpireCommon</li>
+	</techHediffsTags>
+	<techHediffsDisallowTags>
+		<li>PainCauser</li>
+	</techHediffsDisallowTags>
+	<initialResistanceRange>13~21</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="OotR_BasePlayerAncestralOni">
+	<defName>OotR_Ancestral_Oni</defName>
+	<race>OotR_Alien_AncestralOni</race>
+	<label>member</label>
+	<defaultFactionType>OotR_AncestralOniPlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>OotR_AncestralOniBackstoryStarter</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+    <initialResistanceRange>9~15</initialResistanceRange>
+</PawnKindDef>
+
+</Defs>

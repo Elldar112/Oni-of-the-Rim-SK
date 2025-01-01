@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="XmlExtensions.OptionalPatch">
+    <modId>morishep.tarojun.onioftherimlite</modId>
+	<key>TextureLegacyBody</key>
+	<defaultValue>false</defaultValue>
+	<caseTrue>
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AOni"]/alienRace/graphicPaths/body</xpath>
+			<value>
+				<body>Things/Body/Oni_LegacyBody/</body>
+			</value>
+		</Operation>
+	</caseTrue>
+</Operation>
+
+</Patch>

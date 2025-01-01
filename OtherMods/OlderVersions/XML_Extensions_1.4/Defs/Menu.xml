@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XmlExtensions.SettingsMenuDef>
+		<defName>OniOfTheRim_Menu</defName>
+		<modId>morishep.tarojun.onioftherimlite</modId>
+		<label>Oni of the Rim</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Oni textures</text>
+				<tKey>OniOfTheRim_OniTextures</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>TextureLegacyBody</key>
+				<defaultValue>false</defaultValue>
+				<label>Use the legacy body texture for the Oni?</label>
+				<tKey>OniOfTheRim_TextureLegacyBody</tKey>
+				<tooltip>The original texture for the Oni from the start of this race mod and original animal mod.</tooltip>
+				<tKeyTip>OniOfTheRim_TextureLegacyBodyTip</tKeyTip>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Oni head texture</text>
+				<tKey>OniOfTheRim_OniHeadTexture</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.RadioButtons">
+				<key>TextureHeads</key>
+				<defaultValue>0</defaultValue>
+				<buttons>
+					<li>
+						<label>Normal</label>
+						<tKey>OniOfTheRim_TextureHeads_Normal</tKey>
+						<tooltip>Normal head texture as shown in the artwork.</tooltip>
+						<tKeyTip>OniOfTheRim_TextureHeads_NormalTip</tKeyTip>
+						<value>0</value>
+					</li>
+					<li>
+						<label>No facial details</label>
+						<tKey>OniOfTheRim_TextureHeads_NoDetailFace</tKey>
+						<tooltip>Removes facial details, leaving only the eyes.</tooltip>
+						<tKeyTip>OniOfTheRim_TextureHeads_NoDetailFaceTip</tKeyTip>
+						<value>1</value>
+					</li>
+					<li>
+						<label>Vanilla-style heads</label>
+						<tKey>OniOfTheRim_TextureHeads_Vanilla</tKey>
+						<tooltip>Head details are of the vanilla like style.</tooltip>
+						<tKeyTip>OniOfTheRim_TextureHeads_VanillaTip</tKeyTip>
+						<value>2</value>
+					</li>
+				</buttons>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RevenantTalonsHardMode</key>
+				<defaultValue>false</defaultValue>
+				<label>Revenant Talons hard mode: Their raids will not flee and will attack immediately.</label>
+				<tKey>OniOfTheRim_RevenantTalonsHardMode</tKey>
+				<tooltip>They use to never auto-flee when you killed enough, due to their fanatical nature, and their raids were always immediate attacks. This option returns that zeal to see you dead no matter the cost.</tooltip>
+				<tKeyTip>OniOfTheRim_RevenantTalonsHardModeTip</tKeyTip>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveFirePanic</key>
+				<defaultValue>false</defaultValue>
+				<label>Remove the fire panic debuff when Oni are struck by fire?</label>
+				<tKey>OniOfTheRim_RemoveFirePanic</tKey>
+				<tooltip>Recently added at around start of RimWorld 1.4, to further emphasize their weakness to fire. This removes it if you don't want it.</tooltip>
+				<tKeyTip>OniOfTheRim_RemoveFirePanicTip</tKeyTip>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Restarting game is required to apply any changes.</text>
+				<tKey>OniOfTheRim_ResetToApplyReminder</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.ResetSettings">
+				<label>Reset settings</label>
+				<tKey>OniOfTheRim_ResetSettings</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+</Defs>

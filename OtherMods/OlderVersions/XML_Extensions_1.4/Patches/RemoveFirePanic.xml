@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="XmlExtensions.OptionalPatch">
+    <modId>morishep.tarojun.onioftherimlite</modId>
+	<key>RemoveFirePanic</key>
+	<defaultValue>false</defaultValue>
+	<caseTrue>
+		<Operation Class="PatchOperationRemove">
+			<xpath>Defs/HediffDef[defName="OniPassive" or defName="AncestralOniPassive"]/comps/li[@Class="HediffCompProperties_ReactOnDamage"]</xpath>
+		</Operation>
+	</caseTrue>
+</Operation>
+
+</Patch>

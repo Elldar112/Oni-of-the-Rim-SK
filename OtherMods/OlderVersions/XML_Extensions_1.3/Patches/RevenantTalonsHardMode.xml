@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="XmlExtensions.OptionalPatch">
+    <modId>morishep.tarojun.onioftherimlite</modId>
+	<key>RevenantTalonsHardMode</key>
+	<defaultValue>false</defaultValue>
+	<caseTrue>
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/FactionDef[defName="RevenantTalons"]/canStageAttacks</xpath>
+			<value>
+				<autoFlee>false</autoFlee>
+			</value>
+		</Operation>
+	</caseTrue>
+</Operation>
+
+</Patch>

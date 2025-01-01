@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniTribalAdult</defName>
+	<title>Tribesman</title>
+	<titleShort>tribesman</titleShort>
+	<baseDesc>[PAWN_nameDef] has not settled into a dedicated role within the tribe and has been assisting in areas that needed more people at the time, mostly helping moving materials, cleaning or patrols around the village edge.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniTribalElder</defName>
+	<title>Elder tribesman</title>
+	<titleShort>tribesman</titleShort>
+	<baseDesc>[PAWN_nameDef] has learned many wisdoms of life along the years. Nowadays, [PAWN_pronoun] is teaching and raising the young ones of the tribe.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Cooking</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>3</value>
+		</li>	  
+		<li>
+			<key>Crafting</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>1</value>
+		</li>
+	</skillGains>
+	<bioAgeRange>
+		<min>60</min>
+		<max>150</max>
+	</bioAgeRange>	
+	<chronoAgeRange>
+		<min>60</min>
+		<max>3000</max>
+	</chronoAgeRange>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniMiner</defName>
+	<title>Cave enthusiast</title>
+	<titleShort>miner</titleShort>
+	<baseDesc>[PAWN_nameDef] loves rocks and digging. [PAWN_pronoun] feels right at home in a dank cave, so long as [PAWN_pronoun] has a pick and a light. However, an incident involving an over-amorous bear has left [PAWN_objective] more than reluctant to deal with animals of any kind.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Mining</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniMason</defName>
+	<title>Stone mason</title>
+	<titleShort>mason</titleShort>
+	<baseDesc>[PAWN_nameDef] loves rocks and reshaping it. [PAWN_pronoun] can often be seen gathering or mining the rocks [PAWN_objective]self to personally select the material for [PAWN_possessive] next assigned work by the tribe.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Mining</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Crafting</key>
+			<value>1</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniMiner2</defName>
+	<title>Mineral seeker</title>
+	<titleShort>miner</titleShort>
+	<baseDesc>Oni tribes may be close to nature, but they do value metals and minerals as a resource like any other. [PAWN_nameDef] is responsible for looking and bringing back such materials for the tribe, and has grown capable of fending for [PAWN_objective]self outside the settlement.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Mining</key>
+			<value>6</value>
+		</li>	
+		<li>
+			<key>Shooting</key>
+			<value>3</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniTender</defName>
+	<title>Oni Tender</title>
+	<titleShort>tender</titleShort>
+	<baseDesc>[PAWN_nameDef] is familiar with the plants [PAWN_possessive] tribe grows, and is tasked on tending them to maturity for harvest. Aside from plantwork, [PAWN_pronoun] also makes sure things are put where they should be, areas kept tidied and keeping a look out inside the village for any problems.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Plants</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniGatherer</defName>
+	<title>gatherer</title>
+	<titleShort>gatherer</titleShort>
+	<baseDesc>[PAWN_nameDef] often goes outside of the settlement to forage for edible plants and berries, being well versed with the surrounding land. [PAWN_pronoun] also assists with the outside patrols with [PAWN_possessive] knowledge.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>5</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniWildHerder</defName>
+	<title>Wild herder</title>
+	<titleShort>herder</titleShort>
+	<baseDesc>[PAWN_nameDef] regularly sets out with some of the tribe's animals to let them graze in the wild, and [PAWN_pronoun] has grown quite skilled at handling animals of most kinds.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>1</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniAnimalHerder</defName>
+	<title>Animal caretaker</title>
+	<titleShort>herder</titleShort>
+	<baseDesc>[PAWN_nameDef] looks after and trains all the animals in the tribe. Along the way, [PAWN_pronoun] learned a bit of medicine from treating the injuries the animals have or deal to others.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>6</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>1</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniWeapon</defName>
+	<title>Weaponsmith</title>
+	<titleShort>weaponsmith</titleShort>
+	<baseDesc>[PAWN_nameDef] found [PAWN_pronoun] had a natural talent and love for making blades and weaponry. [PAWN_pronoun] has made sure [PAWN_possessive] tribe has the finest weapons [PAWN_pronoun] can craft.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Crafting</key>
+			<value>5</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniWeaver</defName>
+	<title>Oni weaver</title>
+	<titleShort>weaver</titleShort>
+	<baseDesc>Despite Oni being fine without clothing, it is still important someone can make them properly. [PAWN_nameDef] has learned the techniques and spends most of the time carefully assembling [PAWN_possessive] tribe's favored attire.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Crafting</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>1</value>
+		</li>	  
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniBuilderAdult</defName>
+	<title>Oni builder</title>
+	<titleShort>builder</titleShort>
+	<baseDesc>Tasked with the construction jobs for the tribe, [PAWN_nameDef] has overcome some of the issues his race has when it comes to this kind of job. But no one in the tribe blames [PAWN_objective] if something went wrong, for it is a respected role that only a few can carry out properly.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Construction</key>
+			<value>7</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>2</value>
+		</li>	  
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniCook</defName>
+	<title>Oni cook</title>
+	<titleShort>cook</titleShort>
+	<baseDesc>[PAWN_nameDef] had the mixed blessing of being a capable cook in [PAWN_possessive] tribe. It means everyone was grateful for fine meals, but [PAWN_pronoun] also often took the blame for bad cases of indigestion. Fortunately, [PAWN_nameDef] has cultivated a fine hand for preparing meals to avoid any grief.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Cooking</key>
+			<value>8</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniCookBad</defName>
+	<title>Oni disaster cook</title>
+	<titleShort>cursed cook</titleShort>
+	<baseDesc>[PAWN_nameDef] was banned from cooking by [PAWN_possessive] tribe due to an incident none shall ever speak of again. [PAWN_pronoun] since then never looked at cooked meals the same way ever again, and was relegated to looking for ingredients for others on [PAWN_possessive] own.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Ascetic</defName>
+			<chance>100</chance>
+		</li>
+	</forcedTraitsChance>
+	<workDisables>
+		<li>Cooking</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniMedic</defName>
+	<title>Oni healer</title>
+	<titleShort>healer</titleShort>
+	<baseDesc>[PAWN_nameDef] tends the wounds of the warriors and hunters wounded in combat, and to the more mundane illnesses, fevers and injuries among the tribe. [PAWN_pronoun] is very well respected for [PAWN_possessive] talents.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Social</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>6</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>HerbOni</defName>
+	<title>Oni alchemist</title>
+	<titleShort>alchemist</titleShort>
+	<baseDesc>[PAWN_nameDef] is known as a respectable alchemist within leagues of [PAWN_possessive] tribe. [PAWN_pronoun] has learned many medical and other applications of every plant that can be used in the region. Despite [PAWN_possessive] success, it came from having spent so much time alone to achieve all that knowledge.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Plants</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Crafting</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Social</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AlchemyOni</defName>
+	<title>Oni alchemist</title>
+	<titleShort>alchemist</titleShort>
+	<baseDesc>[PAWN_nameDef] is an alchemist for [PAWN_possessive] tribe, practicing with various combination of plants, minerals, and other chemicals to hopefully produce something useful. Was kicked out of the kitchen when an experiment went wrong which set the hut on fire along with half the winter reserves.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Plants</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Crafting</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Cooking</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniSpacerAdult</defName>
+	<title>Travelling trader</title>
+	<titleShort>trader</titleShort>
+	<baseDesc>[PAWN_nameDef] is a brave and open-minded trader, roving the globe searching for deals and opportunities for profit. [PAWN_pronoun] is experienced leading caravan journeys to far reaching settlements and other xeno-colonies to make trade deals.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>4</value>
+		</li>	  
+		<li>
+			<key>Melee</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>8</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Xenophobia</defName>
+			<degree>1</degree>
+			<chance>100</chance>
+		</li>
+	</disallowedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniRemoteHunter</defName>
+	<title>Remote Hunter</title>
+	<titleShort>hunter</titleShort>
+	<baseDesc>[PAWN_nameDef] is a hunter who is often far away from the village for extended period of time with [PAWN_possessive] team. They send back their hunt on a regular basis or left in a set place where other hunter teams can deliver them back home.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+		<li>OniHunter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>-2</value>
+		</li>
+	</skillGains>	
+	<workDisables>
+		<li>Intellectual</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniHunterBS</defName>
+	<title>Hunter</title>
+	<titleShort>hunter</titleShort>
+	<baseDesc>[PAWN_nameDef] is a hunter. [PAWN_pronoun] makes sure [PAWN_possessive] tribe is well fed, learning the game paths and watering holes. [PAWN_pronoun] makes sure to keep the predator numbers down as well, for [PAWN_possessive] own people, and the game they share.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+		<li>OniHunter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-1</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniHunterMS</defName>
+	<title>Master hunter</title>
+	<titleShort>hunter</titleShort>
+	<baseDesc>[PAWN_nameDef] is a professional hunter. Sometimes called to put down manhunters, or tracking down hostiles to their bases. [PAWN_possessive] skills as a tracker are even able to elude mechanoid sensors trying to catch [PAWN_objective].</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+		<li>OniHunter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>-1</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniInsectHunter</defName>
+	<title>Insect hunter</title>
+	<titleShort>hunter</titleShort>
+	<baseDesc>[PAWN_nameDef] is a hunter that specialized in hunting down insects for their meat, and became proficient in close combat within caves where the big ones dwell.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+		<li>AncestralOniBackstoryStarter</li>
+		<li>OniHunter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Mining</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Nimble</defName>
+			<chance>33</chance>
+		</li>
+	</forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>FighterOni</defName>
+	<title>Front fighter</title>
+	<titleShort>fighter</titleShort>
+	<baseDesc>[PAWN_nameDef] is a rank-and-file soldier for [PAWN_possessive] tribe. [PAWN_pronoun] is the first line of defence to keep dangerous creatures or people from attacking the village, sometimes raiding other tribes for supplies or people... maybe.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>-2</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>10</chance>
+		</li>
+	</forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniWarrior</defName>
+	<title>Oni warrior</title>
+	<titleShort>warrior</titleShort>
+	<baseDesc>[PAWN_nameDef] is a seasoned soldier for [PAWN_possessive] tribe. Having been in numerous fights with hostile threats, [PAWN_pronoun] is often seen heading to the troubled areas before anyone else in the tribe knows what is going on.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>6</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>6</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>-2</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>15</chance>
+		</li>
+	</forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>CMDOni</defName>
+	<title>Oni champion</title>
+	<titleShort>Champion</titleShort>
+	<baseDesc>[PAWN_nameDef] is [PAWN_possessive] people's champion. [PAWN_pronoun] has become very skilled in combat after years of defending [PAWN_possessive] tribe from the innumerable threats they had faced.</baseDesc>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>7</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>7</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>-2</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>25</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Wimp</defName>
+			<chance>100</chance>
+		</li>
+	</disallowedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniShaman</defName>
+	<title>Shaman</title>
+	<titleShort>shaman</titleShort>
+	<baseDesc>[PAWN_nameDef] is a member of the shaman cast of a large tribe, a group that closely assists the chief in leading the tribe. [PAWN_pronoun] is well versed with the lores and legends of the tribe.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>	
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Social</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>3</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniChief</defName>
+	<title>Oni tribe chief</title>
+	<titleShort>chief</titleShort>
+	<baseDesc>[PAWN_nameDef] is a leader of [PAWN_possessive] tribe. It falls upon [PAWN_objective] guidance to lead the tribe and solving disputes within.</baseDesc>
+	<bodyTypeMale>Hulk</bodyTypeMale>	
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>5</value>
+		</li>	  
+		<li>
+			<key>Melee</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>8</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>ManualDumb</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniBlackTalon</defName>
+	<title>Black Talon</title>
+	<titleShort>Black Talon</titleShort>
+	<baseDesc>The Black Talon is a special force division of the Oni people, specialized in combat, infiltration and assassination. [PAWN_nameDef] is one such member. The rank of Black Talon brings fear into the enemies and are well known to be deadly adversaries.</baseDesc>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniBackstory</li>
+		<li>AncestralOniBackstory</li>
+		<li>OniBlackTalon</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>6</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>6</value>
+		</li>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>15</chance>
+		</li>
+		<li>
+			<defName>Bloodlust</defName>
+			<chance>15</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Wimp</defName>
+			<chance>100</chance>
+		</li>
+	</disallowedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>FreedMiner</defName>
+	<title>Rescued Oni</title>
+	<titleShort>Rescued</titleShort>
+	<baseDesc>[PAWN_nameDef] was kidnapped and enslaved, working in a dark hilly mine after refusing [PAWN_possessive] new masters advances. Kept at the brink of starvation - until a wandering band of travelers (perhaps just looking to loot the settlement) freed [PAWN_objective] from [PAWN_possessive] bonds. Since then, [PAWN_pronoun] has grown very fond of cooking meals, and still retains a good skill with a pickaxe.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniSlave</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Mining</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Cooking</key>
+			<value>4</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniSexSlave</defName>
+	<title>Runaway slave</title>
+	<titleShort>Toy</titleShort>
+	<baseDesc>[PAWN_nameDef] was captured by slavers and sold to a lecherous tycoon. [PAWN_pronoun] was forced to tend the gardens, and do all sorts of lewd acts for [PAWN_possessive] 'owner', but grew accustomed to the otherwise lavish environment. However eventually [PAWN_pronoun] grew to hate the lack of control and escaped on a garbage barge.</baseDesc>
+	<maleCommonality>10</maleCommonality>
+	<femaleCommonality>90</femaleCommonality>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniSlave</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Social</key>
+			<value>7</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>-4</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>-4</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Crafting</li>
+		<li>Intellectual</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>OniWorkerSlave</defName>
+	<title>Enslaved Oni</title>
+	<titleShort>slave</titleShort>
+	<baseDesc>[PAWN_nameDef] was captured by slavers. Being sold to numerous masters, [PAWN_nameDef] has lost the will to escape and learned absolute obedience to avoid brutal punishments.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OniSlave</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Construction</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Cooking</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Social</li>
+		<li>Intellectual</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniWanderer</defName>
+	<title>Ancestral wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<baseDesc>[PAWN_nameDef] is a ancestral Oni wanderer of unknown origins, having one day suddenly finding [PAWN_objective]self here in this world.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>-3</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-3</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniLost</defName>
+	<title>Lost wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<baseDesc>[PAWN_nameDef] is a lost ancestral Oni of unknown origins, suddenly finding [PAWN_objective]self here in this world.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-3</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Intellectual</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniTraveller</defName>
+	<title>keen wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<baseDesc>[PAWN_nameDef] is a ancestral Oni traveller of unknown origins, and was unphased by the sudden introduction into this new world.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-3</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniWildWanderer</defName>
+	<title>wild wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<baseDesc>[PAWN_nameDef] is a wild ancestral Oni wanderer of unknown origins, suddenly finding [PAWN_objective]self here in this world. [PAWN_objective] mindset is more close to that of a wild animal.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>6</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-10</value>
+		</li>
+	</skillGains>
+	<workDisables>
+      <li>Firefighting</li>
+      <li>Caring</li>
+      <li>Social</li>
+      <li>Cooking</li>
+      <li>Crafting</li>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+	</workDisables>
+    <!--workAllows>
+		<li>Violent</li>
+		<li>Mining</li>
+		<li>PlantWork</li>
+        <li>Animals</li>
+		<li>ManualDumb</li>
+		<li>Hauling</li>
+		<li>Cleaning</li>
+		<li>ManualSkilled</li>
+    </workAllows-->
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniExplorer</defName>
+	<title>ancestral Oni explorer</title>
+	<titleShort>explorer</titleShort>
+	<baseDesc>[PAWN_nameDef] is a ancestral Oni explorer interested in the unknown. Seeking out new places brings out [PAWN_possessive] curiosity and is eager to try new things.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Mining</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniHomesick</defName>
+	<title>homesick wanderer</title>
+	<titleShort>wanderer</titleShort>
+	<baseDesc>[PAWN_nameDef] is a lost ancestral Oni explorer of unknown origins. [PAWN_pronoun] did not appreciate finding [PAWN_objective]self in this new world, and misses [PAWN_possessive] herd.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>-3</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-3</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniManhunter</defName>
+	<title>manhunter ancestral Oni</title>
+	<titleShort>manhunter</titleShort>
+	<baseDesc>[PAWN_nameDef] is a ancestral Oni explorer of unknown origins. [PAWN_pronoun] found joy in hunting for smart prey, and have been on manhunter-like sprees. Due to this, [PAWN_pronoun] did learn how to treat injuries that comes with the hunt.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>7</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Bloodlust</defName>
+			<chance>100</chance>
+		</li>
+	</forcedTraitsChance>
+	<workDisables>
+		<li>Social</li>
+		<li>Artistic</li>
+	</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniNomad</defName>
+	<title>ancestral Oni nomad</title>
+	<titleShort>nomad</titleShort>
+	<baseDesc>[PAWN_nameDef] is a ancestral Oni nomad who does not settle in one place for long, having a carefree life of living off the land.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>-10</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Firefighting</li>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Artistic</li>
+		<li>Intellectual</li>
+	</workDisables>
+    <!--workAllows>
+		<li>Violent</li>
+		<li>Mining</li>
+		<li>PlantWork</li>
+        <li>Animals</li>
+		<li>Crafting</li>
+		<li>Caring</li>
+		<li>ManualDumb</li>
+		<li>Hauling</li>
+		<li>Cleaning</li>
+		<li>ManualSkilled</li>
+    </workAllows-->
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+	<defName>AncestralOniSettler</defName>
+	<title>ancestral Oni settler</title>
+	<titleShort>settler</titleShort>
+	<baseDesc>[PAWN_nameDef] is a ancestral Oni who wants to find a good place to call home, and have wandered a long time to find a suitable location.</baseDesc>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>AncestralOniBackstoryStarter</li>
+	</spawnCategories>
+	<skillGains>
+		<li>
+			<key>Melee</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Crafting</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

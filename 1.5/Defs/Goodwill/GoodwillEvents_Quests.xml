@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Quests -->
+
+<HistoryEventDef>
+	<defName>AcceptedStolenOniPackage</defName>
+	<label>Accepted stolen valuable Oni package.</label>
+</HistoryEventDef>
+
+<HistoryEventDef>
+	<defName>UsedRevenantTalonStartThing</defName>
+	<label>Activated Revenant Talon's device.</label>
+</HistoryEventDef>
+
+</Defs>

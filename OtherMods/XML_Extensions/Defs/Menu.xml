@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XmlExtensions.SettingsMenuDef>
+		<defName>OniOfTheRimLite_Menu</defName>
+		<modId>morishep.tarojun.onioftherimlite</modId>
+		<label>Oni of the Rim: Lite</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Ancient Urbans Ruins settings (If active)</text>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.Checkbox" MayRequireAnyOf="XMB.AncientUrbanrUins.MO,XMB.AncientUrbanrUins.MO_steam">
+				<key>OotR_AncientUrbanRuins_Add_BT</key>
+				<defaultValue>true</defaultValue>
+				<label>Black Talons are added to Ancient Urban Ruins maps</label>
+				<tKey>OotR_AncientUrbanRuins_Add_BT</tKey>
+				<tooltip>One Black Talon agent is added for certain maps. If this faction is not existing in your game, recommend to turn off this option to prevent spawning errors.</tooltip>
+				<tKeyTip>OotR_AncientUrbanRuins_Add_BT_Tip</tKeyTip>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox" MayRequireAnyOf="XMB.AncientUrbanrUins.MO,XMB.AncientUrbanrUins.MO_steam">
+				<key>OotR_AncientUrbanRuins_Add_RT</key>
+				<defaultValue>true</defaultValue>
+				<label>Revenant Talons are added to Ancient Urban Ruins maps</label>
+				<tKey>OotR_AncientUrbanRuins_Add_RT</tKey>
+				<tooltip>Small groups of Revenant Talons members are added to the chaos. If this faction is not existing in your game, recommend to turn off this option to prevent spawning errors.</tooltip>
+				<tKeyTip>OotR_AncientUrbanRuins_Add_RT_Tip</tKeyTip>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Restarting game is required to apply any changes.</text>
+				<tKey>OotR_ResetToApplyReminder</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.ResetSettings">
+				<label>Reset settings</label>
+				<tKey>OotR_ResetSettings</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine" />
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+</Defs>

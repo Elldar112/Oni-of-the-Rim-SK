@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_EagerConscript</defName>
+	<title>eager conscript</title>
+	<titleShort>conscript</titleShort>
+	<description>[PAWN_nameDef] was eager to fight for the Revenant Talons' cause when given the opportunity through their mandatory conscription.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_RevenantTalonsConscript</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>4</Shooting>
+		<Melee>4</Melee>
+		<Intellectual>-1</Intellectual>
+	</skillGains>
+	<!--passions>
+		<li>
+			<skill>Shooting</skill>
+			<xp>2</xp>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<xp>2</xp>
+		</li>
+	</passions-->
+	<requiredWorkTags>Violent</requiredWorkTags>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_ForcedConscript</defName>
+	<title>forced conscript</title>
+	<titleShort>conscript</titleShort>
+	<description>[PAWN_nameDef] was put through mandatory conscription that is demanded by all members of Revenant Talons.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_RevenantTalonsConscript</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>2</Shooting>
+		<Melee>2</Melee>
+		<Intellectual>-1</Intellectual>
+	</skillGains>
+	<requiredWorkTags>Violent</requiredWorkTags>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_UnwillingConscript</defName>
+	<title>unwilling conscript</title>
+	<titleShort>conscript</titleShort>
+	<description>[PAWN_nameDef] could not escape being forcefully put through mandatory conscription and every day felt like a hellish fight for survival.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsConscript</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>1</Shooting>
+		<Melee>1</Melee>
+		<Plants>1</Plants>
+		<Medicine>1</Medicine>
+	</skillGains>
+	<disallowedTraits>
+		<Bloodlust>0</Bloodlust>
+	</disallowedTraits>
+	<!--passions>
+		<li>
+			<skill>Shooting</skill>
+			<xp>0</xp>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<xp>0</xp>
+		</li>
+	</passions-->
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_AbductedConscript</defName>
+	<title>abducted conscript</title>
+	<titleShort>conscript</titleShort>
+	<description>[PAWN_nameDef] was captured and forcefully recruited into the Revenant Talons ranks, now subservient to their will.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsConscript</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>1</Shooting>
+		<Melee>1</Melee>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_RespectedZealot</defName>
+	<title>respected zealot</title>
+	<titleShort>zealot</titleShort>
+	<description>[PAWN_nameDef] proven [PAWN_objective]self to be an embodiment of Revenant Talons values, and is respected among the tribe.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_RevenantTalonsZealot</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>4</Shooting>
+		<Melee>4</Melee>
+		<Social>2</Social>
+		<Intellectual>-1</Intellectual>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="-1">HAR_Xenophobia</defName>
+			<chance>10</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraits>
+		<Wimp>0</Wimp>
+		<Kind>0</Kind>
+	</disallowedTraits>
+	<requiredWorkTags>Violent</requiredWorkTags>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_UnyieldingZealot</defName>
+	<title>unyielding zealot</title>
+	<titleShort>zealot</titleShort>
+	<description>[PAWN_nameDef] has gone through numerous tough trials and campaigns. [PAWN_pronoun] has proven to be a force to be reckoned with.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_RevenantTalonsZealot</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>5</Shooting>
+		<Melee>5</Melee>
+		<Social>2</Social>
+		<Intellectual>-1</Intellectual>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>25</chance>
+		</li>
+		<li>
+			<defName Degree="2">Nerves</defName>
+			<chance>10</chance>
+		</li>
+		<li>
+			<defName Degree="1">Nerves</defName>
+			<chance>25</chance>
+		</li>
+		<li>
+			<defName Degree="-1">HAR_Xenophobia</defName>
+			<chance>10</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraits>
+		<Wimp>0</Wimp>
+		<Kind>0</Kind>
+	</disallowedTraits>
+	<disallowedTraitsChance>
+	  <li>
+		<defName Degree="-1">Nerves</defName>
+		<chance>100</chance>
+	  </li>
+	  <li>
+		<defName Degree="-2">Nerves</defName>
+		<chance>100</chance>
+	  </li>
+	</disallowedTraitsChance>
+	<requiredWorkTags>Violent</requiredWorkTags>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_MercilessZealot</defName>
+	<title>merciless zealot</title>
+	<titleShort>zealot</titleShort>
+	<description>[PAWN_nameDef] took extreme measures to enforce the will of Revenant Talons, to degrees that can unsettle other members.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+		<li>OotR_RevenantTalonsZealot</li>
+	</spawnCategories>
+	<skillGains>
+		<Melee>6</Melee>
+		<Social>3</Social>
+	</skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Psychopath</defName>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName>Bloodlust</defName>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName Degree="-1">HAR_Xenophobia</defName>
+			<chance>10</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraits>
+		<Wimp>0</Wimp>
+		<Kind>0</Kind>
+	</disallowedTraits>
+	<!--passions>
+		<li>
+			<skill>Melee</skill>
+			<xp>2</xp>
+		</li>
+	</passions-->
+	<requiredWorkTags>Violent</requiredWorkTags>
+	<workDisables>Caring, Intellectual</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_OverburdenWorker</defName>
+	<title>overburdened worker</title>
+	<titleShort>worker</titleShort>
+	<description>There are no shortage of skilled work needed to maintain Revenant Talons functionality, and [PAWN_nameDef] is one of the more fortunate ones that spent more time on support work than risking their lives on raids.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Medicine>3</Medicine>
+		<Crafting>3</Crafting>
+		<Construction>1</Construction>
+		<Cooking>2</Cooking>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_OverburdenLabourer</defName>
+	<title>overburdened labourer</title>
+	<titleShort>labourer</titleShort>
+	<description>There are no shortage of labour needed to maintain Revenant Talons functionality, and [PAWN_nameDef] is one of the more fortunate ones that spent more time on support work than risking their lives on raids.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Plants>3</Plants>
+		<Animals>3</Animals>
+		<Mining>3</Mining>
+	</skillGains>
+	<requiredWorkTags>Violent</requiredWorkTags>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_AbductedWorker</defName>
+	<title>abducted Oni worker</title>
+	<titleShort>worker</titleShort>
+	<description>[PAWN_nameDef] was kidnapped by the Revenant Talons, and only spared from becoming a disposable living asset and materials because [PAWN_pronoun] is an Oni. To survive without ill treatment, [PAWN_pronoun] has to stay subservient to [PAWN_possessive] new masters.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsConscript</li>
+	</spawnCategories>
+	<skillGains>
+		<Crafting>1</Crafting>
+		<Construction>1</Construction>
+		<Cooking>1</Cooking>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RT_AbductedLabourer</defName>
+	<title>kidnapped Oni labourer</title>
+	<titleShort>labourer</titleShort>
+	<description>[PAWN_nameDef] was kidnapped by the Revenant Talons, and only spared from becoming a disposable living asset and materials because [PAWN_pronoun] is an Oni. To survive without ill treatment, [PAWN_pronoun] has to stay subservient to [PAWN_possessive] new masters.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_RevenantTalonsConscript</li>
+	</spawnCategories>
+	<skillGains>
+		<Plants>1</Plants>
+		<Mining>1</Mining>
+		<Animals>1</Animals>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

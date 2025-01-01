@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef ParentName="GeneEyeColor">
+		<defName>OotR_Oni_LifelessEyes</defName>
+		<label>lifeless Oni eyes</label>
+		<description>Carriers of this gene have Oni eyes that appear lifeless, apathetic and disturbing at certain side angles.</description>
+		<iconPath>UI/OotR/Icons/Genes/Gene_LifelessOniEyes</iconPath>
+		<!--displayOrderInCategory>1</displayOrderInCategory-->
+		<missingGeneRomanceChanceFactor>0.1</missingGeneRomanceChanceFactor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Things/OotR/Pawn/GeneAttachments/OniLifelessEyes/OniLifelessEye_Right</texPath>
+				<!--texPathFemale>Things/OotR/Pawn/GeneAttachments/OniLifelessEyes/</texPathFemale-->
+				<anchorTag>RightEye</anchorTag>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>0.2</drawSize>
+				<side>Right</side>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, -0.25)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Things/OotR/Pawn/GeneAttachments/OniLifelessEyes/OniLifelessEye_Right</texPath>
+				<!--texPathFemale>Things/OotR/Pawn/GeneAttachments/OniLifelessEyes/</texPathFemale-->
+				<anchorTag>LeftEye</anchorTag>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>0.2</drawSize>
+				<side>Left</side>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, -0.25)</offset>
+						<flip>true</flip>
+					</defaultData>
+					<dataWest>
+						<flip>false</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+</Defs>

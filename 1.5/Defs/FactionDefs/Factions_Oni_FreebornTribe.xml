@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- pawnGroupMaker is done at another file, and to complete the faction def. -->
+<!-- Blame CE, but it makes the process need significantly less patch operations. -->
+
+<FactionDef Name="OotR_Faction_OniFreeborn" ParentName="TribeBase" Abstract="True">
+	<defName>OotR_OniFreeborn</defName>
+	<label>Oni Freeborn Tribe</label>
+    <description>A tribe of the mysterious and sought after Oni race.</description>
+    <colorSpectrum>
+		<li>(1, 1, 1)</li>
+		<li>(0.9, 0.9, 0.9)</li>
+    </colorSpectrum>
+    <factionIconPath>World/OotR/OniBase</factionIconPath>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
+	<allowedCultures Inherit="False">
+		<li>OotR_OniCulture</li>
+	</allowedCultures>
+    <disallowedMemes Inherit="False">
+		<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </disallowedMemes>
+    <pawnSingular>Oni</pawnSingular>
+    <pawnsPlural>Oni</pawnsPlural>
+    <backstoryFilters>
+		<li>
+			<categories>
+				<li>OotR_OniFreebornTribeBackstory</li>
+			</categories>
+		</li>
+    </backstoryFilters>
+    <leaderTitle>chief</leaderTitle>
+	<caravanTraderKinds>
+    </caravanTraderKinds>
+	<allowedArrivalTemperatureRange>-55~60</allowedArrivalTemperatureRange>
+</FactionDef>
+
+</Defs>

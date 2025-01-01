@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<HediffDef Name="OotR_GenericOniAbilitiesCooldowns" Abstract="True">
+	<hediffClass>HediffWithComps</hediffClass>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+</HediffDef>
+
+<!-- Comp left empty because HediffDef can give ability by itself. Used as a check instead. -->
+<HediffDef Name="OotR_OniBlessings" Abstract="True">
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.9, 0.9, 0.9)</defaultLabelColor>
+	<isBad>false</isBad>
+	<initialSeverity>1</initialSeverity>
+	<maxSeverity>1</maxSeverity>
+	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	<priceImpact>true</priceImpact>
+	<comps>
+		<li Class="OniOfTheRimLite.HediffCompProperties_OniBlessingGiveAbility" />
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+</HediffDef>
+
+<ThingDef Name="OotR_OniDustBase" ParentName="ResourceBase" Abstract="True">
+    <healthAffectsPrice>false</healthAffectsPrice>
+	<techLevel>Neolithic</techLevel>
+	<statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Mass>0.05</Mass>
+		<Flammability>1.5</Flammability>
+		<DeteriorationRate>2</DeteriorationRate>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Usable">
+			<useJob>UseItem</useJob>
+			<useLabel>Use {0_label}</useLabel>
+		</li>
+		<li Class="CompProperties_UseEffectDestroySelf" />
+	</comps>
+    <recipeMaker>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+	</recipeMaker>
+	<thingCategories>
+		<li>OotR_OniDust</li>
+	</thingCategories>
+	<tradeTags>
+		<li>OotR_OniDust</li>
+	</tradeTags>
+</ThingDef>
+
+<ThingDef ParentName="OotR_OniDustBase">
+	<defName>OotR_OniDust</defName>
+	<label>Oni dust</label>
+	<description>A mysterious powder that can coax out the potential within an Oni. Used to grant the Oni their racial passive, or as a base ingredient to make modified variants, that will grant new abilities.</description>
+	<descriptionHyperlinks>
+		<HediffDef>OotR_OniPassive</HediffDef>
+		<HediffDef>OotR_AncestralOniPassive</HediffDef>
+    </descriptionHyperlinks>
+	<graphicData>
+		<texPath>Things/OotR/Item/Drug/OniDust</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<comps>
+		<li Class="OniOfTheRimLite.CompProperties_AddOniHediffs">
+			<hediffDefOni>OotR_OniPassive</hediffDefOni>
+			<hediffDefAncestral>OotR_AncestralOniPassive</hediffDefAncestral>
+			<needsRacePassive>false</needsRacePassive>
+		</li>
+	</comps>
+	<statBases>
+		<WorkToMake>1200</WorkToMake>
+	</statBases>
+	<costList>
+		<MedicineHerbal>15</MedicineHerbal>
+	</costList>
+</ThingDef>
+
+</Defs>

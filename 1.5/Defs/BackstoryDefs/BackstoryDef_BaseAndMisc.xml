@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Most backstories can be shared with different factions, so for file management -->
+<!-- Backstory category's file priority -->
+<!-- Players only or slaves -->
+<!-- Oni Freeborn tribe -->
+<!-- Black Talon -->
+<!-- Revenant Talon -->
+<!-- Ancestral Oni -->
+
+<AlienRace.AlienBackstoryDef Name="OotR_OniBackstory_Adult" Abstract="True">
+	<slot>Adulthood</slot>
+	<spawnCategories>
+		<li>OotR_OniBackstoryBase_Adult</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_OniFreedMiner</defName>
+	<title>rescued Oni</title>
+	<titleShort>rescuee</titleShort>
+	<description>[PAWN_nameDef] was kidnapped and enslaved, working in a dark hilly mine after refusing [PAWN_possessive] new masters advances. Kept at the brink of starvation - until a wandering band of travelers (perhaps just looking to loot the settlement) freed [PAWN_objective] from [PAWN_possessive] bonds. Since then, [PAWN_pronoun] has grown very fond of cooking meals, and still retains a good skill with a pickaxe.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Mining>5</Mining>
+		<Cooking>4</Cooking>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_RunawayOniSlave</defName>
+	<title>runaway Oni slave</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] was captured by slavers and sold to a lecherous tycoon. [PAWN_pronoun] was forced to tend the gardens, and do all sorts of lewd acts for [PAWN_possessive] 'owner', but grew accustomed to the otherwise lavish environment. However eventually [PAWN_pronoun] grew to hate the lack of control and escaped on a garbage barge.</description>
+	<maleCommonality>10</maleCommonality>
+	<femaleCommonality>90</femaleCommonality>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+		<li>OotR_BlackTalonsBackstory</li>
+		<li>OotR_RevenantTalonsBackstory</li>
+	</spawnCategories>
+	<skillGains>
+		<Social>7</Social>
+		<Plants>3</Plants>
+		<Shooting>-4</Shooting>
+		<Melee>-4</Melee>
+	</skillGains>
+	<workDisables>Crafting,Intellectual</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="OotR_OniBackstory_Adult">
+	<defName>OotR_Adult_EnslavedOni</defName>
+	<title>enslaved Oni</title>
+	<titleShort>slave</titleShort>
+	<description>[PAWN_nameDef] was captured by slavers. Being sold to numerous masters, [PAWN_nameDef] has lost the will to escape and learned absolute obedience to avoid brutal punishments.</description>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<spawnCategories>
+		<li>OotR_OniSlave</li>
+	</spawnCategories>
+	<skillGains>
+		<Construction>2</Construction>
+		<Cooking>2</Cooking>
+		<Plants>2</Plants>
+	</skillGains>
+	<workDisables>Violent,Social,Intellectual</workDisables>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

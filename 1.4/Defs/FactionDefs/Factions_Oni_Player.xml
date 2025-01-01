@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="PlayerFactionBase">
+	<defName>OniPlayerColony</defName>
+	<label>Oni Colony</label>
+	<description>Your Oni colony.</description>
+	<isPlayer>true</isPlayer>
+	<basicMemberKind>OniColonist</basicMemberKind>
+    <pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Industrial</techLevel>
+	<factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures>
+		<li>Rustican</li>
+		<li>Corunan</li>
+	</allowedCultures>
+    <backstoryFilters>
+		<li>
+			<categories>
+				<li>OniBackstory</li>
+			</categories>
+		</li>
+	</backstoryFilters>
+    <factionIconPath>World/OniBase</factionIconPath>
+	<startingResearchTags>
+		<li>ClassicStart</li>
+		<li>OniStart</li>
+	</startingResearchTags>
+    <startingTechprintsResearchTags>
+		<li>ClassicStart</li>
+		<li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+		</thingDefs>
+    </apparelStuffFilter>
+</FactionDef>
+
+<FactionDef ParentName="PlayerFactionBase">
+	<defName>OniTPlayerColony</defName>
+	<label>Oni tribe</label>
+	<description>Your Oni tribe.</description>
+	<isPlayer>true</isPlayer>
+    <categoryTag>Tribal</categoryTag>
+    <pawnSingular>tribesman</pawnSingular>
+    <pawnsPlural>tribespeople</pawnsPlural>
+	<basicMemberKind>OniTribal</basicMemberKind>
+    <techLevel>Neolithic</techLevel>
+	<factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures>
+		<li>Corunan</li>
+    </allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+    </disallowedMemes>
+    <disallowedPrecepts></disallowedPrecepts>
+    <backstoryFilters>
+		<li>
+			<categories>
+				<li>OniBackstory</li>
+			</categories>
+		</li>
+	</backstoryFilters>
+    <factionIconPath>World/OniBase</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<forageabilityFactor>1.7</forageabilityFactor>
+	<startingResearchTags>
+		<li>TribalStart</li>
+		<li>OniStart</li>
+	</startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+		<thingDefs>
+			<li>Cloth</li>
+		</thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+		<li>Tribal</li>
+    </recipePrerequisiteTags>
+</FactionDef>
+
+<FactionDef ParentName="PlayerFactionBase">
+	<defName>AncestralOniPlayerColony</defName>
+	<label>Oni tribe (Ancestral)</label>
+	<description>Your Oni tribe.</description>
+	<isPlayer>true</isPlayer>
+    <categoryTag>Tribal</categoryTag>
+    <pawnSingular>tribesman</pawnSingular>
+    <pawnsPlural>tribespeople</pawnsPlural>
+	<basicMemberKind>Ancestral_Oni</basicMemberKind>
+    <techLevel>Neolithic</techLevel>
+	<factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures>
+		<li>Corunan</li>
+    </allowedCultures>
+    <disallowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+    </disallowedMemes>
+    <disallowedPrecepts></disallowedPrecepts>
+    <backstoryFilters>
+		<li>
+			<categories>
+				<li>AncestralOniBackstoryStarter</li>
+			</categories>
+		</li>
+	</backstoryFilters>
+    <factionIconPath>World/OniBase</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<forageabilityFactor>1.7</forageabilityFactor>
+    <apparelStuffFilter>
+		<thingDefs>
+			<li>Cloth</li>
+		</thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+		<li>Tribal</li>
+    </recipePrerequisiteTags>
+</FactionDef>
+
+<FactionDef ParentName="PlayerFactionBase">
+	<defName>RevenantTalonsPlayerColony</defName>
+	<label>Oni revenant tribe</label>
+	<description>Your Oni tribe, whose origins are from the Revenant Talons.</description>
+	<isPlayer>true</isPlayer>
+    <categoryTag>Tribal</categoryTag>
+    <pawnSingular>tribesman</pawnSingular>
+    <pawnsPlural>tribespeople</pawnsPlural>
+	<basicMemberKind>OniTribal</basicMemberKind>
+    <techLevel>Medieval</techLevel>
+	<factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures>
+		<li>Corunan</li>
+    </allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
+    </disallowedMemes>
+    <disallowedPrecepts></disallowedPrecepts>
+    <backstoryFilters>
+		<li>
+			<categories>
+				<li>OniBackstory</li>
+				<li>OniSlave</li>
+				<li>OniRevenantTalons</li>
+			</categories>
+		</li>
+	</backstoryFilters>
+    <factionIconPath>World/OniBase</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<forageabilityFactor>1.7</forageabilityFactor>
+	<startingResearchTags>
+		<li>TribalStart</li>
+		<li>OniStart</li>
+		<li>RevenantTalonStart</li>
+	</startingResearchTags>
+    <startingTechprintsResearchTags>
+		<li>TribalStart</li>
+		<li>TribalStartTechprints</li>
+		<li>RevenantTalonTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+		<thingDefs>
+			<li>Cloth</li>
+		</thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+		<li>Tribal</li>
+    </recipePrerequisiteTags>
+</FactionDef>
+
+</Defs>

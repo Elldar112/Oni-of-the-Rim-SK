@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Anti-Black Talons intro quest. -->
+<QuestScriptDef>
+	<defName>OotR_Intro_OniIre</defName>
+	<rootMinPoints>0</rootMinPoints>
+	<expireDaysRange>2</expireDaysRange>
+	<defaultChallengeRating>1</defaultChallengeRating>
+	<isRootSpecial>true</isRootSpecial>
+	<questNameRules>
+	<rulesStrings>
+		<li>questName->Oni's ire</li>
+	</rulesStrings>
+	</questNameRules>
+	<questDescriptionRules>
+		<rulesStrings>
+			<li>questDescription->An anonymous vagabond calls from nearby, requesting to dump an "accidentally" stolen package in your territory, to throw off the original owner from their trails. The original owners were refusing all communication attempts and out for blood, the vagabond was desperately running out of options.
+
+The anonymous vagabond may not be entirely truthful about how they came into possession of this stolen package, but there are no signs of hostiles chasing them.
+
+Beware - If you accept to take the attention of the stolen belongings, all Oni race factions (If present, Oni Freeborn Tribes and Black Talons) will become hostile. Fortunately, no raids related to this matter will arrive.</li>
+		</rulesStrings>
+	</questDescriptionRules>
+	<root Class="QuestNode_Sequence">
+		<nodes>
+		
+			<li Class="QuestNode_GetMap" />
+			<li Class="QuestNode_GetWalkInSpot" />
+
+			<li Class="QuestNode_Set">
+			  <name>raidPoints</name>
+			  <value>$points</value>
+			</li>
+			<li Class="QuestNode_GetColonistCountFromColonyPercentage">
+				<storeAs>colonistCount</storeAs>
+				<colonyPercentage>1</colonyPercentage>
+			</li>
+			<li Class="QuestNode_GenerateThing">
+				<def>SmokeleafJoint</def>
+				<stackCount>$($colonistCount+1)</stackCount>
+				<storeAs>itemPodsContents</storeAs>
+			</li>
+			<li Class="QuestNode_GenerateThing">
+				<def>Silver</def>
+				<stackCount>420</stackCount>
+				<addToList>itemPodsContents</addToList>
+			</li>
+			<!-- Oni freeborn tribes becomes hostile -->
+			<li Class="QuestNode_FactionExists">
+				<faction>OotR_OniFreeborn</faction>
+				<node Class="QuestNode_ChangeFactionGoodwill">
+					<faction>OotR_OniFreeborn</faction>
+					<change>-100</change>
+					<canSendLetter>true</canSendLetter>
+					<canSendMessage>false</canSendMessage>
+					<ensureHostile>true</ensureHostile>
+					<reason>AcceptedStolenOniPackage</reason>
+				</node>
+			</li>
+			<!-- Black Talons becomes hostile -->
+			<li Class="QuestNode_FactionExists">
+				<faction>OotR_BlackTalons</faction>
+				<node Class="QuestNode_ChangeFactionGoodwill">
+					<faction>OotR_BlackTalons</faction>
+					<change>-100</change>
+					<canSendLetter>true</canSendLetter>
+					<canSendMessage>false</canSendMessage>
+					<ensureHostile>true</ensureHostile>
+					<reason>AcceptedStolenOniPackage</reason>
+				</node>
+			</li>
+			<li Class="QuestNode_DropPods">
+				<contents>$itemPodsContents</contents>
+				<useTradeDropSpot>true</useTradeDropSpot>
+			</li>
+			
+			<li Class="QuestNode_End"/>
+		</nodes>
+	</root>
+</QuestScriptDef>
+
+</Defs>
